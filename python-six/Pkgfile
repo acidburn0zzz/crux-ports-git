@@ -1,0 +1,15 @@
+# Description: Python 2 and 3 compatibility utilities
+# URL:         https://pypi.python.org/pypi/six
+# Packager:    Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer:  Samuel Hand, samuel dot hand at openmailbox dot org
+# Depends on:  python
+
+name=python-six
+version=1.9.0
+release=1
+source=(https://pypi.python.org/packages/source/s/six/six-$version.tar.gz)
+
+build() {
+	cd six-$version
+	python setup.py install --root $PKG
+}

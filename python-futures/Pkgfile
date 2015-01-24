@@ -1,0 +1,15 @@
+# Description: Backport of the concurrent.futures package from Python 3.2
+# URL:         https://pypi.python.org/pypi/futures 
+# Packager:    Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer:  Samuel Hand, samuel dot hand at openmailbox dot org
+# Depends on:  python
+
+name=python-futures
+version=2.2.0
+release=1
+source=(https://pypi.python.org/packages/source/f/futures/futures-$version.tar.gz)
+
+build() {
+	cd futures-$version
+	python setup.py install --root $PKG
+}

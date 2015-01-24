@@ -1,0 +1,31 @@
+# Description: Extremely powerful ICCCM-compliant multiple virtual desktop window manager - git checkout
+# URL:         https://github.com/ThomasAdam/mvwm
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  git imlib2
+
+name=mvwm
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master 
+	else
+		git clone git://github.com/ThomasAdam/mvwm $name
+		cd $name
+	fi
+
+	./autogen.sh \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--libexecdir=/usr/lib \
+		--disable-gtk \
+		--disable-nls
+
+	make
+	make DESTDIR=$PKG install
+}

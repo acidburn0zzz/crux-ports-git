@@ -1,0 +1,27 @@
+# Description: Portable and multi-interface IRC client - git checkout
+# URL:         https://weechat.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  cmake git libgcrypt
+
+name=weechat
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/weechat/weechat $name
+		cd $name
+	fi
+
+	cmake ./ -DCMAKE_INSTALL_PREFIX=/usr
+
+	make
+	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share
+}

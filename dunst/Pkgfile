@@ -1,0 +1,26 @@
+# Description: Lightweight and customizable notification daemon - git checkout
+# URL:         https://github.com/knopwob/dunst
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:  dbus git libnotify libxdg-basedir xorg-libxscrnsaver
+
+name=dunst
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/knopwob/dunst.git $name
+		cd $name
+	fi
+	
+	make
+	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
+
+	rm -rf $PKG/usr/share/dunst
+}

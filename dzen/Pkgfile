@@ -1,0 +1,24 @@
+# Description: General purpose messaging, notification and menuing program for X11
+# URL:         https://github.com/robm/dzen
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Depends on:  git xorg-libx11 xorg-libxpm xorg-libxinerama xorg-libxft
+
+name=dzen
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone https://github.com/robm/dzen $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
+}

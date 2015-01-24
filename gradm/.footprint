@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	etc/
+drwx------	root/root	etc/grsec/
+-rw-------	root/root	etc/grsec/learn_config
+-rw-------	root/root	etc/grsec/policy
+drwxr-xr-x	root/root	etc/udev/
+drwxr-xr-x	root/root	etc/udev/rules.d/
+-rw-r--r--	root/root	etc/udev/rules.d/80-grsec.rules
+drwxr-xr-x	root/root	sbin/
+-rwxr-xr-x	root/root	sbin/gradm
+-rwx------	root/root	sbin/grlearn
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man8/
+-rw-r--r--	root/root	usr/man/man8/gradm.8.gz

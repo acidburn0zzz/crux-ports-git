@@ -1,0 +1,17 @@
+# Description: user-space utility for controlling PaX flags of executables
+# URL:         https://pax.grsecurity.net
+# Packager:    Thomas Penteker, tek at serverop dot de
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=paxctl
+version=0.9
+release=1
+source=(https://pax.grsecurity.net/paxctl-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	make
+	make DESTDIR="$PKG" MANDIR=/usr/man/man1 install
+}
