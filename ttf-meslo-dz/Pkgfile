@@ -1,0 +1,17 @@
+# Description:  Customized version of Apple's Menlo font. Dotted zero version
+# URL:          https://github.com/andreberg/Meslo-Font
+# Packager:     Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer:   Samuel Hand, samuel dot hand at openmailbox dot org
+# Depends on:   fontconfig
+
+name=ttf-meslo-dz
+version=1
+release=1
+source=(https://github.com/andreberg/Meslo-Font/raw/master/dist/v1.2/Meslo%20LG%20DZ%20v1.2.zip)
+
+build() {
+    cd Meslo\ LG\ DZ\ v1.2
+
+	install -d $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/
+	install -Dm644 *.ttf $PKG/usr/share/fonts/X11/TTF/Meslo/DZ/
+}
