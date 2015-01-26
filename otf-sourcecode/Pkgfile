@@ -7,10 +7,10 @@
 name=otf-sourcecode
 version=1.017
 release=1
-source=(http://sourceforge.net/projects/sourcecodepro.adobe/files/SourceCodePro_FontsOnly-$version.zip)
+source=(https://github.com/adobe-fonts/source-code-pro/archive/${version}R.tar.gz)
 
 build() {
-    cd SourceCodePro_FontsOnly-$version
+    cd source-code-pro-${version}R
 
 	install -Dm644 OTF/SourceCodePro-ExtraLight.otf	$PKG/usr/share/fonts/X11/OTF/Source/CodePro/ExtraLight.otf
 	install -Dm644 OTF/SourceCodePro-Light.otf      $PKG/usr/share/fonts/X11/OTF/Source/CodePro/Light.otf
