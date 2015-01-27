@@ -10,10 +10,12 @@ release=1
 source=(https://github.com/weechat/weechat/archive/v$version.tar.gz)
 
 build() {
+	cd $name-$version
+
 	mkdir build
 	cd build
 
-	cmake ./ -DCMAKE_INSTALL_PREFIX=/usr
+	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr
 
 	make
 	make DESTDIR=$PKG install
