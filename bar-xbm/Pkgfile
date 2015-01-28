@@ -7,8 +7,10 @@
 name=bar-xbm
 version=git
 release=1
-source=(xbm.patch \
-	https://raw.githubusercontent.com/rootcoma/bar/feature_xbm_images/xbm.c)
+source=(
+	xbm.patch
+	https://raw.githubusercontent.com/rootcoma/bar/feature_xbm_images/xbm.c
+)
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -16,7 +18,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/lemonboy/bar $name
+		git clone git://github.com/LemonBoy/bar $name
 		cd $name
 	fi
 
