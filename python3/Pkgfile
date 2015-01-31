@@ -1,0 +1,32 @@
+# Description: Python 3
+# URL:         http://www.python.org/
+# Packager:    Kristian Lehmann, email at zero-io dot net
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:
+
+name=python3
+version=3.4.2
+release=1
+source=(http://python.org/ftp/python/$version/Python-$version.tar.xz)
+
+build() {
+	cd Python-$version
+
+	./configure --prefix=/usr \
+		--mandir=/usr/man \
+		--enable-shared \
+		--with-threads \
+		--with-sqlite \
+		--enable-ipv6 \
+		--with-tkinter
+  
+	make
+	make DESTDIR=$PKG install
+	rm $PKG/usr/bin/2to3
+
+	# remove junk files
+	find $PKG -name "README*" -delete
+	find $PKG -name "ChangeLog*" -delete
+	find $PKG -name "TODO*" -delete
+	find $PKG -name "NEWS*" -delete
+}
