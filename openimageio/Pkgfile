@@ -1,0 +1,28 @@
+# Description: A library for reading and writing images, including classes, utilities, and applications
+# URL:         http://openimageio.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  cmake boost ilmbase openexr
+
+name=openimageio
+version=1.5.11
+release=1
+source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
+
+build() {
+	cd oiio-Release-$version
+
+	mkdir build
+	cd build
+
+	export CFLAGS=""
+	export CXXFLAGS=""
+
+	cmake ../ \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DOIIO_BUILD_TESTS=OFF
+
+
+	make
+	make DESTDIR=$PKG install
+}
