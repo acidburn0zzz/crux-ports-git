@@ -2,7 +2,7 @@
 # URL:         http://www.python.org/
 # Packager:    Kristian Lehmann, email at zero-io dot net
 # Maintainer:  onodera, onodera at openmailbox dot org
-# Depends on:
+# Depends on:  sqlite3
 
 name=python3
 version=3.4.2
