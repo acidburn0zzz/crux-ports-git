@@ -1,21 +1,22 @@
 # Description: An almost exact clone of ncmpc with some new features
 # URL:         http://rybczak.net/ncmpcpp
-# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Packager:    Michael Savage, mike at mikejsavage dot co dot uk
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  ncurses libmpdclient boost taglib
 
 name=ncmpcpp
 version=0.6.2
 release=1
-source=(https://github.com/arybczak/$name/archive/$version.tar.gz)
+source=(
+	https://github.com/arybczak/$name/archive/$version.tar.gz
+	fix-build.patch
+)
 
 build() {
 	cd $name-$version
+	patch < ../fix-build.patch
 
-	./autogen.sh \
-		--prefix=/usr \
-		--mandir=/usr/man \
-		--disable-clock
+	./autogen.sh --prefix=/usr --mandir=/usr/man --disable-clock
 
 	make
 	make DESTDIR=$PKG install
