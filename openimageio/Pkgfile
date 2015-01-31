@@ -12,17 +12,11 @@ source=(https://github.com/OpenImageIO/oiio/archive/Release-$version.tar.gz)
 build() {
 	cd oiio-Release-$version
 
-	mkdir build
-	cd build
 
-	export CFLAGS=""
-	export CXXFLAGS=""
-
-	cmake ../ \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DOIIO_BUILD_TESTS=OFF
+	CFLAGS="" CXXFLAGS="" cmake ./ -DCMAKE_INSTALL_PREFIX=/usr -DOIIO_BUILD_TESTS=OFF
 
 
 	make
 	make DESTDIR=$PKG install
+	rm -rf $PKG/usr/share
 }
