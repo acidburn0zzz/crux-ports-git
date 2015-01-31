@@ -1,0 +1,34 @@
+# Description: A fully integrated 3D graphics creation suite
+# URL:         http://blender.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  boost cmake desktop-file-utils ffmpeg glew glu mesa openimageio python3
+
+name=blender
+version=2.73a
+release=1
+source=(http://download.blender.org/source/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	mkdir build
+	cd build
+
+	cmake ../ \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DWITH_INSTALL_PORTABLE=OFF \
+		-DWITH_GAMEENGINE=OFF \
+		-DWITH_CYCLES=ON \
+		-DWITH_OPENIMAGEIO=ON\
+		-DWITH_INTERNATIONAL=OFF \
+		-DWITH_OPENAL=OFF \
+		-DWITH_PLAYER=OFF \
+		-DWITH_OPENCOLORIO=OFF \
+		-DWITH_CODEC_FFMPEG=ON \
+		-DPYTHON_VERSION=3.4m \
+		-DWITH_PYTHON_INSTALL=OFF
+
+	make
+	make DESTDIR=$PKG install
+}
