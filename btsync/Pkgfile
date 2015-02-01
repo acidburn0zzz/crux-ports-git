@@ -1,0 +1,20 @@
+# Description: Automatically sync files via BitTorrent
+# URL:         http://www.bittorrent.com/sync
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  lee, rtlanceroad at gmail dot com
+# Depends on:
+
+name=btsync
+version=1.4.106
+release=1
+source=(
+	http://syncapp.bittorrent.com/$version/"$name"_x64-"$version".tar.gz
+	fix-paths.patch
+)
+
+build() {
+	./btsync --dump-sample-config > btsync.conf
+	patch < fix-paths.patch
+	install -Dm644 btsync.conf $PKG/etc/btsync.conf
+	install -Dm755 btsync $PKG/usr/bin/btsync
+}
