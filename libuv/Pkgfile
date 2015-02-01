@@ -20,7 +20,7 @@ build() {
 	fi
 
 	./autogen.sh
+	./configure
 	make
-	make DESTDIR=$PKG install 
-	libtool --finish $PKG/usr/lib
+	make DESTDIR="$PKG" prefix="/usr" install 
 }
