@@ -2,7 +2,7 @@
 # URL:         http://www.dolphin-emu.org/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
-# Depends on:  cmake
+# Depends on:  cmake git libsdl2
 
 name=dolphin-emu
 version=git
