@@ -1,0 +1,9 @@
+#!/bin/sh
+# /etc/rc.d/musicpd: start/stop mpd
+
+case $1 in
+	start) /usr/bin/mpd ;;
+	stop) pkill mpd ;;
+	restart) $0 stop; sleep 2; $0 start ;;
+	*) echo "Usage: $0 [start|stop|restart]" ;;
+esac
