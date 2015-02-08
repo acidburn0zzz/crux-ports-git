@@ -1,19 +1,21 @@
-# Description: a highly customizable and functional document viewer
-# URL:         https://pwmt.org/projects/zathura/
-# Packager:    Lee, rtlanceroad at gmail dot com
-# Maintainer:  Lee, rtlanceroad at gmail dot com
-# Depends on:  girara gtk3 
-# Optional:    sqlite3 intltool ckeck file docutils
+# Description:  A highly customizable and functional document viewer.
+# URL:          https://pwmt.org/projects/zathura/
+# Packager:     Lee, rtlanceroad at gmail dot com
+# Maintainer:   Lee, rtlanceroad at gmail dot com
+# Depends on:   girara gtk3
+# Nice to Have: sqlite3 intltool check docutils
 
 name=zathura
 version=0.3.2
 release=1
-source=(https://pwmt.org/projects/$name/download/$name-$version.tar.gz)
+source=(https://pwmt.org/projects/${name}/download/${name}-${version}.tar.gz)
 
 build() {
-	cd $name-$version
-        sed -i -e '13d' colors.mk
-        make
-	make DESTDIR=$PKG install
-        rm -r $PKG/usr/share/locale
+	cd ${name}-${version}
+
+	sed -i -e '13d' colors.mk
+	make
+	make DESTDIR=${PKG} MANPREFIX="/usr/man" install
+
+	rm -rf $PKG/usr/share
 }
