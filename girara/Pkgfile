@@ -1,19 +1,21 @@
-# Description: a library that implements a user interface that focuses on simplicity and minimalism
-# URL:         https://pwmt.org/projects/girara/
-# Packager:    Lee, rtlanceroad at gmail dot com
-# Maintainer:  Lee, rtlanceroad at gmail dot com
-# Depends on:  gtk3 
-# Optional:    intltool check
+# Description:  A library that implements a user interface that focuses on simplicity and minimalism.
+# URL:          https://pwmt.org/projects/girara/
+# Packager:     Lee, rtlanceroad at gmail dot com
+# Maintainer:   Lee, rtlanceroad at gmail dot com
+# Depends on:   gtk3
+# Nice to have: check intltool
 
 name=girara
 version=0.2.3
 release=1
-source=(https://pwmt.org/projects/$name/download/$name-$version.tar.gz)
+source=(https://pwmt.org/projects/${name}/download/${name}-${version}.tar.gz)
 
 build() {
-	cd $name-$version
-        sed -i -e '13d' colors.mk
-        make
-	make DESTDIR=$PKG install
-        rm -r $PKG/usr/share/locale
+	cd ${name}-${version}
+
+	sed -i -e '13d' colors.mk
+	make
+	make DESTDIR=${PKG} install
+
+	rm -rf $PKG/usr/share
 }

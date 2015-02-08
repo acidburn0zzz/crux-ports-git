@@ -27,4 +27,3 @@ lrwxrwxrwx	root/root	usr/lib/libgirara-gtk3.so.1 -> libgirara-gtk3.so.1.1
 -rw-r--r--	root/root	usr/lib/libgirara-gtk3.so.1.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/girara-gtk3.pc
-drwxr-xr-x	root/root	usr/share/
