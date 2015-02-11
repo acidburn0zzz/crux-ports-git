@@ -5,7 +5,7 @@
 # Depends on:  libmad libid3tag glib flac audiofile
 
 name=mpd
-version=0.19.7
+version=0.19.9
 release=1
 source=(http://www.musicpd.org/download/mpd/0.19/${name}-${version}.tar.xz)
 
