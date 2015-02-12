@@ -1,4 +1,4 @@
-# Description: Tewi: a small bitmap font - git checkout
+# Description: A small bitmap font - git checkout
 # URL:         https://github.com/lucy/tewi-font
 # Packager:    Samuel Hand, samuel dot hand at openmailbox dot org
 # Maintainer:  Samuel Hand, samuel dot hand at openmailbox dot org
@@ -13,7 +13,7 @@ build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
-		git fetch -q;git reset --hard origin/master	
+		git fetch -q; git reset --hard origin/master	
 	else
 		git clone git://github.com/lucy/tewi-font $name
 		cd $name
