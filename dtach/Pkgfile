@@ -1,0 +1,20 @@
+# Description: Emulates the detach feature of screen
+# URL:         http://dtach.sourceforge.net/
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Depends on:  glibc
+
+name=dtach
+version=0.8
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz)
+
+build() {
+    cd ${name}-${version}
+
+    ./configure --prefix=/usr
+    make
+
+    install -Dm755 dtach "${PKG}/usr/bin/dtach"
+    install -Dm644 dtach.1 "${PKG}/usr/man/man1/dtach.1"
+}
