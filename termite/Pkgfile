@@ -21,9 +21,10 @@ build() {
          
 	patch -Np1 < $SRC/fix-transparency.patch
 	make 
-         
+	tic -x termite.terminfo -o xterm-termite
+
 	install -Dm644 man/termite.1 $PKG/usr/man/man1/termite.1
 	install -Dm644 man/termite.config.5 $PKG/usr/man/man5/termite.config.5
-	install -Dm644 termite.terminfo $PKG/usr/share/terminfo/x/xterm-termite
+	install -Dm644 xterm-termite $PKG/usr/share/terminfo/x/xterm-termite
 	install -Dm755 termite $PKG/usr/bin/termite
 }
