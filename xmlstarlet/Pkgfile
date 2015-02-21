@@ -1,0 +1,23 @@
+# Description: A set of tools to transform, query, validate, and edit XML documents
+# URL:         http://www.breakfastquay.com/rubberband/
+# Packager:    Danny Rawlins, crux at romster dot me
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  libxml2 libxslt
+
+name=xmlstarlet
+version=1.6.1
+release=1
+source=(http://downloads.sourceforge.net/sourceforge/xmlstar/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	LIBXSLT_LIBS="$(pkg-config --libs libxslt libexslt)" LIBXML_LIBS="$(pkg-config --libs libxml-2.0)" \
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man
+
+	make
+	make DESTDIR=$PKG install
+}
+
