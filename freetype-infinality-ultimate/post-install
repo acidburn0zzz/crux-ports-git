@@ -1,0 +1,2 @@
+#!/bin/sh
+echo 'freetype-infinality-ultimate: freetype' >> /var/lib/pkg/prt-get.aliases
