@@ -6,7 +6,7 @@
 # Nice to have: flac libvorbis
 
 name=easytag
-version=2.2.5
+version=2.2.6
 release=1
 source=(https://download.gnome.org/sources/$name/2.2/$name-$version.tar.xz)
 
