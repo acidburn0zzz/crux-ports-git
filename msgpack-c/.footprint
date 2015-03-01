@@ -68,6 +68,7 @@ drwxr-xr-x	root/root	usr/include/msgpack/detail/
 -rw-r--r--	root/root	usr/include/msgpack/detail/cpp11_zone.hpp
 -rw-r--r--	root/root	usr/include/msgpack/fbuffer.h
 -rw-r--r--	root/root	usr/include/msgpack/fbuffer.hpp
+-rw-r--r--	root/root	usr/include/msgpack/iterator.hpp
 -rw-r--r--	root/root	usr/include/msgpack/object.h
 -rw-r--r--	root/root	usr/include/msgpack/object.hpp
 -rw-r--r--	root/root	usr/include/msgpack/object_fwd.hpp
