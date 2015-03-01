@@ -11,6 +11,7 @@ source=(https://github.com/mauke/unibilium/archive/v${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
+
 	make
 	make PREFIX="/usr" MANDIR="/usr/man" DESTDIR=${PKG} install
 }
