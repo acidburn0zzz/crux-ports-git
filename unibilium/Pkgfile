@@ -1,0 +1,16 @@
+# Description: A terminfo parsing library.
+# URL:         https://github.com/mauke/unibilium/
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=unibilium
+version=1.1.2
+release=1
+source=(https://github.com/mauke/unibilium/archive/v${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+	make
+	make PREFIX="/usr" MANDIR="/usr/man" DESTDIR=${PKG} install
+}
