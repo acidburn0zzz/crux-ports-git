@@ -4,7 +4,7 @@
 # Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  unibilium
 
-name=libvterm
+name=libtermkey
 version=git
 release=1
 source=()
