@@ -1,8 +1,8 @@
-# Description: Abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator - neovim fork
+# Description: Allows easy processing of keyboard entry from terminal-based programs - neovim fork
 # URL:         https://github.com/neovim/libtermkey
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  Luiz de Milon, kori at openmailbox dot org
-# Depends on:  unibilium
+# Depends on:  git unibilium
 
 name=libtermkey
 version=git
