@@ -2,12 +2,12 @@
 # URL:         https://github.com/neovim/neovim
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  Luiz de Milon, kori at openmailbox dot org
-# Depends on:  git cmake libuv luajit msgpack-c msgpack-lua lua-bitop lua-lpeg
+# Depends on:  git cmake libuv luajit msgpack-c msgpack-lua lua-bitop lua-lpeg libvterm libtermkey unibilium
 
 name=neovim
 version=git
 release=1
-source=(use-legacy-float-names.patch)
+source=()
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -19,7 +19,6 @@ build() {
 		cd $name
 	fi
 
-	patch < $SRC/use-legacy-float-names.patch
 	cmake -G 'Unix Makefiles' -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
 
 	make
