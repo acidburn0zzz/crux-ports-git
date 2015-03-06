@@ -14,8 +14,9 @@ build() {
 	cd ${name}-${version}
 
 	sed -i -e '13d' colors.mk
+
 	make
 	make DESTDIR=${PKG} MANPREFIX="/usr/man" install
 
-	rm -rf $PKG/usr/share
+	rm -rf $PKG/usr/share/locale
 }
