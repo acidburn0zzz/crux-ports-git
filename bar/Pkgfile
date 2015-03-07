@@ -1,0 +1,25 @@
+# Description: A lightweight xcb based bar - git checkout
+# URL:         http://github.com/LemonBoy/bar/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  git xorg-libxcb xorg-xcb-util-image
+
+name=bar
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/LemonBoy/bar $name
+		cd $name
+	fi
+
+	make all doc
+	install -Dm755 bar   $PKG/usr/bin/bar
+	install -Dm644 bar.1 $PKG/usr/man/man1/bar.1
+}
