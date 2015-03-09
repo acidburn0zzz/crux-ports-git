@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/OpenSans/
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/BoldItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/ExtraBold.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/ExtraBoldItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/Italic.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/Light.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/LightItalic.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/Regular.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/Semibold.ttf
+-rw-r--r--	root/root	usr/share/fonts/OpenSans/SemiboldItalic.ttf

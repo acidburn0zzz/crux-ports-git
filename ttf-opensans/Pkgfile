@@ -1,0 +1,23 @@
+# Description: A humanist sans-serif font.
+# URL:         https://www.google.com/fonts/specimen/Open+Sans
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=ttf-opensans
+version=20150308
+release=1
+source=(Open_Sans.zip)
+
+build() {
+	 install -Dm644 OpenSans-Light.ttf           $PKG/usr/share/fonts/OpenSans/Light.ttf
+	 install -Dm644 OpenSans-LightItalic.ttf     $PKG/usr/share/fonts/OpenSans/LightItalic.ttf
+	 install -Dm644 OpenSans-Regular.ttf         $PKG/usr/share/fonts/OpenSans/Regular.ttf
+	 install -Dm644 OpenSans-Italic.ttf          $PKG/usr/share/fonts/OpenSans/Italic.ttf
+	 install -Dm644 OpenSans-Semibold.ttf        $PKG/usr/share/fonts/OpenSans/Semibold.ttf
+	 install -Dm644 OpenSans-SemiboldItalic.ttf  $PKG/usr/share/fonts/OpenSans/SemiboldItalic.ttf
+	 install -Dm644 OpenSans-Bold.ttf            $PKG/usr/share/fonts/OpenSans/Bold.ttf
+	 install -Dm644 OpenSans-BoldItalic.ttf      $PKG/usr/share/fonts/OpenSans/BoldItalic.ttf
+	 install -Dm644 OpenSans-ExtraBold.ttf       $PKG/usr/share/fonts/OpenSans/ExtraBold.ttf
+	 install -Dm644 OpenSans-ExtraBoldItalic.ttf $PKG/usr/share/fonts/OpenSans/ExtraBoldItalic.ttf
+}
