@@ -1,0 +1,15 @@
+# Description: A simple bold font.
+# URL:         http://ospublish.constantvzw.org/foundry/osp-din/
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=ttf-osp-din
+version=20110527
+release=1
+source=(http://ospublish.constantvzw.org/foundry/files/OSP-foundry_DIN.zip)
+
+build() {
+	cd OSP-foundry_DIN
+	install -Dm644 OSP-DIN.ttf $PKG/usr/share/fonts/TTF/OSP/DIN.ttf
+}
