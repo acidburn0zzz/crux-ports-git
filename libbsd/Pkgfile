@@ -1,0 +1,18 @@
+# Description: Provides useful functions commonly found on BSD systems.
+# URL:         http://libbsd.freedesktop.org/wiki
+# Packager:    Ryan Mullen, rmmullen at gmail dot com
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+
+name=libbsd
+version=0.7.0
+release=1
+source=(http://libbsd.freedesktop.org/releases/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure --prefix=/usr
+	
+	make
+	make PREFIX="/usr" mandir="/usr/man" DESTDIR=${PKG} install
+}
