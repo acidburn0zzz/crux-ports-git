@@ -2,6 +2,7 @@
 # URL:         http://libbsd.freedesktop.org/wiki
 # Packager:    Ryan Mullen, rmmullen at gmail dot com
 # Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
 
 name=libbsd
 version=0.7.0
