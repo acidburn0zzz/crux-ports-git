@@ -6,18 +6,18 @@
 
 name=ttf-opensans
 version=20150314
-release=1
+release=2
 source=(Open_Sans.zip)
 
 build() {
-	 install -Dm644 OpenSans-Light.ttf           $PKG/usr/share/fonts/TTF/OpenSans/Light.ttf
-	 install -Dm644 OpenSans-LightItalic.ttf     $PKG/usr/share/fonts/TTF/OpenSans/LightItalic.ttf
-	 install -Dm644 OpenSans-Regular.ttf         $PKG/usr/share/fonts/TTF/OpenSans/Regular.ttf
-	 install -Dm644 OpenSans-Italic.ttf          $PKG/usr/share/fonts/TTF/OpenSans/Italic.ttf
-	 install -Dm644 OpenSans-Semibold.ttf        $PKG/usr/share/fonts/TTF/OpenSans/Semibold.ttf
-	 install -Dm644 OpenSans-SemiboldItalic.ttf  $PKG/usr/share/fonts/TTF/OpenSans/SemiboldItalic.ttf
-	 install -Dm644 OpenSans-Bold.ttf            $PKG/usr/share/fonts/TTF/OpenSans/Bold.ttf
-	 install -Dm644 OpenSans-BoldItalic.ttf      $PKG/usr/share/fonts/TTF/OpenSans/BoldItalic.ttf
-	 install -Dm644 OpenSans-ExtraBold.ttf       $PKG/usr/share/fonts/TTF/OpenSans/ExtraBold.ttf
-	 install -Dm644 OpenSans-ExtraBoldItalic.ttf $PKG/usr/share/fonts/TTF/OpenSans/ExtraBoldItalic.ttf
+	 install -Dm644 OpenSans-Light.ttf           $PKG/usr/share/fonts/X11/TTF/OpenSans/Light.ttf
+	 install -Dm644 OpenSans-LightItalic.ttf     $PKG/usr/share/fonts/X11/TTF/OpenSans/LightItalic.ttf
+	 install -Dm644 OpenSans-Regular.ttf         $PKG/usr/share/fonts/X11/TTF/OpenSans/Regular.ttf
+	 install -Dm644 OpenSans-Italic.ttf          $PKG/usr/share/fonts/X11/TTF/OpenSans/Italic.ttf
+	 install -Dm644 OpenSans-Semibold.ttf        $PKG/usr/share/fonts/X11/TTF/OpenSans/Semibold.ttf
+	 install -Dm644 OpenSans-SemiboldItalic.ttf  $PKG/usr/share/fonts/X11/TTF/OpenSans/SemiboldItalic.ttf
+	 install -Dm644 OpenSans-Bold.ttf            $PKG/usr/share/fonts/X11/TTF/OpenSans/Bold.ttf
+	 install -Dm644 OpenSans-BoldItalic.ttf      $PKG/usr/share/fonts/X11/TTF/OpenSans/BoldItalic.ttf
+	 install -Dm644 OpenSans-ExtraBold.ttf       $PKG/usr/share/fonts/X11/TTF/OpenSans/ExtraBold.ttf
+	 install -Dm644 OpenSans-ExtraBoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/OpenSans/ExtraBoldItalic.ttf
 }
