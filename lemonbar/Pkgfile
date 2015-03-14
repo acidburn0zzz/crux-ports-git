@@ -1,10 +1,10 @@
-# Description: A lightweight xcb based bar - git checkout
+# Description: A featherweight, lemon-scented, bar based on xcb  - git checkout
 # URL:         http://github.com/LemonBoy/bar/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
-# Depends on:  git xorg-libxcb xorg-xcb-util-image
+# Depends on:  git xorg-libxcb
 
-name=bar
+name=lemonbar
 version=git
 release=1
 source=()
@@ -20,6 +20,6 @@ build() {
 	fi
 
 	make all doc
-	install -Dm755 bar   $PKG/usr/bin/bar
-	install -Dm644 bar.1 $PKG/usr/man/man1/bar.1
+	install -Dm755 lemonbar   $PKG/usr/bin/lemonbar
+	install -Dm644 lemonbar.1 $PKG/usr/man/man1/lemonbar.1
 }
