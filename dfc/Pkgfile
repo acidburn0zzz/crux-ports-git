@@ -1,5 +1,5 @@
 # Description:  Display file system space usage using graph and colors - git checkout
-# URL:          http://projects.gw-computing.net/projects/dfc
+# URL:          https://github.com/Rolinh/dfc
 # Packager:     Luiz de Milon, kori at openmailbox dot org
 # Maintainer:   Luiz de Milon, kori at openmailbox dot org
 # Depends on:   git cmake
@@ -15,12 +15,12 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://gw-computing.net/$name.git $name
+		git clone https://github.com/Rolinh/dfc.git $name
 		cd $name
 	fi
 
 	cmake ./ '-DPREFIX=/usr' '-DSYSCONFDIR=/etc' '-DMAN_PATH=/usr/man'
-
+	make
 
 	install -Dm755 bin/dfc   $PKG/usr/bin/dfc
 	install -Dm644 man/dfc.1 $PKG/usr/man/man1/dfc.1
