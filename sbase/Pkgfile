@@ -1,8 +1,8 @@
-# Description:	A suckless variant of the *nix core utilities - git checkout
-# URL:          http://git.2f30.org/sbase/
-# Packager:     Luiz de Milon, kori at openmailbox dot org
-# Maintainer:	Luiz de Milon, kori at openmailbox dot org
-# Depends on:	git
+# Description: A suckless variant of the *nix core utilities - git checkout
+# URL:         http://git.2f30.org/sbase/
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:  git
 
 name=sbase
 version=git
@@ -20,5 +20,5 @@ build() {
 	fi
 
 	make
-	make DESTDIR=$PKG PREFIX=/opt/sbase MANPREFIX=/opt/sbase/man install 
+	make DESTDIR=${PKG} PREFIX="/opt/sbase" MANPREFIX="/opt/sbase/man" install
 }

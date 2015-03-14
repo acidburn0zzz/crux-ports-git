@@ -1,6 +1,7 @@
 drwxr-xr-x	root/root	opt/
 drwxr-xr-x	root/root	opt/sbase/
 drwxr-xr-x	root/root	opt/sbase/bin/
+-rwxr-xr-x	root/root	opt/sbase/bin/[
 -rwxr-xr-x	root/root	opt/sbase/bin/basename
 -rwxr-xr-x	root/root	opt/sbase/bin/cal
 -rwxr-xr-x	root/root	opt/sbase/bin/cat
@@ -10,6 +11,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/chroot
 -rwxr-xr-x	root/root	opt/sbase/bin/cksum
 -rwxr-xr-x	root/root	opt/sbase/bin/cmp
+-rwxr-xr-x	root/root	opt/sbase/bin/col
 -rwxr-xr-x	root/root	opt/sbase/bin/cols
 -rwxr-xr-x	root/root	opt/sbase/bin/comm
 -rwxr-xr-x	root/root	opt/sbase/bin/cp
@@ -23,6 +25,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/expand
 -rwxr-xr-x	root/root	opt/sbase/bin/expr
 -rwxr-xr-x	root/root	opt/sbase/bin/false
+-rwxr-xr-x	root/root	opt/sbase/bin/find
 -rwxr-xr-x	root/root	opt/sbase/bin/fold
 -rwxr-xr-x	root/root	opt/sbase/bin/grep
 -rwxr-xr-x	root/root	opt/sbase/bin/head
@@ -49,6 +52,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/renice
 -rwxr-xr-x	root/root	opt/sbase/bin/rm
 -rwxr-xr-x	root/root	opt/sbase/bin/rmdir
+-rwxr-xr-x	root/root	opt/sbase/bin/sed
 -rwxr-xr-x	root/root	opt/sbase/bin/seq
 -rwxr-xr-x	root/root	opt/sbase/bin/setsid
 -rwxr-xr-x	root/root	opt/sbase/bin/sha1sum
@@ -64,6 +68,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/tar
 -rwxr-xr-x	root/root	opt/sbase/bin/tee
 -rwxr-xr-x	root/root	opt/sbase/bin/test
+-rwxr-xr-x	root/root	opt/sbase/bin/time
 -rwxr-xr-x	root/root	opt/sbase/bin/touch
 -rwxr-xr-x	root/root	opt/sbase/bin/tr
 -rwxr-xr-x	root/root	opt/sbase/bin/true
@@ -88,6 +93,7 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/chroot.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cksum.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cmp.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/col.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cols.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/comm.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cp.1.gz
@@ -101,6 +107,7 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/expand.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/expr.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/false.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/find.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/fold.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/grep.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/head.1.gz
@@ -127,6 +134,7 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/renice.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/rm.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/rmdir.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/sed.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/seq.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/setsid.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/sha1sum.1.gz
@@ -142,6 +150,7 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/tar.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/tee.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/test.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/time.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/touch.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/tr.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/true.1.gz
