@@ -6,10 +6,11 @@
 
 name=ttf-osp-din
 version=20110527
-release=1
+release=2
 source=(http://ospublish.constantvzw.org/foundry/files/OSP-foundry_DIN.zip)
 
 build() {
 	cd OSP-foundry_DIN
-	install -Dm644 OSP-DIN.ttf $PKG/usr/share/fonts/TTF/OSP/DIN.ttf
+
+	install -Dm644 OSP-DIN.ttf $PKG/usr/share/fonts/X11/TTF/OSP/DIN.ttf
 }
