@@ -1,0 +1,26 @@
+# Description: A background browser and setter for X windows.
+# URL:         https://github.com/l3ib/nitrogen/
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:  gtkmm librsvg
+
+name=nitrogen
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	
+	if cd $name; then
+		git fetch; git reset --hard origin/master
+	else
+		git clone https://github.com/l3ib/nitrogen.git $name;
+	fi
+
+	./bootstrap
+	./configure --prefix=/usr
+
+	make
+	make DESTDIR=${PKG} mandir="/usr/man" install
+}
