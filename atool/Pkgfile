@@ -1,0 +1,19 @@
+# Description: A script for managing file archives of various types
+# URL:         http://www.nongnu.org/atool/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  file perl
+
+name=atool
+version=0.39.0
+release=1
+source=(http://savannah.nongnu.org/download/atool/atool-$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --mandir=/usr/man
+
+	make
+	make DESTDIR=$PKG install
+}
