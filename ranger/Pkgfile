@@ -1,0 +1,28 @@
+# Description:  A vim-inspired filemanager for the console - git checkout
+# URL:          http://ranger.nongnu.org/
+# Packager:     onodera, onodera at openmailbox dot org
+# Maintainer:   onodera, onodera at openmailbox dot org
+# Depends on:   git python
+# Nice to have: transmission w3m
+
+name=ranger
+version=git
+release=1
+source=()
+
+build () {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/hut/ranger $name
+		cd $name
+	fi
+
+	sed -i "s/share\/man/man/" setup.py
+
+	python setup.py -q install --root="$PKG" --optimize=1
+
+	rm -rf $PKG/usr/share/doc
+}
