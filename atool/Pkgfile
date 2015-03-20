@@ -2,7 +2,7 @@
 # URL:         http://www.nongnu.org/atool/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
-# Depends on:  file perl
+# Depends on:  
 
 name=atool
 version=0.39.0
