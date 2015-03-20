@@ -1,0 +1,22 @@
+# Description: A sans-serif design that is metrically compatible with Times New Roman™.
+# URL:         https://www.google.com/fonts/specimen/Tinos
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=ttf-tinos
+version=git
+release=1
+source=(
+	https://github.com/google/fonts/raw/master/apache/tinos/Tinos-Regular.ttf
+	https://github.com/google/fonts/raw/master/apache/tinos/Tinos-Italic.ttf
+	https://github.com/google/fonts/raw/master/apache/tinos/Tinos-Bold.ttf
+	https://github.com/google/fonts/raw/master/apache/tinos/Tinos-BoldItalic.ttf
+)
+
+build() {
+	install -Dm644 Tinos-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Tinos/Regular.ttf
+	install -Dm644 Tinos-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Tinos/Bold.ttf
+	install -Dm644 Tinos-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Tinos/Italic.ttf
+	install -Dm644 Tinos-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Tinos/BoldItalic.ttf
+}
