@@ -1,0 +1,8 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/X11/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/
+drwxr-xr-x	root/root	usr/share/fonts/X11/TTF/Inconsolata/
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/Inconsolata/Bold.ttf
+-rw-r--r--	root/root	usr/share/fonts/X11/TTF/Inconsolata/Regular.ttf

@@ -1,0 +1,18 @@
+# Description: A monospace font, designed for high resolution display.
+# URL:         http://www.levien.com/type/myfonts/inconsolata.html
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=ttf-inconsolata
+version=git
+release=1
+source=(
+	https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
+	https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf
+)
+
+build() {
+	install -Dm644 Inconsolata-Regular.ttf $PKG/usr/share/fonts/X11/TTF/Inconsolata/Regular.ttf
+	install -Dm644 Inconsolata-Bold.ttf    $PKG/usr/share/fonts/X11/TTF/Inconsolata/Bold.ttf
+}
