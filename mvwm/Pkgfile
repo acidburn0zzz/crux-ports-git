@@ -13,7 +13,7 @@ build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
-		git fetch -q; git reset --hard origin/master 
+		git fetch -q; git reset --hard origin/master
 	else
 		git clone git://github.com/ThomasAdam/mvwm $name
 		cd $name
