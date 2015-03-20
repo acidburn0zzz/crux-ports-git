@@ -1,0 +1,22 @@
+# Description: A sans-serif design that is metrically compatible with Arial™.
+# URL:         https://www.google.com/fonts/specimen/Arimo
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=ttf-arimo
+version=git
+release=1
+source=(
+	https://github.com/google/fonts/raw/master/apache/arimo/Arimo-Regular.ttf
+	https://github.com/google/fonts/raw/master/apache/arimo/Arimo-Italic.ttf
+	https://github.com/google/fonts/raw/master/apache/arimo/Arimo-Bold.ttf
+	https://github.com/google/fonts/raw/master/apache/arimo/Arimo-BoldItalic.ttf
+)
+
+build() {
+	install -Dm644 Arimo-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Arimo/Regular.ttf
+	install -Dm644 Arimo-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Arimo/Bold.ttf
+	install -Dm644 Arimo-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Arimo/Italic.ttf
+	install -Dm644 Arimo-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Arimo/BoldItalic.ttf
+}
