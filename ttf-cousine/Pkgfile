@@ -1,0 +1,22 @@
+# Description: A sans-serif design that is metrically compatible with Courier New™.
+# URL:         https://www.google.com/fonts/specimen/Cousine
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Depends on:
+
+name=ttf-cousine
+version=git
+release=1
+source=(
+	https://github.com/google/fonts/raw/master/apache/cousine/Cousine-Regular.ttf
+	https://github.com/google/fonts/raw/master/apache/cousine/Cousine-Italic.ttf
+	https://github.com/google/fonts/raw/master/apache/cousine/Cousine-Bold.ttf
+	https://github.com/google/fonts/raw/master/apache/cousine/Cousine-BoldItalic.ttf
+)
+
+build() {
+	install -Dm644 Cousine-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Cousine/Regular.ttf
+	install -Dm644 Cousine-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Cousine/Bold.ttf
+	install -Dm644 Cousine-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Cousine/Italic.ttf
+	install -Dm644 Cousine-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Cousine/BoldItalic.ttf
+}
