@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/include/msgpack/adaptor/
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/bool_fwd.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/char_ptr.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/char_ptr_fwd.hpp
+-rw-r--r--	root/root	usr/include/msgpack/adaptor/check_container_size.hpp
 drwxr-xr-x	root/root	usr/include/msgpack/adaptor/cpp11/
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/array.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/cpp11/array_char.hpp
@@ -59,6 +60,8 @@ drwxr-xr-x	root/root	usr/include/msgpack/adaptor/tr1/
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/tr1/unordered_set.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/tr1/unordered_set_fwd.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/vector.hpp
+-rw-r--r--	root/root	usr/include/msgpack/adaptor/vector_bool.hpp
+-rw-r--r--	root/root	usr/include/msgpack/adaptor/vector_bool_fwd.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/vector_char.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/vector_char_fwd.hpp
 -rw-r--r--	root/root	usr/include/msgpack/adaptor/vector_fwd.hpp
@@ -68,6 +71,7 @@ drwxr-xr-x	root/root	usr/include/msgpack/detail/
 -rw-r--r--	root/root	usr/include/msgpack/detail/cpp11_zone.hpp
 -rw-r--r--	root/root	usr/include/msgpack/fbuffer.h
 -rw-r--r--	root/root	usr/include/msgpack/fbuffer.hpp
+-rw-r--r--	root/root	usr/include/msgpack/gcc_atomic.h
 -rw-r--r--	root/root	usr/include/msgpack/iterator.hpp
 -rw-r--r--	root/root	usr/include/msgpack/object.h
 -rw-r--r--	root/root	usr/include/msgpack/object.hpp
