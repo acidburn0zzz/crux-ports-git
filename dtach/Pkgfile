@@ -2,7 +2,7 @@
 # URL:         http://dtach.sourceforge.net/
 # Packager:    Joe Schillinger, js1 at openmailbox dot org
 # Maintainer:  Joe Schillinger, js1 at openmailbox dot org
-# Depends on:  
+# Depends on:
 
 name=dtach
 version=0.8
