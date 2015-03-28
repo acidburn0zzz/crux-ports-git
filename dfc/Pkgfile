@@ -1,4 +1,4 @@
-# Description:  Display file system space usage using graph and colors - git checkout
+# Description:  Display file system space usage using graph and colors. (git checkout)
 # URL:          https://github.com/Rolinh/dfc
 # Packager:     Luiz de Milon, kori at openmailbox dot org
 # Maintainer:   Luiz de Milon, kori at openmailbox dot org
@@ -19,7 +19,7 @@ build() {
 		cd $name
 	fi
 
-	cmake ./ '-DPREFIX=/usr' '-DSYSCONFDIR=/etc' '-DMAN_PATH=/usr/man'
+	cmake ./ -DPREFIX=/usr -DSYSCONFDIR=/etc -DMAN_PATH=/usr/man
 	make
 
 	install -Dm755 bin/dfc   $PKG/usr/bin/dfc
