@@ -1,4 +1,4 @@
-# Description: A GameCube / Wii / Triforce emulator -- git checkout
+# Description: A GameCube / Wii / Triforce emulator. (git checkout)
 # URL:         http://www.dolphin-emu.org/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
@@ -19,12 +19,11 @@ build() {
 		cd $name
 	fi
 
+	rm -r build
 	mkdir build
 	cd build
 
-	cmake ../ \
-		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_BUILD_TYPE=Release
+	cmake ../ -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
 
 	make all
 	make DESTDIR=$PKG install
