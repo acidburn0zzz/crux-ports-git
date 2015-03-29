@@ -1,4 +1,4 @@
-# Description: Fontconfig files for use with freetype2-infinality - git checkout
+# Description: Fontconfig files for use with freetype2-infinality. (git checkout)
 # URL:         http://www.infinality.net/blog/infinality-freetype-patches/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/Infinality/fontconfig-infinality $name
+		git clone https://github.com/Infinality/fontconfig-infinality $name
 		cd $name
 	fi
 
