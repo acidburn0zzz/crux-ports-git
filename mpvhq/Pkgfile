@@ -1,11 +1,11 @@
-# Description:  General Purpose video player based on MPlayer and mplayer2 forked by haasn - git checkout
+# Description:  General Purpose video player based on MPlayer and mplayer2, now with extra placebo. (git checkout)
 # URL:          http://mpv.io
 # Packager:     Luiz de Milon, kori at openmailbox dot org
 # Maintainer:   onodera, onodera at openmailbox dot org
 # Depends on:   git libass ffmpeg docutils python
 # Nice to have: libdvdread libdvdnav
 
-name=mpv-haasn
+name=mpvhq
 version=git
 release=1
 source=()
@@ -16,7 +16,7 @@ build () {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/haasn/mpv $name
+		git clone git://github.com/haasn/mpvhq $name
 		cd $name
 	fi
 
