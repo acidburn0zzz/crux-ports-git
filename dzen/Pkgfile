@@ -1,4 +1,4 @@
-# Description: General purpose messaging, notification and menuing program for X11
+# Description: General purpose messaging, notification and menuing program for X11.
 # URL:         https://github.com/robm/dzen
 # Packager:    Joe Schillinger, js1 at openmailbox dot org
 # Maintainer:  Joe Schillinger, js1 at openmailbox dot org
@@ -20,5 +20,5 @@ build() {
 	fi
 
 	make
-	make DESTDIR="$PKG" PREFIX="/usr" MANPREFIX="/usr/man" install
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
 }
