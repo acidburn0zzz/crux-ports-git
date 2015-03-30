@@ -29,6 +29,7 @@ drwxr-xr-x	root/root	opt/musl/include/bits/
 -rw-r--r--	root/root	opt/musl/include/bits/limits.h
 -rw-r--r--	root/root	opt/musl/include/bits/mman.h
 -rw-r--r--	root/root	opt/musl/include/bits/msg.h
+-rw-r--r--	root/root	opt/musl/include/bits/poll.h (EMPTY)
 -rw-r--r--	root/root	opt/musl/include/bits/posix.h
 -rw-r--r--	root/root	opt/musl/include/bits/reg.h
 -rw-r--r--	root/root	opt/musl/include/bits/resource.h (EMPTY)
