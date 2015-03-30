@@ -1,5 +1,5 @@
-# Description:  General Purpose video player based on MPlayer and mplayer2, now with extra placebo. (git checkout)
-# URL:          http://mpv.io
+# Description:  General Purpose video player based on MPlayer and mplayer2, now with extra features by Niklas Haas. (git checkout)
+# URL:          https://github.com/haasn/mpvhq
 # Packager:     Luiz de Milon, kori at openmailbox dot org
 # Maintainer:   onodera, onodera at openmailbox dot org
 # Depends on:   git libass ffmpeg docutils python
