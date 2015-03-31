@@ -5,7 +5,7 @@
 # Depends on:  sqlite3
 
 name=python3
-version=3.4.2
+version=3.4.3
 release=1
 source=(http://python.org/ftp/python/$version/Python-$version.tar.xz)
 
