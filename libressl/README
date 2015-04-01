@@ -1,6 +1,3 @@
 TODO: Make libressl-32 port
 
 Make sure to uninstall opensll, use python from 6c37 and not opt, and to run a revdep.
-
-Here are some of the packes I rebuild:
-xorg-server, ncmpcpp, curl, wget, bindutils, python, python3, lua, perl, coreutils, iputils
