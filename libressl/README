@@ -1,3 +1,5 @@
 TODO: Make libressl-32 port
 
-Make sure to uninstall openssl, use python from 6c37 and not opt, and to run a revdep.
+Make sure to download (not compile!) the source of wget & libressl BEFORE you remove openssl!
+Use python from 6c37 and not opt!
+Rebuild packages that depend on openssl, use 'prt-get dependent openssl' and 'revdep'.
