@@ -2,6 +2,6 @@
 
 alias="freetype-infinality-ultimate: freetype"
 
-if [ -n $(grep "$alias") ]; then
+if [[ -z "$(grep "$alias" /var/lib/pkg/prt-get.aliases)" ]]; then
 	echo "$alias" >> /var/lib/pkg/prt-get.aliases
 fi
