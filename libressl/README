@@ -1,0 +1,4 @@
+Make sure to uninstall opensll, and to run a revdep.
+
+Some of the packages I needed to rebuild are: xorg-server, ncmpcpp, curl,
+wget, bindutils, python, python3, lua, perl, coreutils, iputils.
