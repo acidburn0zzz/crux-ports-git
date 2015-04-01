@@ -1,3 +1,5 @@
+TODO: Make libressl-32 port
+
 Make sure to uninstall opensll, and to run a revdep.
 
 Some of the packages I needed to rebuild are: xorg-server, ncmpcpp, curl,
