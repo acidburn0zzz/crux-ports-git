@@ -6,4 +6,5 @@ Here are some of the packes I rebuild:
 xorg-server, ncmpcpp, curl, wget, bindutils, python, python3, lua, perl, coreutils, iputils
 
 Problems I've had so far:
-youtube-dl doesn't work because of python2.7, the full erro log can be found here: http://a.pomf.se/ybmqhe.txt
+youtube-dl doesn't work because of python2.7, the full error log can be found here: http://a.pomf.se/ybmqhe.txt
+^ I found the source of the problem, when building python I get the following footprint mismatch: http://a.pomf.se/tdposb.txt
