@@ -1,6 +1,6 @@
 #!/bin/sh
 
-alias=freetype-infinality-ultimate: freetype
+alias="freetype-infinality-ultimate: freetype"
 
 if [ -n $(grep "$alias") ]; then
 	echo "$alias" >> /var/lib/pkg/prt-get.aliases
