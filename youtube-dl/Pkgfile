@@ -1,0 +1,27 @@
+# Description: Download videos from youtube.com or other video platforms. (git checkout)
+# URL:         https://github.com/rg3/youtube-dl/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  Danny Rawlins, crux at romster dot me
+# Depends on:  git setuptools
+
+name=youtube-dl
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/rg3/youtube-dl $name
+		cd $name
+	fi
+
+	/usr/bin/python setup.py install --root="$PKG" --optimize=1
+
+	rm -r $PKG/usr/share/doc/
+	mv $PKG/usr/share/man $PKG/usr/man
+	rmdir $PKG/usr/share
+}
