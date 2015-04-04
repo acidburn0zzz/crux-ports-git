@@ -6,7 +6,7 @@
 
 name=libressl
 version=2.1.6
-release=1
+release=2
 source=(http://ftp.openbsd.org/pub/OpenBSD/LibreSSL/$name-$version.tar.gz)
 
 build() {
@@ -18,5 +18,6 @@ build() {
 	make DESTDIR=$PKG LIBDIR=lib install
 
 	mkdir $PKG/etc
-	cp apps/openssl.cnf $PKG/etc/openssl.cnf
+	mkdir $PKG/etc/ssl
+	cp apps/openssl.cnf $PKG/etc/ssl/openssl.cnf
 }
