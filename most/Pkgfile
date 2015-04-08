@@ -1,7 +1,7 @@
 # Description: A powerful paging program for Unix.
 # URL:         http://www.jedsoft.org/most/
 # Packager:    Vincenzo Colosimo, vico at bicisport dot de
-# Maintainer:  Vincenzo Colosimo, vico at bicisport dot de
+# Maintainer:  Luiz de Milon, kori at openmailbox dot org
 # Depends on:  libslang2
 
 name=most
