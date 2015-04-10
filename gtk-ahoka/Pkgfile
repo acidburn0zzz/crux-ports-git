@@ -8,10 +8,10 @@ name=gtk-ahoka
 version=2.24.27
 release=1
 source=(
-		http://download.gnome.org/sources/gtk+/2.24/gtk+-$version.tar.xz \
-		icon.patch \
-		gtk.immodules \
-		gtk-register.sh
+	http://download.gnome.org/sources/gtk+/2.24/gtk+-$version.tar.xz \
+	icon.patch \
+	gtk.immodules \
+	gtk-register.sh
 )
 
 build () {
