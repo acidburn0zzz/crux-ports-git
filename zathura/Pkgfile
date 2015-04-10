@@ -3,7 +3,7 @@
 # Packager:     Lee, rtlanceroad at gmail dot com
 # Maintainer:   Lee, rtlanceroad at gmail dot com
 # Depends on:   girara gtk3
-# Nice to Have: sqlite3 intltool check docutils
+# Nice to have: sqlite3 intltool check docutils
 
 name=zathura
 version=0.3.2
