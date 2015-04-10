@@ -4,7 +4,7 @@
 # Maintainer:  onodera, onodera at openmailbox dot org
 # Depends on:  atk dbus-glib hicolor-icon-theme gdk-pixbuf pango shared-mime-info xorg-libsm xorg-libxcursor, xorg-libxinerama xorg-libxrandr xorg-libxcomposite
 
-name=gtk
+name=gtk-ahoka
 version=2.24.27
 release=1
 source=(
