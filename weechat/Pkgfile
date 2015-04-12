@@ -1,8 +1,9 @@
-# Description: Portable and multi-interface IRC client (git checkout)
-# URL:         https://weechat.org/
-# Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  onodera, onodera at openmailbox dot org
-# Depends on:  cmake libgcrypt
+# Description:  Portable and multi-interface IRC client (git checkout)
+# URL:          https://weechat.org/
+# Packager:     onodera, onodera at openmailbox dot org
+# Maintainer:   onodera, onodera at openmailbox dot org
+# Depends on:   cmake libgcrypt
+# Nice to have: python ruby lua tcl gnutls
 
 name=weechat
 version=1.1.1
