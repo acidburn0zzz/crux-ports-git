@@ -1,0 +1,22 @@
+# Description:  A simple image viewer inspired by qiv.
+# URL:          http://www.pberndt.com/Programme/Linux/pqiv/index.html
+# Packager:     onodera, onodera at openmailbox dot org
+# Maintainer:   onodera, onodera at openmailbox dot org
+# Depends on:   gtk
+# Nice to have: poppler imagemagick
+
+name=pqiv
+version=2.3.3
+release=1
+source=(https://github.com/phillipberndt/pqiv/archive/$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	./configure --prefix=/usr --mandir=/usr/man --gtk-version=2
+
+	sed "s/\/share//g" GNUmakefile
+
+	make
+	make DESTDIR=$PKG install
+}
