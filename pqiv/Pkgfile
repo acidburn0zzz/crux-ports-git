@@ -13,9 +13,7 @@ source=(https://github.com/phillipberndt/pqiv/archive/$version.tar.gz)
 build() {
 	cd $name-$version
 
-	./configure --prefix=/usr --gtk-version=2
-
-	sed "s/\/share//g" GNUmakefile
+	./configure --prefix=/usr --mandir=/usr/man --gtk-version=2
 
 	make
 	make DESTDIR=$PKG install
