@@ -6,7 +6,7 @@
 # Nice to have: poppler imagemagick
 
 name=pqiv
-version=2.3.3
+version=2.3.4
 release=1
 source=(https://github.com/phillipberndt/pqiv/archive/$version.tar.gz)
 
