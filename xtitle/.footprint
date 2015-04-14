@@ -1,4 +1,3 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/local/
-drwxr-xr-x	root/root	usr/local/bin/
--rwxr-xr-x	root/root	usr/local/bin/xtitle
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/xtitle
