@@ -8,6 +8,13 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/fish_pager
 -rwxr-xr-x	root/root	usr/bin/fishd
 -rwxr-xr-x	root/root	usr/bin/mimedb
+drwxr-xr-x	root/root	usr/man/
+drwxr-xr-x	root/root	usr/man/man1/
+-rw-r--r--	root/root	usr/man/man1/fish.1.gz
+-rw-r--r--	root/root	usr/man/man1/fish_indent.1.gz
+-rw-r--r--	root/root	usr/man/man1/fish_pager.1.gz
+-rw-r--r--	root/root	usr/man/man1/fishd.1.gz
+-rw-r--r--	root/root	usr/man/man1/mimedb.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/fish/
@@ -674,10 +681,3 @@ drwxr-xr-x	root/root	usr/share/fish/tools/web_config/sample_prompts/
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/terlar.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/user_host_path.fish
 -rwxr-xr-x	root/root	usr/share/fish/tools/web_config/webconfig.py
-drwxr-xr-x	root/root	usr/share/man/
-drwxr-xr-x	root/root	usr/share/man/man1/
--rw-r--r--	root/root	usr/share/man/man1/fish.1.gz
--rw-r--r--	root/root	usr/share/man/man1/fish_indent.1.gz
--rw-r--r--	root/root	usr/share/man/man1/fish_pager.1.gz
--rw-r--r--	root/root	usr/share/man/man1/fishd.1.gz
--rw-r--r--	root/root	usr/share/man/man1/mimedb.1.gz
