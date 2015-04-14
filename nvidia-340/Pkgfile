@@ -5,14 +5,18 @@
 # Depends on:  gtk gl-select
 
 name=nvidia-340
-version=340.65
+version=340.76
 release=1
-source=(http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
-    90-nvidia-uvm.rules)
+source=(
+	http://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linux-x86_64-$version-no-compat32.run \
+    90-nvidia-uvm.rules
+	cr4.patch
+)
 
 build() {
     sh NVIDIA-Linux-x86_64-$version-no-compat32.run --extract-only
     cd NVIDIA-Linux-x86_64-$version-no-compat32
+	patch -p0 < ${SRC}/cr4.patch
 
     # libraries
     install -d $PKG/usr/lib/{tls,vdpau}
@@ -75,12 +79,12 @@ build() {
 
     # kernel module
     cd kernel
-    IGNORE_CC_MISMATCH=1 make module
+	IGNORE_CC_MISMATCH=1 make module
     install -D -m 0644 nvidia.ko $PKG/lib/modules/`uname -r`/extra/nvidia.ko
 
     # nvidia-uvm module
     cd uvm
-    IGNORE_CC_MISMATCH=1 make module
+	IGNORE_CC_MISMATCH=1 make module
     install -D -m 0644 nvidia-uvm.ko $PKG/lib/modules/`uname -r`/extra/nvidia-uvm.ko
 }
 
