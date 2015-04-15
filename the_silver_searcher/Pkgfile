@@ -1,12 +1,12 @@
 # Description: A code-searching tool similar to ack, but faster
-# URL: http://geoff.greer.fm/ag/
-# Maintainer: Eduardo Lavaque, me at greduan dot com
+# URL:         http://geoff.greer.fm/ag/
+# Maintainer:  Eduardo Lavaque, me at greduan dot com
 # Depends on:
 
 name=the_silver_searcher
 version=0.29.1
 release=1
-source=("https://github.com/ggreer/the_silver_searcher/archive/${version}.tar.gz")
+source=(https://github.com/ggreer/the_silver_searcher/archive/$version.tar.gz)
 
 build() {
 	cd $name-$version
