@@ -20,8 +20,6 @@ build() {
 		cd $name
 	fi
 
-	mkdir -p $PKG/usr/bin
-
 	make
 	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
 }
