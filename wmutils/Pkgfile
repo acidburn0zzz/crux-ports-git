@@ -1,0 +1,27 @@
+# Description: wmutils' core is a set of tools for X windows manipulation (git checkout)
+# URL:         https://github.com/wmutils/core
+# Packager:    Eduardo Lavaque, me at greduan dot com
+# Depends on:  git xorg-libxcb
+
+name=wmutils
+version=git
+release=1
+source=()
+
+gitsrc=git://github.com/wmutils/core
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone $gitsrc $name
+		cd $name
+	fi
+
+	mkdir -p $PKG/usr/bin
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
