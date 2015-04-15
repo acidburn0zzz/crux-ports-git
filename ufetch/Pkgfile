@@ -1,0 +1,26 @@
+# Description: Tiny system info for CRUX.
+# URL:         https://github.com/jschx/ufetch
+# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Depends on:  
+
+name=ufetch
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone https://github.com/jschx/ufetch $name
+		cd $name
+	fi
+
+	mkdir $PKG/usr
+	mkdir $PKG/usr/bin
+
+	cp ufetch $PKG/usr/bin/ufetch
+}
