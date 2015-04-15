@@ -1,0 +1,32 @@
+# Description: GNU Emacs is an extensible, customizable text editor -- and more
+# URL: https://www.gnu.org/software/emacs/
+# Packager: Eduardo Lavaque, me at greduan dot com
+# Depends on: xorg xorg-libxpm libjpeg-turbo libtiff giflib ctags libpng
+
+name=emacs
+version=24.5
+release=1
+source=(ftp://ftp.gnu.org/gnu/emacs/$name-$version.tar.xz{,.sig})
+
+build() {
+	cd $name-$version
+
+	ac_cv_lib_gif_EGifPutExtensionLast=yes
+
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--mandir=/usr/man \
+		--with-xft \
+		--without-gif \
+		--without-makeinfo
+
+	make
+	make DESTDIR=$PKG install
+
+	# remove conflicts
+	rm $PKG/usr/bin/{c,e}tags
+	rm $PKG/usr/man/man1/{c,e}tags.1.gz
+}
