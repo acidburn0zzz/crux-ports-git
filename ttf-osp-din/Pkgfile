@@ -1,7 +1,7 @@
 # Description: A simple bold font.
 # URL:         http://ospublish.constantvzw.org/foundry/osp-din/
 # Packager:    Luiz de Milon, kori at openmailbox dot org
-# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=ttf-osp-din

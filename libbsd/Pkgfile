@@ -1,7 +1,7 @@
 # Description: Provides useful functions commonly found on BSD systems.
 # URL:         http://libbsd.freedesktop.org/wiki
 # Packager:    Ryan Mullen, rmmullen at gmail dot com
-# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:
 
 name=libbsd

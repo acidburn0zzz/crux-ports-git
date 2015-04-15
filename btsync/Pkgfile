@@ -1,7 +1,7 @@
 # Description: Automatically sync files via BitTorrent.
 # URL:         http://www.bittorrent.com/sync
 # Packager:    Luiz de Milon, kori at openmailbox dot org
-# Maintainer:  lee, rtlanceroad at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  
 
 name=btsync

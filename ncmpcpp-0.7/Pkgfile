@@ -1,7 +1,7 @@
 # Description: An almost exact clone of ncmpc with some new features (git checkout)
 # URL:         http://rybczak.net/ncmpcpp
 # Packager:    Michael Savage, mike at mikejsavage dot co dot uk
-# Maintainer:  onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  git ncurses libmpdclient boost taglib
 
 name=ncmpcpp-0.7

@@ -1,6 +1,6 @@
 # Description: Pattern-matching library for Lua 5.2
 # URL:         http://www.inf.puc-rio.br/~roberto/lpeg
-# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Depends on:  lua
 

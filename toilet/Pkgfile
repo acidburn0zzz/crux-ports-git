@@ -1,7 +1,7 @@
 # Description: free replacement for the FIGlet utility.
 # URL:         http://libcaca.zoy.org/wiki/toilet
 # Packager:    Joe Schillinger, js1 at openmailbox dot org
-# Maintainer:  Joe Schillinger, js1 at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  libcaca
 
 name=toilet

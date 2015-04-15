@@ -1,7 +1,7 @@
 # Description: A small bitmap font. (git checkout)
 # URL:         https://github.com/lucy/tewi-font
 # Packager:    Samuel Hand, samuel dot hand at openmailbox dot org
-# Maintainer:  Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  git
 
 name=bdf-tewi

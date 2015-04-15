@@ -1,7 +1,7 @@
 # Description: Fork of dmenu with many useful patches applied and additional options. (hg checkout)
 # URL:         https://bitbucket.org/melek/dmenu2
 # Packager:    Luiz de Milon, kori at openmailbox dot org
-# Maintainer:  Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  mercurial xorg-libxft xorg-libxinerama
 
 name=dmenu2
