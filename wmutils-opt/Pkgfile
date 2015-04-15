@@ -14,7 +14,7 @@ gitsrc=git://github.com/wmutils/opt
 build() {
 	cd $PKGMK_SOURCE_DIR
 
-	if cd $name-git ; then
+	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
 		git clone $gitsrc $name
