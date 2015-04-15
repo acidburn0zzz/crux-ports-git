@@ -19,8 +19,5 @@ build() {
 		cd $name
 	fi
 
-	mkdir $PKG/usr
-	mkdir $PKG/usr/bin
-
-	cp ufetch $PKG/usr/bin/ufetch
+	install -Dm755 ufetch $PKG/usr/bin/ufetch
 }
