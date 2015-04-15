@@ -3,7 +3,7 @@
 # Packager:     onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:   gtk
-# Nice to have: poppler imagemagick
+# Optional: poppler imagemagick
 
 name=pqiv
 version=2.3.4

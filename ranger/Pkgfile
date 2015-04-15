@@ -3,7 +3,7 @@
 # Packager:     onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:   git python
-# Nice to have: transmission w3m
+# Optional: transmission w3m
 
 name=ranger
 version=git
