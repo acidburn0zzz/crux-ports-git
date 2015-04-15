@@ -1,0 +1,28 @@
+# Description: simple window manager (git checkout)
+# URL:         https://github.com/dcat/swm
+# Maintainer:  Eduardo Lavaque, me at greduan dot com
+# Depends on:  git xorg-libxcb
+
+name=swm
+version=git
+release=1
+source=()
+
+gitsrc=git://github.com/dcat/swm
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git pull
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone $gitsrc $name
+		cd $name
+	fi
+
+	mkdir -p $PKG/usr/bin
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}
