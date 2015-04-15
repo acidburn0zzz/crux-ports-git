@@ -1,9 +1,9 @@
-# Description:  A vim-inspired filemanager for the console (git checkout)
-# URL:          http://ranger.nongnu.org/
-# Packager:     onodera, onodera at openmailbox dot org
+# Description: A vim-inspired filemanager for the console. (git checkout)
+# URL:         http://ranger.nongnu.org/
+# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:   git python
-# Optional: transmission w3m
+# Depends on:  git python
+# Optional:    transmission w3m
 
 name=ranger
 version=git
