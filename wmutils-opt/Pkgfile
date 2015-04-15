@@ -1,0 +1,26 @@
+# Description: wmutils opt is an addition to wmutils core
+# URL:         https://github.com/wmutils/opt
+# Maintainer:  Eduardo Lavaque, me at greduan dot com
+# Packager:    Eduardo Lavaque, me at greduan dot com
+# Depends on:  git xorg-libxcb
+
+name=wmutils-opt
+version=git
+release=1
+source=()
+
+gitsrc=git://github.com/wmutils/opt
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name-git ; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone $gitsrc $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+}
