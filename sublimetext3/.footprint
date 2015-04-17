@@ -1,0 +1,91 @@
+drwxr-xr-x	root/root	opt/
+drwxrwxr-x	root/root	opt/sublime_text_3/
+drwxrwxr-x	root/root	opt/sublime_text_3/Icon/
+drwxrwxr-x	root/root	opt/sublime_text_3/Icon/128x128/
+-rw-rw-r--	root/root	opt/sublime_text_3/Icon/128x128/sublime-text.png
+drwxrwxr-x	root/root	opt/sublime_text_3/Icon/16x16/
+-rw-rw-r--	root/root	opt/sublime_text_3/Icon/16x16/sublime-text.png
+drwxrwxr-x	root/root	opt/sublime_text_3/Icon/256x256/
+-rw-rw-r--	root/root	opt/sublime_text_3/Icon/256x256/sublime-text.png
+drwxrwxr-x	root/root	opt/sublime_text_3/Icon/32x32/
+-rw-rw-r--	root/root	opt/sublime_text_3/Icon/32x32/sublime-text.png
+drwxrwxr-x	root/root	opt/sublime_text_3/Icon/48x48/
+-rw-rw-r--	root/root	opt/sublime_text_3/Icon/48x48/sublime-text.png
+drwxrwxr-x	root/root	opt/sublime_text_3/Packages/
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/ASP.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/ActionScript.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/AppleScript.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Batch File.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/C#.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/C++.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/CSS.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Clojure.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Color Scheme - Default.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/D.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Default.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Diff.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Erlang.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Go.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Graphviz.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Groovy.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/HTML.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Haskell.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Java.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/JavaScript.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/LaTeX.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Language - English.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Lisp.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Lua.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Makefile.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Markdown.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Matlab.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/OCaml.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Objective-C.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/PHP.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Pascal.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Perl.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Python.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/R.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Rails.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Regular Expressions.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/RestructuredText.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Ruby.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/SQL.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Scala.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/ShellScript.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/TCL.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Text.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Textile.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Theme - Default.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/Vintage.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/XML.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/Packages/YAML.sublime-package
+-rw-rw-r--	root/root	opt/sublime_text_3/changelog.txt
+-rwxrwxr-x	root/root	opt/sublime_text_3/crash_reporter
+-rwxrwxr-x	root/root	opt/sublime_text_3/plugin_host
+-rw-rw-r--	root/root	opt/sublime_text_3/python3.3.zip
+-rw-rw-r--	root/root	opt/sublime_text_3/sublime.py
+-rw-rw-r--	root/root	opt/sublime_text_3/sublime_plugin.py
+-rwxrwxr-x	root/root	opt/sublime_text_3/sublime_text
+-rw-rw-r--	root/root	opt/sublime_text_3/sublime_text.desktop
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+lrwxrwxrwx	root/root	usr/bin/subl3 -> /opt/sublime_text_3/sublime_text
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/128x128/apps/
+lrwxrwxrwx	root/root	usr/share/icons/hicolor/128x128/apps/sublime-text.png -> /opt/sublime_text_3/Icon/128x128/sublime-text.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/16x16/apps/
+lrwxrwxrwx	root/root	usr/share/icons/hicolor/16x16/apps/sublime-text.png -> /opt/sublime_text_3/Icon/16x16/sublime-text.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/256x256/apps/
+lrwxrwxrwx	root/root	usr/share/icons/hicolor/256x256/apps/sublime-text.png -> /opt/sublime_text_3/Icon/256x256/sublime-text.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
+lrwxrwxrwx	root/root	usr/share/icons/hicolor/32x32/apps/sublime-text.png -> /opt/sublime_text_3/Icon/32x32/sublime-text.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
+lrwxrwxrwx	root/root	usr/share/icons/hicolor/48x48/apps/sublime-text.png -> /opt/sublime_text_3/Icon/48x48/sublime-text.png

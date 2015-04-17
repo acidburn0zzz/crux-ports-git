@@ -1,0 +1,25 @@
+# Description: Sophisticated text editor for code, html and prose.
+# URL:         http://www.sublimetext.com/3
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, onodera at openmailbox dot org
+# Depends on:  libpng gtk python3
+
+name=sublimetext3
+version=3083
+release=1
+source=(http://c758482.r82.cf2.rackcdn.com/sublime_text_3_build_${version}_x64.tar.bz2)
+
+build() {
+	cd sublime_text_3
+
+	install -dm755 $PKG/opt
+	cp --preserve=mode -r . $PKG/opt/sublime_text_3
+
+	for res in 128x128 16x16 256x256 32x32 48x48; do
+		install -dm755 $PKG/usr/share/icons/hicolor/$res/apps
+		ln -s /opt/sublime_text_3/Icon/$res/sublime-text.png $PKG/usr/share/icons/hicolor/$res/apps/sublime-text.png
+	done
+
+	install -dm755 $PKG/usr/bin
+	ln -s /opt/sublime_text_3/sublime_text $PKG/usr/bin/subl3
+}
