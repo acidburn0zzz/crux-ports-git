@@ -8,15 +8,13 @@ version=git
 release=1
 source=()
 
-gitsrc=git://github.com/wmutils/core
-
 build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone $gitsrc $name
+		git clone git://github.com/wmutils/core $name
 		cd $name
 	fi
 
