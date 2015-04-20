@@ -1,10 +1,11 @@
-# Description: Highly configurable text editor with x11 support
+# Description: Highly configurable text editor with x11 support.
 # URL:         http://www.vim.org/
+# Packager:    CRUX System Team, core-ports at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  ncurses acl
 
 name=vim-x11
-version=7.4.629
+version=7.4.703
 release=1
 source=(http://crux.nu/files/distfiles/vim-$version.tar.xz)
 

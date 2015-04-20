@@ -1144,6 +1144,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/sqloracle.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sqr.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/squid.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/srec.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sshconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/sshdconfig.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/st.vim
@@ -1198,6 +1199,7 @@ drwxr-xr-x	root/root	usr/share/vim/syntax/
 -rw-r--r--	root/root	usr/share/vim/syntax/upstreamdat.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/upstreaminstalllog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/upstreamlog.vim
+-rw-r--r--	root/root	usr/share/vim/syntax/upstreamrpt.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/usserverlog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/usw2kagtlog.vim
 -rw-r--r--	root/root	usr/share/vim/syntax/valgrind.vim
