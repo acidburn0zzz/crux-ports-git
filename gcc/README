@@ -1,0 +1,6 @@
+A made a small tool that recompiles all packages.
+
+I don't know if this is actually needed (everything actually worked out of
+the box) but whatever.
+
+https://github.com/onodera-punpun/bin/blob/master/allmk
