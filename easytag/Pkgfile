@@ -2,8 +2,8 @@
 # URL:         http://projects.gnome.org/easytag
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  gtk id3lib itstool
-# Optional:    flac intltool libvorbis
+# Depends on:  flac gtk id3lib itstool intltool
+# Optional:    libvorbis
 
 name=easytag
 version=2.2.6
