@@ -2,7 +2,7 @@
 # URL:         http://www.musicpd.org/
 # Packager:    Mark Rosenstand, mark at borkware dot net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  libmad libid3tag glib flac audiofile
+# Depends on:  boost libmad libid3tag glib flac
 
 name=mpd
 version=0.19.9
