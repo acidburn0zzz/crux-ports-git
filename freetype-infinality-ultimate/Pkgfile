@@ -6,12 +6,12 @@
 
 name=freetype-infinality-ultimate
 version=2.5.5
-release=5
+release=6
 source=(
 	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
 	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/01-freetype-2.5.5-enable-valid.patch
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/02-upstream-2015.03.30.patch
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/03-infinality-2.5.5-2015.03.30.patch
+	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/02-upstream-2015.04.26.patch
+	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/03-infinality-2.5.5-2015.04.26.patch
 )
 
 build() {
