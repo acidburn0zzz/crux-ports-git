@@ -5,10 +5,10 @@
 # Depends on:  ncurses libmpdclient boost taglib
 
 name=ncmpcpp
-version=0.6.3
+version=0.6.4
 release=1
 source=(
-	https://github.com/arybczak/$name/archive/$version.tar.gz
+	http://ncmpcpp.rybczak.net/stable/ncmpcpp-$version.tar.bz2 \
 	fix-build.patch
 )
 
