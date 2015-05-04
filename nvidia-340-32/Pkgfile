@@ -5,7 +5,7 @@
 # Depends on:  gl-select xorg-libxv-32 xorg-libxvmc-32 nvidia
 
 name=nvidia-32-340
-version=340.65
+version=340.76
 release=1
 source=(http://us.download.nvidia.com/XFree86/Linux-x86/$version/NVIDIA-Linux-x86-$version.run)
 
