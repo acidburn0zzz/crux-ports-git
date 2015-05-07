@@ -1,0 +1,17 @@
+# Description: Like pkgmk but for dependencies.
+# URL:         https://github.com/onodera-punpun/depmk
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=depmk
+version=0.03
+release=1
+source=(https://github.com/onodera-punpun/depmk/archive/$version.tar.gz)
+
+build () {
+	cd $name-$version
+    
+	install -Dm755 depmk      $PKG/usr/bin/depmk
+	install -Dm644 depmk.conf $PKG/etc/depmk.conf
+}
