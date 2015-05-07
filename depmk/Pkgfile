@@ -5,7 +5,7 @@
 # Depends on:  
 
 name=depmk
-version=0.03
+version=0.04
 release=1
 source=(https://github.com/onodera-punpun/depmk/archive/$version.tar.gz)
 
