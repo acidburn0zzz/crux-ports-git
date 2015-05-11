@@ -1,4 +1,0 @@
-#!/bin/sh
-
-# make /dev/grsec appear, if the kernel supports it
-/sbin/udevadm trigger --action=change
