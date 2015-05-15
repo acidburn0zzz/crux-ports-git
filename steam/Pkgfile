@@ -3,9 +3,10 @@
 # Packager:    Matt Housh, jaeger at morpheus dot net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  xdg-utils mesa3d-32
+# Optional:    nvidia-32
 
 name=steam
-version=1.0.0.49
+version=1.0.0.50
 release=1
 source=(http://repo.steampowered.com/steam/archive/precise/steam-launcher_${version}_all.deb)
 
