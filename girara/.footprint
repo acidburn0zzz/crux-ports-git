@@ -22,8 +22,8 @@ drwxr-xr-x	root/root	usr/include/girara/
 -rw-r--r--	root/root	usr/include/girara/version.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libgirara-gtk3.a
-lrwxrwxrwx	root/root	usr/lib/libgirara-gtk3.so -> libgirara-gtk3.so.1.1
-lrwxrwxrwx	root/root	usr/lib/libgirara-gtk3.so.1 -> libgirara-gtk3.so.1.1
--rw-r--r--	root/root	usr/lib/libgirara-gtk3.so.1.1
+lrwxrwxrwx	root/root	usr/lib/libgirara-gtk3.so -> libgirara-gtk3.so.2.0
+lrwxrwxrwx	root/root	usr/lib/libgirara-gtk3.so.2 -> libgirara-gtk3.so.2.0
+-rw-r--r--	root/root	usr/lib/libgirara-gtk3.so.2.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/girara-gtk3.pc

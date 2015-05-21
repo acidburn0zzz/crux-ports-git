@@ -6,7 +6,7 @@
 # Optional:    check intltool
 
 name=girara
-version=0.2.3
+version=0.2.4
 release=1
 source=(https://pwmt.org/projects/${name}/download/${name}-${version}.tar.gz)
 
