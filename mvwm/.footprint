@@ -23,6 +23,7 @@ lrwxrwxrwx	root/root	usr/lib/mvwm/2.6.6/MvwmAudio -> MvwmEvent
 -rwxr-xr-x	root/root	usr/lib/mvwm/2.6.6/MvwmIdent
 -rwxr-xr-x	root/root	usr/lib/mvwm/2.6.6/MvwmPager
 -rwxr-xr-x	root/root	usr/lib/mvwm/2.6.6/MvwmPerl
+-rwxr-xr-x	root/root	usr/lib/mvwm/2.6.6/MvwmProxy
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/MvwmAuto.1.gz
@@ -37,6 +38,7 @@ drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/MvwmIdent.1.gz
 -rw-r--r--	root/root	usr/man/man1/MvwmPager.1.gz
 -rw-r--r--	root/root	usr/man/man1/MvwmPerl.1.gz
+-rw-r--r--	root/root	usr/man/man1/MvwmProxy.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/mvwm/
 -rw-r--r--	root/root	usr/share/mvwm/ConfigMvwmBacker
@@ -45,6 +47,7 @@ drwxr-xr-x	root/root	usr/share/mvwm/
 -rw-r--r--	root/root	usr/share/mvwm/ConfigMvwmIconMan
 -rw-r--r--	root/root	usr/share/mvwm/ConfigMvwmIdent
 -rw-r--r--	root/root	usr/share/mvwm/ConfigMvwmPager
+-rw-r--r--	root/root	usr/share/mvwm/ConfigMvwmProxyDefaults
 -rw-r--r--	root/root	usr/share/mvwm/ConfigMvwmSetup
 drwxr-xr-x	root/root	usr/share/mvwm/perllib/
 drwxr-xr-x	root/root	usr/share/mvwm/perllib/General/
