@@ -1,7 +1,6 @@
 drwxr-xr-x	root/root	usr/
-drwxr-xr-x	root/root	usr/local/
-drwxr-xr-x	root/root	usr/local/bin/
--rwxr-xr-x	root/root	usr/local/bin/xdo
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/xdo
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/xdo.1.gz
