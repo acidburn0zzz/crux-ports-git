@@ -22,6 +22,7 @@ build () {
 	# Fix https://github.com/hut/minirc/issues/24
 	sed -i "s/\/usr\/bin\/udevd/\/sbin\/udevd/g" rc
 	sed -i "s/\/usr\/bin\/udevadm/\/sbin\/udevadm/g" rc
+	sed -i "s/\/usr\/sbin/\/sbin/g"
 
 	# Fix hostname
 	sed -i "s/cat \/etc\/hostname/\/bin\/hostname/g" rc
