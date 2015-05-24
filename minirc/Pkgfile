@@ -24,8 +24,7 @@ build () {
 	sed -i "s/\/usr\/bin\/udevadm/\/sbin\/udevadm/g" rc
 
 	# Fix hostname
-	mkdir $PKG/etc
-	echo "$HOSTNAME" > $PKG/etc/hostname
+	sed -i "s/cat \/etc\/hostname/\/bin\/hostname/g" rc
 
 	ROOT=$PKG ./setup.sh --force
 }

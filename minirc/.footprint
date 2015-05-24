@@ -1,5 +1,4 @@
 drwxr-xr-x	root/root	etc/
--rw-r--r--	root/root	etc/hostname
 -rw-r--r--	root/root	etc/inittab
 -rw-r--r--	root/root	etc/minirc.conf
 drwxr-xr-x	root/root	sbin/
