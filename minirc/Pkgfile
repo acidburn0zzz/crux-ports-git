@@ -1,0 +1,31 @@
+# Description: Minimalistic init script. (git checkout)
+# URL:         https://github.com/hut/minirc
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  busybox
+
+name=minirc
+version=git
+release=1
+source=()
+
+build () {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/hut/minirc $name
+		cd $name
+	fi
+
+	# Fix https://github.com/hut/minirc/issues/24
+	sed -i "s/\/usr\/bin\/udevd/\/sbin\/udevd/g" rc
+	sed -i "s/\/usr\/bin\/udevadm/\/sbin\/udevadm/g" rc
+
+	# Fix hostname
+	mkdir $PKG/etc
+	echo "$HOSTNAME" > $PKG/etc/hostname
+
+	ROOT=$PKG ./setup.sh --force
+}
