@@ -5,7 +5,7 @@
 # Depends on:  
 
 name=mk
-version=0.05
+version=0.6.1
 release=1
 source=(https://github.com/onodera-punpun/mk/archive/$version.tar.gz)
 
