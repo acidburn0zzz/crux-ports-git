@@ -1,0 +1,24 @@
+# Description: A minimal getty which allows automatic logins.
+# URL:         http://sourceforge.net/projects/mingetty
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=mingetty
+version=1.08
+release=1
+source=(
+	http://downloads.sourceforge.net/sourceforge/mingetty/mingetty-$version.tar.gz
+	utf8.patch
+)
+
+
+build() {
+	cd $name-$version
+
+	patch -p1 < $SRC/utf8.patch
+
+	make
+	install -Dm755 mingetty "$PKG/sbin/mingetty"
+	install -Dm644 mingetty "$PKG/usr/man/man8/mingetty.8"
+}

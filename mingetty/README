@@ -1,0 +1,6 @@
+Make sure to add mingetty to your /etc/inittab, example:
+
+# Set up the TTY's 1 through 3
+tty1:123:askfirst:/sbin/mingetty tty1
+tty2:123:respawn:/sbin/mingetty tty2
+tty3:123:respawn:/sbin/mingetty tty3
