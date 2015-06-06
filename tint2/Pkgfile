@@ -2,7 +2,8 @@
 # URL:         https://gitlab.com/o9000/tint2
 # Packager:    Lains, lainsce at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends On:  imlib2 xorg-libxcomposite xorg-libxinerama xorg-libxrandr pango startup-notification
+# Depends on:  gtk imlib2 librsvg pango startup-notification xorg-libxcomposite xorg-libxinerama xorg-libxrandr
+
 
 name=tint2
 version=git
@@ -19,9 +20,10 @@ build() {
         cd $name
     fi
 
-    cmake .
+    cmake . -DCMAKE_INSTALL_PREFIX=/usr -DENABLE_TINT2CONF=1
     make
-    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
 
-    rm -rf $PKG/usr/share/tint2
+	install -Dm755 tint2 $PKG/usr/bin/tint2
+	install -Dm755 src/tint2conf/tint2conf $PKG/usr/bin/tint2conf
+	install -Dm644 doc/tint2.1 $PKG/usr/man/man1/tint2.1
 }
