@@ -24,7 +24,7 @@ build() {
 		--mandir=/usr/man \
 		--libexecdir=/usr/lib \
 		--disable-gtk \
-		--disable-nls \
+		--disable-perllib \
 		--disable-bidi \
 		--disable-nls
 
