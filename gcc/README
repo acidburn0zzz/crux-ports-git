@@ -1,5 +1,8 @@
 I made a small tool that recompiles all packages:
-
-(I don't know if this is actually needed (for me everything actually worked out of the box) but whatever.)
-
 https://github.com/onodera-punpun/bin/blob/master/allmk
+
+Packages that failed with GCC 5.1:
+* core/ncurses
+  - fixed with https://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/sys-libs/ncurses/files/ncurses-5.9-gcc-5.patch
+* core/binutils
+  - fixed by changing the version to 2.25
