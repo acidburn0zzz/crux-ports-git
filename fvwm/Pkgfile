@@ -28,6 +28,8 @@ build() {
 		--mandir=/usr/man \
 		--libexecdir=/usr/lib \
 		--disable-gtk \
+		--disable-perllib \
+		--disable-bidi \
 		--disable-nls
 
 	make
