@@ -5,13 +5,12 @@
 # Depends on:
 
 name=freetype-infinality-ultimate
-version=2.5.5
-release=7
+version=2.6
+release=1
 source=(
 	http://download.savannah.gnu.org/releases/freetype/freetype-$version.tar.bz2
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/01-freetype-2.5.5-enable-valid.patch
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/02-upstream-2015.05.31.patch
-	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/03-infinality-2.5.5-2015.05.31.patch
+	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/01-freetype-$version-enable-valid.patch
+	https://raw.githubusercontent.com/bohoomil/fontconfig-ultimate/master/freetype/03-infinality-$version-2015.06.08.patch
 )
 
 build() {
@@ -21,8 +20,11 @@ build() {
 		patch -Np1 < $patch
 	done
 
-	./configure --prefix=/usr
+	./configure --prefix=/usr \
+				--mandir=/usr/man \
+				--with-zlib \
+				--disable-nls
 
 	make
-	make DESTDIR=$PKG mandir=/usr/man install
+	make DESTDIR=$PKG install
 }
