@@ -1,0 +1,28 @@
+# Description: The Rust programming language compiler and utilities.
+# URL:         http://www.rust-lang.org
+# Packager:    Lains, lainsce at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  python curl gcc
+
+
+name=rustc
+version=1.0.0
+release=1
+source=("http://static.rust-lang.org/dist/$name-$version-src.tar.gz") 
+
+build() {
+    cd $name-$version
+
+    sed -i 's/^PYTHONVERSION.*/PYTHONVERSION := 3/' src/llvm/Makefile.rules
+    ./configure --prefix=/usr --disable-docs --release-channel=stable
+
+    make
+    make DESTDIR=$PKG prefix="/usr" mandir="/usr/man" install
+
+    install -Dm644 LICENSE-APACHE \
+        "$PKG/usr/share/licenses/$name/LICENSE-APACHE"
+    install -Dm644 LICENSE-MIT "$PKG/usr/share/licenses/$name/LICENSE-MIT"
+
+    cd "$PKG/usr/lib"
+    rm rustlib/{components,manifest-rustc,rust-installer-version}
+}
