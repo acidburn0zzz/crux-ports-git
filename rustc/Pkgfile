@@ -13,6 +13,7 @@ source=("http://static.rust-lang.org/dist/$name-$version-src.tar.gz")
 build() {
     cd $name-$version
 
+    sed -i '12,15d' mk/install.mk
     sed -i 's/^PYTHONVERSION.*/PYTHONVERSION := 3/' src/llvm/Makefile.rules
     ./configure --prefix=/usr --disable-docs --release-channel=stable
 
