@@ -11,18 +11,18 @@ release=1
 source=(http://static.rust-lang.org/dist/${name}-${version}-src.tar.gz) 
 
 build() {
-    cd $name-$version
+	cd $name-$version
 
-    sed -i '12,15d' mk/install.mk
+	sed -i '12,15d' mk/install.mk
 	sed -i '13d' mk/install.mk
-    sed -i 's/^PYTHONVERSION.*/PYTHONVERSION := 3/' src/llvm/Makefile.rules
+	sed -i 's/^PYTHONVERSION.*/PYTHONVERSION := 3/' src/llvm/Makefile.rules
 
-    ./configure --prefix=/usr --disable-docs --release-channel=stable
+	./configure --prefix=/usr --disable-docs --release-channel=stable
 
-    make
-    make DESTDIR=$PKG prefix="/usr" install
+	make
+	make DESTDIR=$PKG prefix="/usr" install
 	
 	mv $PKG/usr/{share/,}man
 
-    rm -rf $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version} $PKG/usr/share
+	rm -rf $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version} $PKG/usr/share
 }
