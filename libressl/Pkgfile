@@ -17,7 +17,5 @@ build() {
 	make
 	make DESTDIR=$PKG LIBDIR=lib install
 
-	mkdir $PKG/etc
-	mkdir $PKG/etc/ssl
-	cp apps/openssl.cnf $PKG/etc/ssl/openssl.cnf
+	install -Dm644 apps/openssl.cnf $PKG/etc/ssl/openssl.cnf
 }
