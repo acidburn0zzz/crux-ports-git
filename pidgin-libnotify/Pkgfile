@@ -1,0 +1,26 @@
+# Description: Pidgin plugin that enables popups when someone logs in or messages you.
+# URL:         http://gaim-libnotify.sourceforge.net/
+# Packager:    Luiz de Milon, kori at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  pidgin libnotify intltool
+
+name=pidgin-libnotify
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone https://github.com/yorikvanhavre/pidgin-libnotify
+	fi
+
+	./configure --prefix=/usr --disable-deprecated --disable-static
+
+	make
+	make DESTDIR=$PKG install
+	
+	rm -rf $PKG/usr/share
+}
