@@ -1,16 +1,16 @@
-# Description: A set of OpenType fonts designed for user interfaces
+# Description: A set of OpenType fonts designed for user interfaces.
 # URL:         http://sourceforge.net/projects/sourcecodepro.adobe/
 # Packager:    Luiz de Milon, kori at openmailbox dot org 
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  fontconfig
+# Depends on:
 
 name=otf-sourcesans
-version=1.050
+version=1.050R
 release=1
-source=(http://sourceforge.net/projects/sourcesans.adobe/files/SourceSansPro_FontsOnly-$version.zip)
+source=(https://github.com/adobe-fonts/source-sans-pro/archive/${version}.tar.gz)
 
 build() {
-    cd SourceSansPro_FontsOnly-$version
+	cd source-sans-pro-${version}
 
 	install -Dm644 OTF/SourceSansPro-ExtraLight.otf   $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLight.otf
 	install -Dm644 OTF/SourceSansPro-ExtraLightIt.otf $PKG/usr/share/fonts/X11/OTF/Source/SansPro/ExtraLightItalic.otf
