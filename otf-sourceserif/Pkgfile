@@ -1,16 +1,16 @@
 # Description: A set of serif OpenType fonts designed to complement Source Sans Pro
-# URL:         http://sourceforge.net/projects/sourcecodepro.adobe/
+# URL:         https://github.com/adobe-fonts/source-serif-pro
 # Packager:    Luiz de Milon, kori at openmailbox dot org 
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  fontconfig
+# Depends on:
 
 name=otf-sourceserif
-version=1.014
+version=1.014R
 release=1
-source=(http://sourceforge.net/projects/sourceserifpro.adobe/files/SourceSerifPro_FontsOnly-$version.zip)
+source=(https://github.com/adobe-fonts/source-serif-pro/archive/${version}.tar.gz)
 
 build() {
-	cd source-serif-pro-$version\R
+	cd source-serif-pro-${version}
 
 	install -Dm644 OTF/SourceSerifPro-Regular.otf  $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Regular.otf
 	install -Dm644 OTF/SourceSerifPro-Bold.otf     $PKG/usr/share/fonts/X11/OTF/Source/SerifPro/Bold.otf
