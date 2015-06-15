@@ -7,13 +7,13 @@
 name=slop
 version=4.1.16
 release=1
-source=(https://github.com/naelstrof/slop/archive/v${version}.tar.gz)
+source=(https://github.com/naelstrof/slop/archive/v$version.tar.gz)
 
 build() {
-	cd ${name}-${version}
+	cd $name-$version
 
 	cmake -DCMAKE_INSTALL_PREFIX=/usr
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 }
