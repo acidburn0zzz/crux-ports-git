@@ -1,0 +1,26 @@
+# Description: Modified killw with atom support
+# URL:         https://github.com/wmutils/opt
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Packager:    onodera, onodera at openmailbox dot org
+# Depends on:  xorg-xcb-util-wm
+
+name=killwa
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/wmutils/contrib $name
+		cd $name
+	fi
+
+	cd killwa
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}
