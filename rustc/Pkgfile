@@ -6,7 +6,7 @@
 
 
 name=rustc
-version=1.0.0
+version=1.1.0
 release=1
 source=(http://static.rust-lang.org/dist/${name}-${version}-src.tar.gz) 
 
