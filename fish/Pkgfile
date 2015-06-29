@@ -23,5 +23,8 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
+	mkdir $PKG/bin
+	ln -s $PKG/usr/bin/fish $PKG/bin/fish
+
 	rm -rf $PKG/usr/share/locale
 }

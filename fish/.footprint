@@ -1,3 +1,5 @@
+drwxr-xr-x	root/root	bin/
+lrwxrwxrwx	root/root	bin/fish -> /tmp/pkgmk-fish/pkg/usr/bin/fish
 drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/fish/
 -rw-r--r--	root/root	etc/fish/config.fish
