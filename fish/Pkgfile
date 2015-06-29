@@ -2,16 +2,15 @@
 # URL:         http://fishshell.com
 # Packager:    lee, rtlanceroad at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  ncurses gettext
-# Optional:    doxygen
+# Optional:    doxygen python
 
 name=fish
-version=2.1.2
+version=2.2.0
 release=1
-source=(http://fishshell.com/files/${version}/${name}-${version}.tar.gz)
+source=(https://github.com/fish-shell/fish-shell/archive/$version.tar.gz)
 
 build() {
-	cd $name-$version
+	cd $name-shell-$version
 
 	autoconf
 	
@@ -22,7 +21,7 @@ build() {
 		--with-doxygen=no
 
 	make
-	make DESTDIR=${PKG} install
+	make DESTDIR=$PKG install
 
-	rm -rf ${PKG}/usr/share/locale
+	rm -rf $PKG/usr/share/locale
 }
