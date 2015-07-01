@@ -1,21 +1,16 @@
-# Description: Python interpreter, version 3.4 with libressl patch.
+# Description: Python interpreter, version 3.4.
 # URL:         http://www.python.org/
 # Packager:    Kristian Lehmann, email at zero-io dot net
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  sqlite3
+# Depends on:  sqlite3 expat libffi
 
 name=python3
 version=3.4.3
-release=1
-source=(
-	http://python.org/ftp/python/$version/Python-$version.tar.xz \
-	python-3.4.3-randegd.diff
-)
+release=2
+source=(http://python.org/ftp/python/$version/Python-$version.tar.xz)
 
 build() {
 	cd Python-$version
-
-	patch -p1 < ../python-3.4.3-randegd.diff 
 
 	./configure --prefix=/usr \
 		--mandir=/usr/man \
@@ -23,10 +18,15 @@ build() {
 		--with-threads \
 		--with-sqlite \
 		--enable-ipv6 \
-		--with-tkinter
-  
+		--with-threads \
+		--with-computed-gotos \
+		--with-system-expat \
+		--with-system-ffi \
+		--without-ensurepip
+
 	make
 	make DESTDIR=$PKG install
+
 	rm $PKG/usr/bin/2to3
 
 	# remove junk files
