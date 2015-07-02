@@ -1,5 +1,0 @@
-#!/bin/sh
-
-fc-cache -s
-mkfontscale /usr/share/fonts/X11/PCF/ProFont
-mkfontdir /usr/share/fonts/X11/PCF/ProFont

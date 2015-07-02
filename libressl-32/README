@@ -1,3 +1,0 @@
-Make sure to download (not compile! use 'pkgmk -do') the source of libressl-32 BEFORE you remove openssl-32!
-Use python-32 from 6c37 and not compat-32!
-Rebuild packages that depend on openssl-32, use 'prt-get dependent openssl-32' and 'revdep'.
