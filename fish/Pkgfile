@@ -1,0 +1,37 @@
+# Description: A smart and user-friendly command line shell for OSX, Linux, and the rest of the family. (git checkout)
+# URL:         http://fishshell.com
+# Packager:    lee, rtlanceroad at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Optional:    doxygen python
+
+name=fish
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/fish-shell/fish-shell $name
+		cd $name
+	fi
+
+	autoconf
+	
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man \
+		--sysconfdir=/etc \
+		--with-doxygen=no
+
+	make
+	make DESTDIR=$PKG install
+
+	install -d $PKG/bin
+	ln -s /usr/bin/fish $PKG/bin
+
+	rm -rf $PKG/usr/share/locale
+}
