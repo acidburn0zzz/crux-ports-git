@@ -4,7 +4,6 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 -rw-r--r--	root/root	usr/man/man1/nvim.1.gz
--rw-r--r--	root/root	usr/man/man1/nvimtutor.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/nvim/
 drwxr-xr-x	root/root	usr/share/nvim/runtime/
@@ -162,7 +161,6 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/doc/
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/ft_sql.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/gui.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/gui_w32.txt
--rw-r--r--	root/root	usr/share/nvim/runtime/doc/gui_x11.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/hebrew.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/help.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/helphelp.txt
@@ -257,7 +255,6 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/doc/
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/usr_43.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/usr_44.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/usr_45.txt
--rw-r--r--	root/root	usr/share/nvim/runtime/doc/usr_90.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/usr_toc.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/various.txt
 -rw-r--r--	root/root	usr/share/nvim/runtime/doc/vi_diff.txt
@@ -466,7 +463,6 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/ftplugin/
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/zimbu.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugin/zsh.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/ftplugof.vim
--rw-r--r--	root/root	usr/share/nvim/runtime/gvimrc_example.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent.vim
 drwxr-xr-x	root/root	usr/share/nvim/runtime/indent/
 -rw-r--r--	root/root	usr/share/nvim/runtime/indent/aap.vim
@@ -655,6 +651,7 @@ drwxr-xr-x	root/root	usr/share/nvim/runtime/macros/
 -rw-r--r--	root/root	usr/share/nvim/runtime/macros/less.bat
 -rwxr-xr-x	root/root	usr/share/nvim/runtime/macros/less.sh
 -rw-r--r--	root/root	usr/share/nvim/runtime/macros/less.vim
+-rw-r--r--	root/root	usr/share/nvim/runtime/macros/matchit.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/macros/shellmenu.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/macros/swapmous.vim
 -rw-r--r--	root/root	usr/share/nvim/runtime/makemenu.vim
