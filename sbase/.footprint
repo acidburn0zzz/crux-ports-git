@@ -11,7 +11,6 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/chroot
 -rwxr-xr-x	root/root	opt/sbase/bin/cksum
 -rwxr-xr-x	root/root	opt/sbase/bin/cmp
--rwxr-xr-x	root/root	opt/sbase/bin/col
 -rwxr-xr-x	root/root	opt/sbase/bin/cols
 -rwxr-xr-x	root/root	opt/sbase/bin/comm
 -rwxr-xr-x	root/root	opt/sbase/bin/cp
@@ -30,6 +29,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/grep
 -rwxr-xr-x	root/root	opt/sbase/bin/head
 -rwxr-xr-x	root/root	opt/sbase/bin/hostname
+-rwxr-xr-x	root/root	opt/sbase/bin/join
 -rwxr-xr-x	root/root	opt/sbase/bin/kill
 -rwxr-xr-x	root/root	opt/sbase/bin/link
 -rwxr-xr-x	root/root	opt/sbase/bin/ln
@@ -80,6 +80,7 @@ drwxr-xr-x	root/root	opt/sbase/bin/
 -rwxr-xr-x	root/root	opt/sbase/bin/uudecode
 -rwxr-xr-x	root/root	opt/sbase/bin/uuencode
 -rwxr-xr-x	root/root	opt/sbase/bin/wc
+-rwxr-xr-x	root/root	opt/sbase/bin/which
 -rwxr-xr-x	root/root	opt/sbase/bin/xargs
 -rwxr-xr-x	root/root	opt/sbase/bin/yes
 drwxr-xr-x	root/root	opt/sbase/man/
@@ -93,7 +94,6 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/chroot.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cksum.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cmp.1.gz
--rw-r--r--	root/root	opt/sbase/man/man1/col.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cols.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/comm.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/cp.1.gz
@@ -112,6 +112,7 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/grep.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/head.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/hostname.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/join.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/kill.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/link.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/ln.1.gz
@@ -162,5 +163,6 @@ drwxr-xr-x	root/root	opt/sbase/man/man1/
 -rw-r--r--	root/root	opt/sbase/man/man1/uudecode.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/uuencode.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/wc.1.gz
+-rw-r--r--	root/root	opt/sbase/man/man1/which.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/xargs.1.gz
 -rw-r--r--	root/root	opt/sbase/man/man1/yes.1.gz
