@@ -1,0 +1,30 @@
+# Description: Suite of gimp plugins for texture synthesis. (git checkout)
+# URL:         https://github.com/bootchk/resynthesizer
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git gimp
+
+name=resynthesizer
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/bootchk/resynthesizer $name
+		cd $name
+	fi
+
+    ./autogen.sh --prefix=/usr \
+			 --disable-maintainer-mode \
+			 --disable-nls
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}
