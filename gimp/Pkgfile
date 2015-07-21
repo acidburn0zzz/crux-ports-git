@@ -1,0 +1,36 @@
+# Description: GNU Image Manipulation Program. (git checkout)
+# URL:         http://gimp.org
+# Packager:    Simone Rota, sip at crux dot nu
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git libsdl librsvg libmng gexiv2
+
+name=gimp
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://git.gnome.org/gimp $name
+		cd $name
+	fi
+
+	./autogen.sh --prefix=/usr \
+			--mandir=/usr/man \
+			--disable-static \
+			--disable-gtk-doc \
+			--disable-python \
+			--disable-nls \
+			--without-webkit \
+			--without-aa \
+			--without-gvfs
+
+	make
+	make DESTDIR=$PKG install
+  
+	rm -rf $PKG/usr/share/{gtk-doc,locale}
+}
