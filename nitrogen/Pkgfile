@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch; git reset --hard origin/master
 	else
-		git clone https://github.com/l3ib/nitrogen.git $name;
+		git clone https://github.com/l3ib/nitrogen.git $name; cd $name
 	fi
 
 	./bootstrap
