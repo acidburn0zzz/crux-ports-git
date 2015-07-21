@@ -19,6 +19,9 @@ build() {
 		cd $name
 	fi
 
+	sed -i "s|/usr/bin/env python|/usr/bin/env python2|" PluginScripts/*.py
+	sed -i "s/--enable-maintainer-mode//g" autogen.sh
+
     ./autogen.sh --prefix=/usr \
 			 --disable-maintainer-mode \
 			 --disable-nls
