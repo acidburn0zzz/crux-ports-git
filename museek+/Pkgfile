@@ -1,0 +1,31 @@
+# Description: Client/server mode client for the SoulSeek peer-to-peer system. (git checkout)
+# URL:         http://www.museek-plus.org
+# Packager:    onodera, onodera at openmailbox dot org 
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git libxml++ python cmake
+
+name=museek+
+version=git
+release=1
+source=()
+
+build () {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/eLvErDe/museek-plus $name
+		cd $name
+	fi
+
+	cmake ./ \
+		-DPREFIX=/usr \
+		-DNO_SETUP=1 \
+		-DNO_PYMUCIPHER=1 \
+		-DNO_MUSEEQ=1 \
+		-DMUCOUS=1
+
+	make
+	make DESTDIR=$PKG install
+}
