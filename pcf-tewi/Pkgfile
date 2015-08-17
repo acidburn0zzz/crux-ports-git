@@ -1,0 +1,30 @@
+# Description: A small bitmap font. (git checkout)
+# URL:         https://github.com/lucy/tewi-font
+# Packager:    Samuel Hand, samuel dot hand at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git
+
+name=pcf-tewi
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master	
+	else
+		git clone git://github.com/lucy/tewi-font $name
+		cd $name
+	fi
+
+	make
+
+	install -Dm644 tewi2a-bold-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi/tewi2a-bold-11.pcf
+	install -Dm644 tewi2a-normal-11.pcf $PKG/usr/share/fonts/X11/PCF/Tewi/tewi2a-normal-11.pcf
+	install -Dm644 tewifw-bold-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi/tewifw-bold-11.pcf
+	install -Dm644 tewifw-normal-11.pcf $PKG/usr/share/fonts/X11/PCF/Tewi/tewifw-normal-11.pcf
+	install -Dm644 tewi-bold-11.pcf     $PKG/usr/share/fonts/X11/PCF/Tewi/tewi-bold-11.pcf
+	install -Dm644 tewi-normal-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi/tewi-normal-11.pcf
+}
