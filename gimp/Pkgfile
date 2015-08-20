@@ -6,7 +6,7 @@
 
 name=gimp
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -33,5 +33,7 @@ build() {
 	make
 	make DESTDIR=$PKG install
   
+	ln -s /usr/bin/gimp-2.9 $PKG/usr/bin/gimp
+
 	rm -rf $PKG/usr/share/{gtk-doc,locale}
 }
