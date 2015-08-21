@@ -1,13 +1,13 @@
-# Description: Parallel Browser Project: web browser written in Rust. (git checkout)
+# Description: Web browser written in Rust. (git checkout)
 # URL:         https://github.com/mozilla/servo
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  git python xorg-libxmu virtualenv gperf cmake freetype xorg-libxrandr mesa3d xorg-libxi xorg-libxcursor glu
+# Depends on:  git python xorg-libxmu virtualenv gperf cmake freetype xorg-libxrandr mesa3d xorg-libxi xorg-libxcursor xorg-libxxf86vm glu
 
 name=servo
 version=git
-release=1
-source=(fix-build.patch)
+release=2
+source=()
 
 build () {
 	cd $PKGMK_SOURCE_DIR
@@ -19,16 +19,15 @@ build () {
 		cd $name
 	fi
 
-	# Fix https://github.com/servo/servo/issues/5917
-	patch -p1 < $SRC/fix-build.patch
+	unset CPPFLAGS
+	./mach build -d
 
-	./mach build --release
-
-	install -Dm755 servo/components/servo/target/release/servo $PKG/usr/bin/servo
+	echo $PWD
+	install -Dm755 target/debug/servo $PKG/usr/bin/servo
 
 	mkdir -p $PKG/usr/lib
-	find servo/components/servo/target/release/deps -name "*-*.so" -exec basename {} \; | sort | uniq | while read _f; do
-		_file=$(find servo/components/servo/target/release/deps -name "$_f" -print | head -n 1)
+	find target/debug/deps -name "*-*.so" -exec basename {} \; | sort | uniq | while read _f; do
+		_file=$(find target/debug/deps -name "$_f" -print | head -n 1)
 		if [ -z "$_file" ]; then
 			echo "Skipping: $_f"
 			continue
