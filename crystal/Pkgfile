@@ -2,7 +2,7 @@
 # URL:         http://crystal-lang.org/
 # Packager:    Luiz de Milon, kori at openmailbox.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  boehm-gc gmp libpcl libpcre libunwind libxml2 libyaml
+# Depends on:  boehm-gc libgmp libpcl libpcre libunwind libxml2 libyaml
 
 name=crystal
 version=git
@@ -19,8 +19,7 @@ build() {
 		cd $name
 	fi
 
-
-	make release=1 PATH="$PATH:$SRC/bin" CRYSTAL_CONFIG_PATH="libs:/usr/lib/crystal"
+	make release=1 PATH="$SRC/crystal-0.7.6-1/bin:$PATH" CRYSTAL_CONFIG_PATH="libs:/usr/lib/crystal"
 
 	install -Dm755 .build/crystal $PKG/usr/bin/crystal
 	install -d $PKG/usr/lib
