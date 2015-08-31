@@ -1,0 +1,5 @@
+drwxr-xr-x	root/root	lib/
+drwxr-xr-x	root/root	lib/modules/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/
+drwxr-xr-x	root/root	lib/modules/<kernel-version>/extra/
+-rw-r--r--	root/root	lib/modules/<kernel-version>/extra/v4l2loopback.ko

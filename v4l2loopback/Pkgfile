@@ -1,0 +1,24 @@
+# Description: A kernel module to create V4L2 loopback devices. (git checkout)
+# URL:         https://github.com/umlaeute/v4l2loopback/
+# Packager:    onodera, ondera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  
+
+name=v4l2loopback
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/umlaeute/v4l2loopback/ $name
+		cd $name
+	fi
+
+	make
+	install -Dm644 v4l2loopback.ko $PKG/lib/modules/$(uname -r)/extra/v4l2loopback.ko
+}
