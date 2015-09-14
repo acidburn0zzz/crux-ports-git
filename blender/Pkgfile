@@ -7,7 +7,7 @@
 
 name=blender
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -30,7 +30,7 @@ build() {
 	cd build
 	cmake ../ \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DPYTHON_VERSION=3.4m \
+		-DPYTHON_VERSION=3.5 \
 		-DWITH_INSTALL_PORTABLE=OFF \
 		-DWITH_CYCLES=ON \
 		-DWITH_CYCLES_CUDA_BINARIES=ON \
