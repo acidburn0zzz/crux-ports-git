@@ -160,6 +160,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/emacs.fish
 -rw-r--r--	root/root	usr/share/fish/completions/emerge.fish
 -rw-r--r--	root/root	usr/share/fish/completions/encfs.fish
+-rw-r--r--	root/root	usr/share/fish/completions/entr.fish
 -rw-r--r--	root/root	usr/share/fish/completions/env.fish
 -rw-r--r--	root/root	usr/share/fish/completions/equery.fish
 -rw-r--r--	root/root	usr/share/fish/completions/eselect.fish
@@ -558,6 +559,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_prt_use_port.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_pwd.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_seen_subcommand_from.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_sgrep.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_automounts.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_devices.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_mounts.fish
@@ -588,6 +590,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/export.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_config.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_default_key_bindings.fish
+-rw-r--r--	root/root	usr/share/fish/functions/fish_fallback_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_indent.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_mode_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_prompt.fish
@@ -618,7 +621,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/pushd.fish
 -rw-r--r--	root/root	usr/share/fish/functions/seq.fish
 -rw-r--r--	root/root	usr/share/fish/functions/setenv.fish
--rw-r--r--	root/root	usr/share/fish/functions/sgrep.fish
+-rw-r--r--	root/root	usr/share/fish/functions/suspend.fish
 -rw-r--r--	root/root	usr/share/fish/functions/trap.fish
 -rw-r--r--	root/root	usr/share/fish/functions/type.fish
 -rw-r--r--	root/root	usr/share/fish/functions/umask.fish
