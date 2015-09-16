@@ -6,7 +6,7 @@
 
 name=openbox
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.openbox.org/dana/openbox $name
+		git clone git://git.openbox.org/mikachu/openbox $name
 		cd $name
 	fi
 
