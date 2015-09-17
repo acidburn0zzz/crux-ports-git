@@ -2,7 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/bspc
 -rwxr-xr-x	root/root	usr/bin/bspwm
--rwxr-xr-x	root/root	usr/bin/bspwm-session
 drwxr-xr-x	root/root	usr/man/
 drwxr-xr-x	root/root	usr/man/man1/
 lrwxrwxrwx	root/root	usr/man/man1/bspc.1.gz -> bspwm.1.gz
@@ -22,6 +21,9 @@ drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/
 drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/external_rules/
 -rwxr-xr-x	root/root	usr/share/doc/bspwm/examples/external_rules/bspwmrc
 -rwxr-xr-x	root/root	usr/share/doc/bspwm/examples/external_rules/external_rules
+drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/external_rules/pseudo_automatic_mode/
+-rw-r--r--	root/root	usr/share/doc/bspwm/examples/external_rules/pseudo_automatic_mode/README.md
+-rwxr-xr-x	root/root	usr/share/doc/bspwm/examples/external_rules/pseudo_automatic_mode/external_rules
 drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/loop/
 -rwxr-xr-x	root/root	usr/share/doc/bspwm/examples/loop/bspwmrc
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/loop/profile
