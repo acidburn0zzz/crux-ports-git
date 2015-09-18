@@ -281,6 +281,8 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/map-relative.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/matting-global.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/matting-global.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/maze.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/maze.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/mblur.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/mblur.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/mirrors.la
