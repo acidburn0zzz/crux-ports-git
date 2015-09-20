@@ -21,10 +21,10 @@ build() {
 
 	make
 
-	install -Dm644 tewi2a-bold-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi/tewi2a-bold-11.pcf
-	install -Dm644 tewi2a-normal-11.pcf $PKG/usr/share/fonts/X11/PCF/Tewi/tewi2a-normal-11.pcf
-	install -Dm644 tewifw-bold-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi/tewifw-bold-11.pcf
-	install -Dm644 tewifw-normal-11.pcf $PKG/usr/share/fonts/X11/PCF/Tewi/tewifw-normal-11.pcf
-	install -Dm644 tewi-bold-11.pcf     $PKG/usr/share/fonts/X11/PCF/Tewi/tewi-bold-11.pcf
-	install -Dm644 tewi-normal-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi/tewi-normal-11.pcf
+	install -Dm644 tewi2a-normal-11.pcf $PKG/usr/share/fonts/X11/PCF/Tewi2a/Normal.pcf
+	install -Dm644 tewi2a-bold-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi2a/Bold.pcf
+	install -Dm644 tewifw-normal-11.pcf $PKG/usr/share/fonts/X11/PCF/Tewifw/Normal.pcf
+	install -Dm644 tewifw-bold-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewifw/Bold.pcf
+	install -Dm644 tewi-normal-11.pcf   $PKG/usr/share/fonts/X11/PCF/Tewi/Normal.pcf
+	install -Dm644 tewi-bold-11.pcf     $PKG/usr/share/fonts/X11/PCF/Tewi/Bold.pcf
 }
