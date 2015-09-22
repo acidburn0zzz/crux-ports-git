@@ -2,11 +2,12 @@
 # URL:         http://fishshell.com
 # Packager:    lee, rtlanceroad at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Optional:    doxygen python
+# Depends on:  git doxygen
+# Optional:    python
 
 name=fish
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -20,12 +21,10 @@ build() {
 	fi
 
 	autoconf
-	
 	./configure \
 		--prefix=/usr \
 		--mandir=/usr/man \
-		--sysconfdir=/etc \
-		--with-doxygen=no
+		--sysconfdir=/etc
 
 	make
 	make DESTDIR=$PKG install
