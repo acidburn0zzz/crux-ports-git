@@ -303,6 +303,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/node.fish
 -rw-r--r--	root/root	usr/share/fish/completions/not.fish
 -rw-r--r--	root/root	usr/share/fish/completions/npm.fish
+-rw-r--r--	root/root	usr/share/fish/completions/nvim.fish
 -rw-r--r--	root/root	usr/share/fish/completions/obnam.fish
 -rw-r--r--	root/root	usr/share/fish/completions/oggenc.fish
 -rw-r--r--	root/root	usr/share/fish/completions/omega.fish
@@ -483,9 +484,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_abook_formats.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_ant_targets.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_atool_archive_contents.fish
--rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_aura.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_bittorrent.fish
--rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_cabal.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_cd.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_command.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_convert_options.fish
@@ -496,7 +495,6 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_list.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_lpr.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_lpr_option.fish
--rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_ls.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_lsusb.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_man.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_path.fish
@@ -513,7 +511,6 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_tar.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_unrar.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_users.fish
--rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_vi.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_wvdial_peers.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_config_interactive.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_contains_opt.fish
@@ -558,6 +555,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_make_targets.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_mounted.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_packages.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_print_pacman_repos.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_service_names.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_svn_rev.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_users.fish
