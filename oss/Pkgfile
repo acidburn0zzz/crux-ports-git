@@ -6,7 +6,7 @@
 
 name=oss
 version=git
-release=1
+release=2
 source=(
 	linux-4.0.patch
 	kmod-link.patch
@@ -44,7 +44,7 @@ build () {
 	cd ../..
 
 	cd build
-	../configure --enable-libsalsa=NO --regparm
+	../configure --enable-libsalsa=NO --config-midi=NO --regparm
 	make build
 	gcc $CFLAGS -shared -fPIC -Wall -Werror oss/lib/flashsupport.c -o libflashsupport.so
 
