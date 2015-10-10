@@ -1,30 +1,24 @@
-# Description : Linux utility to configure mondifier keys to act as other keys when pressed and released on their own.
-# URL         : http://github.com/alols/xcape
-# Packager    : wildefyr, wildefur at gmail dot com
-# Maintainer  : 6c37 Team, https://github.cm/6c37/crux-ports/issues
-# Depends on  : git gcc make xorg-libx11 xorg-libxtst xorg-libxi
+# Description: Linux utility to configure modifier keys to act as other keys when pressed and released on their own. (git checkout)
+# URL:         https://github.com/alols/xcape
+# Packager:    Wildefyr, wildefur at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git xorg-libx11 xorg-libxtst xorg-libxi
 
 name=xcape
-version=git-7fca36
-sversion=7fca36453eb2ce7c61afa2f1e4571c81c4abcefd
-release=2
+version=git
+release=1
 source=()
 
-gitsource=git://github.com/alols/xcape
-
 build() {
-    cd $PKGMK_SOURCE_DIR
+	cd $PKGMK_SOURCE_DIR
 
-    if cd $name; then
-        git reset --hard
-        git pull $gitsource
-    else
-        git clone $gitsource $name
-        cd $name
-    fi
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/alols/xcape $name
+		cd $name
+	fi
 
-    git checkout $sversion
-
-    make
-    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+	make
+	make PREFIX=/usr MANDIR=/man/man1 DESTDIR=$PKG install
 }
