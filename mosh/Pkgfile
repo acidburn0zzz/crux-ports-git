@@ -1,0 +1,28 @@
+# Description: Mobile shell. (git checkout)
+# URL:         https://github.com/mobile-shell/mosh
+# Packager:    wildefyr, wildefur at gmail dot come
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git
+
+name=mosh
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/mobile-shell/mosh -b master $name
+	fi
+
+	./autogen.sh
+	./configure \
+		--prefix=/usr \
+		--mandir=/usr/man
+		
+	make
+	make DESTDIR=$PKG install
+}
