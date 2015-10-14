@@ -68,6 +68,7 @@ drwxr-xr-x	root/root	usr/include/gimp-2.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpimageconvert_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpimagegrid_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpimageguides_pdb.h
+-rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpimagemetadata.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpimageselect_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpimagetransform_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpimageundo_pdb.h
@@ -78,7 +79,6 @@ drwxr-xr-x	root/root	usr/include/gimp-2.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimplayer_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpmenu.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpmessage_pdb.h
--rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimpmetadata.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimppainttools_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimppalette.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimp/gimppalette_pdb.h
@@ -332,6 +332,7 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-openraster.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pat
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pcx
+-rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pdf-load
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pdf-save
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pix
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-png
