@@ -15,12 +15,12 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/knopwob/dunst $name
+		git clone git://github.com/knopwob/dunst $name
 		cd $name
 	fi
 	
 	make
-	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+	make DESTDIR=$PKG PREFIX=/usr install
 
 	rm -rf $PKG/usr/share/dunst
 }
