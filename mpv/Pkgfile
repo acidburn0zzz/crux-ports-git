@@ -7,7 +7,7 @@
 
 name=mpv
 version=git
-release=1
+release=2
 source=()
 
 build () {
@@ -22,13 +22,14 @@ build () {
 
 	./bootstrap.py
 	./waf configure \
-		--prefix=$PKG/usr \
-		--mandir=$PKG/usr/man \
+		--prefix=/usr \
+		--confdir=/etc/mpv \
 		--disable-direct3d \
 		--disable-cocoa \
 		--disable-coreaudio
 
 	./waf build
-	./waf install destdir=$PKG
-	rm -rf $PKG/usr/share
+	./waf install --destdir=$PKG
+
+	rm -rf $PKG/usr/share/doc
 }
