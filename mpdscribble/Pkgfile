@@ -1,4 +1,4 @@
-# Description: last.fm/libre.fm scrobbler for mpd (git checkout)
+# Description: last.fm/libre.fm scrobbler for mpd. (git checkout)
 # URL:         http://git.musicpd.org/cgit/master/mpdscribble.git/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -6,7 +6,7 @@
 
 name=mpdscribble
 version=git
-release=2
+release=3
 source=(mpdscribble)
 
 build () {
@@ -19,12 +19,12 @@ build () {
 		cd $name
 	fi
 
-	./autogen.sh --prefix=/usr --mandir=/usr/man 
+	./autogen.sh --prefix=/usr
 
 	make
 	make DESTDIR=${PKG} install
 
 	install -Dm755 $SRC/mpdscribble $PKG/etc/rc.d/mpdscribble
 
-	rm -rf $PKG/usr/share
+	rm -rf $PKG/usr/share/doc
 }
