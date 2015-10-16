@@ -6,7 +6,7 @@
 
 name=jwm
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -20,10 +20,8 @@ build() {
 	fi
 
 	autoreconf
-
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
 		--disable-nls
 
 	make
