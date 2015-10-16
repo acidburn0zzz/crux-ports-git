@@ -1716,5 +1716,6 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/postprocessor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/version.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/version.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/version.pyo
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
