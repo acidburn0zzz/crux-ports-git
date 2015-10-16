@@ -1,4 +1,4 @@
-# Description: Terminal based IRC client for UNIX systems (git checkout)
+# Description: Terminal based IRC client for UNIX systems. (git checkout)
 # URL:         http://www.irssi.org/
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -15,13 +15,12 @@ build () {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/irssi/irssi $name
+		git clone git://github.com/irssi/irssi $name
 		cd $name
 	fi
 
 	./autogen.sh \
 		--prefix=/usr \
-		--mandir=/usr/man \
 		--enable-ipv6 \
 		--with-proxy \
 		--with-perl-lib=site
