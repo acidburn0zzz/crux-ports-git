@@ -6,7 +6,7 @@
 
 name=dfc
 version=git
-release=1
+release=2
 source=()
 
 build() {
