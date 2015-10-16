@@ -6,7 +6,7 @@
 
 name=openbox
 version=git
-release=2
+release=3
 source=()
 
 build() {
@@ -22,7 +22,6 @@ build() {
 	./bootstrap
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
 		--libexecdir=/usr/lib \
 		--disable-imlib2 \
 		--disable-librsvg \
