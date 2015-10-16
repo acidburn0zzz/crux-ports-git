@@ -1,4 +1,4 @@
-# Description: The Crystal Programming Language.
+# Description: The Crystal Programming Language. (git checkout)
 # URL:         http://crystal-lang.org/
 # Packager:    Luiz de Milon, kori at openmailbox.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/manastech/crystal/ -b master $name
+		git clone git://github.com/manastech/crystal/ -b master $name
 		cd $name
 	fi
 
