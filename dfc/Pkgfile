@@ -19,9 +19,9 @@ build() {
 		cd $name
 	fi
 
-	cmake ./ -DPREFIX=/usr -DSYSCONFDIR=/etc -DMAN_PATH=/usr/man
+	cmake ./ -DPREFIX=/usr -DSYSCONFDIR=/etc
 	make
 
 	install -Dm755 bin/dfc   $PKG/usr/bin/dfc
-	install -Dm644 man/dfc.1 $PKG/usr/man/man1/dfc.1
+	install -Dm644 man/dfc.1 $PKG/usr/share/man/man1/dfc.1
 }
