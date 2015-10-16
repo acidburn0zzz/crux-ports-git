@@ -1,4 +1,4 @@
-# Description: Allows easy processing of keyboard entry from terminal-based programs - neovim fork
+# Description: Allows easy processing of keyboard entry from terminal-based programs - neovim fork. (git checkout)
 # URL:         https://github.com/neovim/libtermkey
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
@@ -15,10 +15,10 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/neovim/libtermkey $name
+		git clone git://github.com/neovim/libtermkey $name
 		cd $name
 	fi
 
 	make
-	make PREFIX="/usr" MANDIR="/usr/man" DESTDIR=${PKG} install
+	make PREFIX=/usr DESTDIR=$PKG install
 }
