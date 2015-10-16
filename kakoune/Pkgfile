@@ -1,4 +1,4 @@
-# Description: mawww's experiment for a better code editor. (git checkout)
+# Description: Experiment for a better code editor. (git checkout)
 # URL:         https://github.com/mawww/kakoune
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
@@ -6,7 +6,7 @@
 
 name=kakoune
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -20,6 +20,7 @@ build() {
 	fi
 
 	cd src
+
 	make
-	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/man install
+	make DESTDIR=$PKG PREFIX=/usr install
 }
