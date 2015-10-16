@@ -7,7 +7,7 @@
 
 name=fish
 version=git
-release=2
+release=3
 source=()
 
 build() {
@@ -23,7 +23,6 @@ build() {
 	autoconf
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man \
 		--sysconfdir=/etc
 
 	make
