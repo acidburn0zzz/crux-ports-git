@@ -6,7 +6,7 @@
 
 name=gimp-gtk3
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -20,15 +20,11 @@ build() {
 	fi
 
 	./autogen.sh --prefix=/usr \
-			--mandir=/usr/man \
 			--disable-static \
 			--disable-gtk-doc \
 			--disable-nls \
 			--without-webkit \
-			--without-aa \
-			--without-hal \
-			--without-gvfs \
-			--without-gnomevfs
+			--without-aa
 
 	make
 	make DESTDIR=$PKG install

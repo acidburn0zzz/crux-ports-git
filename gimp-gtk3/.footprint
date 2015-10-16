@@ -67,6 +67,7 @@ drwxr-xr-x	root/root	usr/include/gimp-3.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimageconvert_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimagegrid_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimageguides_pdb.h
+-rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimagemetadata.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimageselect_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimagetransform_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpimageundo_pdb.h
@@ -77,7 +78,6 @@ drwxr-xr-x	root/root	usr/include/gimp-3.0/libgimp/
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimplayer_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpmenu.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpmessage_pdb.h
--rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimpmetadata.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimppainttools_pdb.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimppalette.h
 -rw-r--r--	root/root	usr/include/gimp-3.0/libgimp/gimppalette_pdb.h
@@ -322,6 +322,7 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-jpeg
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pat
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pcx
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pdf-load
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pdf-save
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-pix
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-png
@@ -353,12 +354,10 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/hot
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/imagemap
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/jigsaw
--rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/lcms
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/lighting
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/mail
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/map-object
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/max-rgb
--rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/maze
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/metadata
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/newsprint
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/nl-filter
@@ -426,13 +425,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gimp-3.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gimpthumb-3.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gimpui-3.0.pc
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/gimp-2.99.1.gz
-lrwxrwxrwx	root/root	usr/man/man1/gimp-console-2.99.1.gz -> gimp-2.99.1.gz
--rw-r--r--	root/root	usr/man/man1/gimptool-3.0.1.gz
-drwxr-xr-x	root/root	usr/man/man5/
--rw-r--r--	root/root	usr/man/man5/gimprc-2.99.5.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/gimp-2.0.m4
@@ -1423,3 +1415,10 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/32x32/apps/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
 drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/gimp.png
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/gimp-2.99.1.gz
+lrwxrwxrwx	root/root	usr/share/man/man1/gimp-console-2.99.1.gz -> gimp-2.99.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/gimptool-3.0.1.gz
+drwxr-xr-x	root/root	usr/share/man/man5/
+-rw-r--r--	root/root	usr/share/man/man5/gimprc-2.99.5.gz
