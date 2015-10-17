@@ -315,7 +315,6 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-csource
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-desktop-link
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-dicom
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-exr
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-faxg3
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-fits
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-fli
@@ -332,7 +331,6 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-openraster.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pat
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pcx
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pdf-load
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pdf-save
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pix
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-png
