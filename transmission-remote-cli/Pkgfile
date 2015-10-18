@@ -20,5 +20,5 @@ build() {
 	fi
 
 	install -Dm755 transmission-remote-cli $PKG/usr/bin/transmission-remote-cli
-	install -Dm644 transmission-remote-cli.1 $PKG/usr/man/man1/transmission-remote-cli.1
+	install -Dm644 transmission-remote-cli.1 $PKG/usr/share/man/man1/transmission-remote-cli.1
 }
