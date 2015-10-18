@@ -6,7 +6,7 @@
 
 name=mpdscribble
 version=git
-release=3
+release=4
 source=(mpdscribble)
 
 build () {
@@ -22,8 +22,7 @@ build () {
 	./autogen.sh --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} install
-
+	make DESTDIR=$PKG install
 	install -Dm755 $SRC/mpdscribble $PKG/etc/rc.d/mpdscribble
 
 	rm -rf $PKG/usr/share/doc

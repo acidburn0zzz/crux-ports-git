@@ -1,9 +1,40 @@
 #!/bin/sh
-# /etc/rc.d/mpdscribble: start/stop mpdscribble
+#
+# /etc/rc.d/mpdscribble: start/stop mpdscribble daemon
+#
+
+SSD=/sbin/start-stop-daemon
+PROG=/usr/bin/mpdscribble
+PID=/var/run/mpdscribble.pid
+OPTS=""
 
 case $1 in
-	start) /usr/bin/mpdscribble ;;
-	stop) kill -9 $(pidof /usr/bin/mpdscribble) ;;
-	restart) $0 stop; sleep 2; $0 start ;;
-	*) echo "Usage: $0 [start|stop|restart]" ;;
+start)
+	$SSD --start --pidfile $PID --exec $PROG -- $OPTS
+	;;
+stop)
+	$SSD --stop --remove-pidfile --retry 10 --pidfile $PID
+	;;
+restart)
+	$0 stop
+	$0 start
+	;;
+reload)
+	$SSD --stop --signal HUP --pidfile $PID
+	;;
+status)
+	$SSD --status --pidfile $PID
+	case $? in
+	0) echo "$PROG is running with pid $(cat $PID)" ;;
+	1) echo "$PROG is not running but the pid file $PID exists" ;;
+	3) echo "$PROG is not running" ;;
+	4) echo "Unable to determine the program status" ;;
+	esac
+	;;
+*)
+	echo "usage: $0 [start|stop|restart|reload|status]"
+	;;
 esac
+
+# End of file
+
