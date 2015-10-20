@@ -1,0 +1,26 @@
+# Description: A a 'cd' wrapper that fuzzy finds and cd into a directory. (git checkout)
+# URL:         https://github.com/miguelvps/c
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git
+
+name=c
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/miguelvps/c $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+
+	rm -rf $PKG/etc/bash_completion.d
+}
