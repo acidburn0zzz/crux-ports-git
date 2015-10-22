@@ -21,7 +21,6 @@ build() {
 
 	./autogen.sh \
 		--prefix=/usr \
-		--mandir=/usr/man \
 		--libexecdir=/usr/lib \
 		--disable-gtk \
 		--disable-perllib \
