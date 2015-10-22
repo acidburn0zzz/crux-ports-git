@@ -19,10 +19,10 @@ build() {
 		cd $name
 	fi
 
-	./autogen.sh 
-	./configure --prefix=/usr \
-			--disable-docs \
-			--disable-nls
+	./autogen.sh \
+		--prefix=/usr \
+		--disable-docs \
+		--disable-nls
 
 	make
 	make DESTDIR=$PKG install
