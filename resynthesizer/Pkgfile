@@ -21,9 +21,9 @@ build() {
 
 	sed -i "s/--enable-maintainer-mode//g" autogen.sh
 
-    ./autogen.sh --prefix=/usr \
-			 --disable-maintainer-mode \
-			 --disable-nls
+	./autogen.sh --prefix=/usr \
+		 --disable-maintainer-mode \
+		 --disable-nls
 
 	make
 	make DESTDIR=$PKG install
