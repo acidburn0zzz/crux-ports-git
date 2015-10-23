@@ -20,5 +20,5 @@ build() {
 	fi
 
 	install -Dm755 screenfetch-dev $PKG/usr/bin/screenfetch
-	install -Dm644 screenfetch.1 $PKG/usr/shareman/man1/screenfetch.1
+	install -Dm644 screenfetch.1 $PKG/usr/share/man/man1/screenfetch.1
 }
