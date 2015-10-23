@@ -1,6 +1,6 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/screenfetch
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/screenfetch.1.gz
+drwxr-xr-x	root/root	usr/shareman/
+drwxr-xr-x	root/root	usr/shareman/man1/
+-rw-r--r--	root/root	usr/shareman/man1/screenfetch.1
