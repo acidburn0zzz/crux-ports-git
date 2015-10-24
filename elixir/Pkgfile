@@ -1,0 +1,25 @@
+# Description: A dynamic, functional language designed for building scalable and maintainable applications.
+# URL:         http://elixir-lang.org/
+# Packager:    Luiz de Milon, kori at openmailbox.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git erlang
+
+name=elixir
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone https://github.com/elixir-lang/elixir.git -b master $name --depth 1
+		cd $name
+	fi
+
+	make
+	make test_erlang
+	make DESTDIR=${PKG} PREFIX=/usr install
+}
