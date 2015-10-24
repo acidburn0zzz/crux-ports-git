@@ -8,12 +8,7 @@ drwxr-xr-x	root/root	usr/etc/fish/completions/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
-drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.13-py2.7.egg-info/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.13-py2.7.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.13-py2.7.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.13-py2.7.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.13-py2.7.egg-info/entry_points.txt
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.13-py2.7.egg-info/top_level.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.24-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.pyc
@@ -764,9 +759,6 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/mdr.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/mdr.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/mdr.pyo
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/megavideoz.py
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/megavideoz.pyc
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/megavideoz.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/metacafe.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/metacafe.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/metacafe.pyo
@@ -1268,6 +1260,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/steam.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/steam.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/steam.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/stitcher.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/stitcher.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/stitcher.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/streamcloud.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/streamcloud.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/streamcloud.pyo
