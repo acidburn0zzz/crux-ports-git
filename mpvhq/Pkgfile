@@ -3,7 +3,7 @@
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  git libass ffmpeg docutils python
-# Optional:    libdvdread libdvdnav youtube-dl lua
+# Optional:    libdvdread libdvdnav youtube-dl lua libcdio-paranoia
 
 name=mpvhq
 version=git
