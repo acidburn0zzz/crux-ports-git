@@ -1,0 +1,16 @@
+drwxr-xr-x	skrzyp/users	etc/
+drwxr-xr-x	skrzyp/users	etc/bash_completion.d/
+-rw-r--r--	skrzyp/users	etc/bash_completion.d/herbstclient-completion
+drwxr-xr-x	skrzyp/users	etc/xdg/
+drwxr-xr-x	skrzyp/users	etc/xdg/herbstluftwm/
+-rwxr-xr-x	skrzyp/users	etc/xdg/herbstluftwm/autostart
+-rwxr-xr-x	skrzyp/users	etc/xdg/herbstluftwm/panel.sh
+-rwxr-xr-x	skrzyp/users	etc/xdg/herbstluftwm/restartpanels.sh
+drwxr-xr-x	skrzyp/users	usr/
+drwxr-xr-x	skrzyp/users	usr/bin/
+-rwxr-xr-x	skrzyp/users	usr/bin/dmenu_run_hlwm
+-rwxr-xr-x	skrzyp/users	usr/bin/herbstclient
+-rwxr-xr-x	skrzyp/users	usr/bin/herbstluftwm
+drwxr-xr-x	skrzyp/users	usr/share/
+drwxr-xr-x	skrzyp/users	usr/share/xsessions/
+-rw-r--r--	skrzyp/users	usr/share/xsessions/herbstluftwm.desktop

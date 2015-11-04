@@ -2,7 +2,7 @@
 # URL:         http://herbstluftwm.org
 # Packager:    skrzyp, jot dot skrzyp at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  git xorg-libx11 xorg-libxinerama glib asciidoc
+# Depends on:  git xorg-libx11 xorg-libxinerama glib 
 
 name=herbstluftwm
 version=git
@@ -21,4 +21,6 @@ build() {
 
 	make all-nodoc
 	make PREFIX=/usr DESTDIR=$PKG install-nodoc
+	rm -rf $PKG/usr/share/doc
+	[ ! -e /usr/bin/zsh ] && rm -rf $PKG/usr/share/zsh
 }
