@@ -8,7 +8,12 @@ drwxr-xr-x	root/root	usr/etc/fish/completions/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.10.24-py2.7.egg-info
+drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.11.2-py2.7.egg-info/
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.11.2-py2.7.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.11.2-py2.7.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.11.2-py2.7.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.11.2-py2.7.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2015.11.2-py2.7.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.pyc
@@ -330,6 +335,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/defense.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/defense.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/defense.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/democracynow.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/democracynow.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/democracynow.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/dfb.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/dfb.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/dfb.pyo
