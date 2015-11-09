@@ -1,0 +1,24 @@
+# Description: Advanced color picker written in C++ using GTK+ toolkit. (git checkout)
+# URL:         https://github.com/thezbyg/gpick
+# Packager:    wildefyr, wildefur at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  boost scons desktop-file-utils gtk lua
+
+name=gpick
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone https://github.com/thezbyg/gpick -b master $name
+		cd $name
+	fi
+	
+	scons
+	scons DESTDIR=$PKG/usr install
+}
