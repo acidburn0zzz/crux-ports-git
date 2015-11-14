@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone  -b master $name
+		git clone https://github.com/wmutils/libwm -b master $name
 		cd $name
 	fi
 
