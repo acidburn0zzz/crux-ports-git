@@ -23,5 +23,5 @@ build() {
 	./configure --disable-nls --disable-gui --disable-ubuntu
 
 	make
-	make DESTDIR="$PKG" prefix="/usr" install
+	make prefix="/usr/" DESTDIR=${PKG} install
 }
