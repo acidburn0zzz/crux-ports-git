@@ -10,12 +10,12 @@ release=1
 source=()
 
 build() {
-    	cd $PKGMK_SOURCE_DIR
+	cd $PKGMK_SOURCE_DIR
 
-    	if cd $name; then
-        	git fetch -q; git reset --hard origin/master
+	if cd $name; then
+    	git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/TrilbyWhite/interrobang.github
+		git clone git://github.com/TrilbyWhite/interrobang.git
 		cd $name
 	fi
 
