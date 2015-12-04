@@ -22,12 +22,11 @@ build() {
 	./bootstrap
 	./configure --prefix=/usr \
 				--enable-shared \
+				--disable-csharp \
 				--disable-doc \
 				--disable-cxx \
 				--disable-gl \
-				--disable-csharp \
 				--disable-static
 	make
-	make DESTDIR=${PKG} PREFIX="/usr" mandir="/usr/man1" install
+	make DESTDIR=${PKG} PREFIX="/usr" install
 }
-# vim: set ft=sh noet :
