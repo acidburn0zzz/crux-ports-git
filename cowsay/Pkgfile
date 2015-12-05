@@ -1,0 +1,31 @@
+# Description: Configurable talking ASCII cow.
+# URL:         https://github.com/schacon/cowsay
+# Packager:    arcetera, arc at plusreed dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues  
+# Depends on:  perl
+
+name=cowsay
+version=3.03
+release=1
+source=(cowsay-3.03.patch)
+
+build() {
+        cd $PKGMK_SOURCE_DIR
+        
+        if cd $name; then
+                git fetch -q; git reset --hard origin/master
+        else
+                git clone git://github.com/schacon/cowsay.git
+                cd $name
+        fi
+
+        patch -p1 < ../cowsay-3.03.patch
+
+        mkdir -p $PKG/usr/{bin,man/man1,share/cowsay/cows}
+
+        cp cowsay $PKG/usr/bin
+        chmod a+x $PKG/usr/bin/cowsay
+        ln -s cowsay $PKG/usr/bin/cowthink
+        cp cows/*.cow $PKG/usr/share/cowsay/cows
+        cp cowsay.1 $PKG/usr/man/man1
+}
