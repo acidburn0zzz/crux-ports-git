@@ -2,9 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/cowsay
 lrwxrwxrwx	root/root	usr/bin/cowthink -> cowsay
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/cowsay.1.gz
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/cowsay/
 drwxr-xr-x	root/root	usr/share/cowsay/cows/
@@ -55,3 +52,6 @@ drwxr-xr-x	root/root	usr/share/cowsay/cows/
 -rw-r--r--	root/root	usr/share/cowsay/cows/vader-koala.cow
 -rw-r--r--	root/root	usr/share/cowsay/cows/vader.cow
 -rw-r--r--	root/root	usr/share/cowsay/cows/www.cow
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/cowsay.1.gz
