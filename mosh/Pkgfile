@@ -2,11 +2,11 @@
 # URL:         https://github.com/mobile-shell/mosh
 # Packager:    wildefyr, wildefur at gmail dot come
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  git
+# Depends on:  git protobuf
 
 name=mosh
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -16,12 +16,13 @@ build() {
 		git fetch -q; git reset --hard origin/master
 	else
 		git clone git://github.com/mobile-shell/mosh -b master $name
+		cd $name
 	fi
 
 	./autogen.sh
 	./configure \
 		--prefix=/usr \
-		--mandir=/usr/man
+		--mandir=/usr/share/man
 		
 	make
 	make DESTDIR=$PKG install
