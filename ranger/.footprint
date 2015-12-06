@@ -5,7 +5,11 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger-1.6.1-py2.7.egg-info
+drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger-1.7.2-py2.7.egg-info/
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger-1.7.2-py2.7.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger-1.7.2-py2.7.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger-1.7.2-py2.7.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger-1.7.2-py2.7.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/__init__.pyc
@@ -80,9 +84,6 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/core/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/actions.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/actions.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/actions.pyo
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/environment.py
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/environment.pyc
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/environment.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/fm.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/fm.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/fm.pyo
@@ -109,7 +110,7 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/core/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/core/tab.pyo
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/data/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/data/mime.types
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/data/scope.sh
+-rwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/data/scope.sh
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/ext/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/__init__.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/__init__.pyc
@@ -187,15 +188,15 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/hg.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/hg.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/hg.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/svn.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/svn.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/svn.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/vcs.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/vcs.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/vcs/vcs.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/widestring.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/widestring.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/ext/widestring.pyo
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/fsobject.py
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/fsobject.pyc
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/fsobject.pyo
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/gui/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/gui/__init__.py (EMPTY)
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/gui/__init__.pyc
@@ -252,8 +253,8 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/ranger/gui/widgets/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/gui/widgets/titlebar.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/gui/widgets/titlebar.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/ranger/gui/widgets/titlebar.pyo
-drwxr-xr-x	root/root	usr/man/
-drwxr-xr-x	root/root	usr/man/man1/
--rw-r--r--	root/root	usr/man/man1/ranger.1.gz
--rw-r--r--	root/root	usr/man/man1/rifle.1.gz
 drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/ranger.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/rifle.1.gz

@@ -18,9 +18,7 @@ build () {
 	else
 		git clone git://github.com/hut/ranger $name
 		cd $name
-	fi
-
-	sed -i "s/share\/man/man/" setup.py
+	fi	
 
 	python setup.py -q install --root="$PKG" --optimize=1
 
