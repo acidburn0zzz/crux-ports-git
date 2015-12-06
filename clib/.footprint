@@ -1,0 +1,4 @@
+drwxr-xr-x	root/root	bin/
+-rwxr-xr-x	root/root	bin/clib
+-rwxr-xr-x	root/root	bin/clib-install
+-rwxr-xr-x	root/root	bin/clib-search
