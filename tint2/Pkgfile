@@ -25,5 +25,5 @@ build() {
 
 	install -Dm755 tint2 $PKG/usr/bin/tint2
 	install -Dm755 src/tint2conf/tint2conf $PKG/usr/bin/tint2conf
-	install -Dm644 doc/tint2.1 $PKG/usr/man/man1/tint2.1
+	install -Dm644 doc/tint2.1 $PKG/usr/share/man/man1/tint2.1
 }
