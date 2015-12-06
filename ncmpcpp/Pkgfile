@@ -6,7 +6,7 @@
 
 name=ncmpcpp
 version=git
-release=1
+release=2
 source=(fix-build.patch)
 
 build() {
@@ -21,7 +21,7 @@ build() {
 
 	patch < $SRC/fix-build.patch
 
-	./autogen.sh --prefix=/usr --mandir=/usr/man --disable-clock
+	./autogen.sh --prefix=/usr --mandir=/usr/share/man --disable-clock
 
 	make
 	make DESTDIR=$PKG install
