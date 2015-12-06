@@ -19,9 +19,9 @@ build() {
 		cd $name
 	fi
 
-	./bootstrap
+	autoreconf -fi
 	./configure --prefix=/usr
 
 	make
-	make DESTDIR=${PKG} mandir="/usr/man" install
+	make DESTDIR=${PKG} mandir="/usr/share/man" install
 }
