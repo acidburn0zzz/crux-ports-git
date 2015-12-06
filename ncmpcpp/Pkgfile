@@ -6,7 +6,7 @@
 
 name=ncmpcpp
 version=git
-release=2
+release=1
 source=(fix-build.patch)
 
 build() {
