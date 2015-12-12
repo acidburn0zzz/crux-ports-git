@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/wmutils/core $name
+		git clone git://github.com/wmutils/core -b master $name
 		cd $name
 	fi
 
