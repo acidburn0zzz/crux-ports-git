@@ -19,6 +19,10 @@ build() {
 		cd $name
 	fi
 
+    ./autogen.sh
+    ./configure --prefix=/usr \
+                --mandir=/usr/share/man
+
 	make
-	make PREFIX=/usr DESTDIR=$PKG install
+	make DESTDIR=$PKG install
 }
