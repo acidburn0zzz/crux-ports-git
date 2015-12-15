@@ -10,12 +10,18 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/fish/
+-rw-r--r--	root/root	usr/share/doc/fish/arrowdown.png
+-rw-r--r--	root/root	usr/share/doc/fish/arrowright.png
 -rw-r--r--	root/root	usr/share/doc/fish/ascii_fish.png
 -rw-r--r--	root/root	usr/share/doc/fish/commands.html
 -rw-r--r--	root/root	usr/share/doc/fish/design.html
+-rw-r--r--	root/root	usr/share/doc/fish/doc.png
 -rw-r--r--	root/root	usr/share/doc/fish/faq.html
+-rw-r--r--	root/root	usr/share/doc/fish/folderclosed.png
+-rw-r--r--	root/root	usr/share/doc/fish/folderopen.png
 -rw-r--r--	root/root	usr/share/doc/fish/index.html
 -rw-r--r--	root/root	usr/share/doc/fish/license.html
+-rw-r--r--	root/root	usr/share/doc/fish/splitbar.png
 -rw-r--r--	root/root	usr/share/doc/fish/tutorial.html
 -rw-r--r--	root/root	usr/share/doc/fish/user_doc.css
 drwxr-xr-x	root/root	usr/share/fish/
@@ -105,6 +111,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/cabal.fish
 -rw-r--r--	root/root	usr/share/fish/completions/cancel.fish
 -rw-r--r--	root/root	usr/share/fish/completions/canto.fish
+-rw-r--r--	root/root	usr/share/fish/completions/cargo.fish
 -rw-r--r--	root/root	usr/share/fish/completions/case.fish
 -rw-r--r--	root/root	usr/share/fish/completions/cat.fish
 -rw-r--r--	root/root	usr/share/fish/completions/cd.fish
@@ -150,7 +157,6 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/djview4.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dlocate.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dmesg.fish
--rw-r--r--	root/root	usr/share/fish/completions/docker.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dpkg.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dropbox.fish
 -rw-r--r--	root/root	usr/share/fish/completions/du.fish
@@ -304,6 +310,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/oggenc.fish
 -rw-r--r--	root/root	usr/share/fish/completions/omega.fish
 -rw-r--r--	root/root	usr/share/fish/completions/opam.fish
+-rw-r--r--	root/root	usr/share/fish/completions/open.fish
 -rw-r--r--	root/root	usr/share/fish/completions/or.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pacman-color.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pacman-key.fish
@@ -324,6 +331,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/pine.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ping.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pinky.fish
+-rw-r--r--	root/root	usr/share/fish/completions/pkg-config.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pkg.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pkgadd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pkgfile.fish
@@ -368,6 +376,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/rsync.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ruby-build.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ruby.fish
+-rw-r--r--	root/root	usr/share/fish/completions/rustc.fish
 -rw-r--r--	root/root	usr/share/fish/completions/sass-convert.fish
 -rw-r--r--	root/root	usr/share/fish/completions/sass.fish
 -rw-r--r--	root/root	usr/share/fish/completions/scanimage.fish
@@ -395,12 +404,15 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/stat.fish
 -rw-r--r--	root/root	usr/share/fish/completions/status.fish
 -rw-r--r--	root/root	usr/share/fish/completions/stream.fish
+-rw-r--r--	root/root	usr/share/fish/completions/string.fish
 -rw-r--r--	root/root	usr/share/fish/completions/su.fish
 -rw-r--r--	root/root	usr/share/fish/completions/sudo.fish
 -rw-r--r--	root/root	usr/share/fish/completions/svn.fish
 -rw-r--r--	root/root	usr/share/fish/completions/sylpheed.fish
 -rw-r--r--	root/root	usr/share/fish/completions/sysctl.fish
 -rw-r--r--	root/root	usr/share/fish/completions/systemctl.fish
+-rw-r--r--	root/root	usr/share/fish/completions/systemd-analyze.fish
+-rw-r--r--	root/root	usr/share/fish/completions/systemd-nspawn.fish
 -rw-r--r--	root/root	usr/share/fish/completions/tail.fish
 -rw-r--r--	root/root	usr/share/fish/completions/tar.fish
 -rw-r--r--	root/root	usr/share/fish/completions/tee.fish
@@ -488,6 +500,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_file_url.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_ftp.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_groups.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_job_pids.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_list.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_lpr.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_lpr_option.fish
@@ -568,6 +581,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_pwd.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_seen_subcommand_from.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_sgrep.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_svn_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_automounts.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_devices.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_mounts.fish
