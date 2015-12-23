@@ -599,6 +599,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_test_arg.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_urlencode.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_use_subcommand.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_vcs_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__terlar_git_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/abbr.fish
 -rw-r--r--	root/root	usr/share/fish/functions/alias.fish
@@ -705,6 +706,7 @@ drwxr-xr-x	root/root	usr/share/fish/man/man1/
 -rw-r--r--	root/root	usr/share/fish/man/man1/popd.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/prevd.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/printf.1.gz
+-rw-r--r--	root/root	usr/share/fish/man/man1/prompt_pwd.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/psub.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/pushd.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/pwd.1.gz
@@ -751,11 +753,11 @@ drwxr-xr-x	root/root	usr/share/fish/tools/web_config/partials/
 drwxr-xr-x	root/root	usr/share/fish/tools/web_config/sample_prompts/
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/acidhub.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/classic.fish
--rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/classic_git.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/classic_status.fish
+-rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/classic_vcs.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/debian_chroot.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/informative.fish
--rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/informative_git.fish
+-rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/informative_vcs.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/justadollar.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/lonetwin.fish
 -rw-r--r--	root/root	usr/share/fish/tools/web_config/sample_prompts/minimalist.fish
