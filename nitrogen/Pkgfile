@@ -6,7 +6,7 @@
 
 name=nitrogen
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -18,6 +18,8 @@ build() {
 		git clone https://github.com/l3ib/nitrogen.git $name
 		cd $name
 	fi
+
+	export CXXFLAGS=" -g -std=c++11"
 
 	autoreconf -fi
 	./configure --prefix=/usr
