@@ -20,7 +20,7 @@ build() {
 		cd $name
 	fi
 
-	patch -p1 -i $SRC/screenfetch-fix-os-detection.patch
+	patch -p0 -i $SRC/screenfetch-fix-os-detection.patch
 
 	install -Dm755 screenfetch-dev $PKG/usr/bin/screenfetch
 	install -Dm644 screenfetch.1 $PKG/usr/share/man/man1/screenfetch.1
