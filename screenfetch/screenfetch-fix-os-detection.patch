@@ -1,0 +1,13 @@
+--- screenfetch.origin	2016-01-05 10:11:03.051907354 +0000
++++ screenfetch-dev	2016-01-05 10:14:36.691899559 +0000
+@@ -764,10 +764,6 @@ detectdistro () {
+ 		fi
+ 	fi
+ 
+-	if [[ -n ${distro_more} ]]; then
+-		distro_more="${distro} ${distro_more}"
+-	fi
+-
+ 	case $distro in
+ 		antergos) distro="Antergos" ;;
+ 		arch*linux*old) distro="Arch Linux - Old" ;;
