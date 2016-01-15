@@ -1,0 +1,27 @@
+# Description: Simple terminal with Xresources support.
+# URL:         https://github.com/dcat/st-xresources
+# Packager:    arcetera, arcetera@cock.li
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  git xorg-libx11
+
+name=st-xresources
+version=git
+release=2
+source=(config.h)
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone https://github.com/dcat/st-xresources.git -b master $name
+		cd $name
+	fi
+	
+	mv $SRC/config.h .
+	
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+	tic -s st.info
+}
