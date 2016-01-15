@@ -79,6 +79,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/aptitude.fish
 -rw-r--r--	root/root	usr/share/fish/completions/arepack.fish
 -rw-r--r--	root/root	usr/share/fish/completions/arp.fish
+-rw-r--r--	root/root	usr/share/fish/completions/asp.fish
 -rw-r--r--	root/root	usr/share/fish/completions/at.fish
 -rw-r--r--	root/root	usr/share/fish/completions/atd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/atom.fish
@@ -157,6 +158,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/djview4.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dlocate.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dmesg.fish
+-rw-r--r--	root/root	usr/share/fish/completions/dnf.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dpkg.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dropbox.fish
 -rw-r--r--	root/root	usr/share/fish/completions/du.fish
@@ -237,6 +239,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/iptables.fish
 -rw-r--r--	root/root	usr/share/fish/completions/jobs.fish
 -rw-r--r--	root/root	usr/share/fish/completions/journalctl.fish
+-rw-r--r--	root/root	usr/share/fish/completions/kcmshell5.fish
 -rw-r--r--	root/root	usr/share/fish/completions/kill.fish
 -rw-r--r--	root/root	usr/share/fish/completions/killall.fish
 -rw-r--r--	root/root	usr/share/fish/completions/kitchen.fish
@@ -316,7 +319,9 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/pacman-key.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pacman.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pacmatic.fish
+-rw-r--r--	root/root	usr/share/fish/completions/pacmd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pacsrv.fish
+-rw-r--r--	root/root	usr/share/fish/completions/pactl.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pactree.fish
 -rw-r--r--	root/root	usr/share/fish/completions/patch.fish
 -rw-r--r--	root/root	usr/share/fish/completions/pbget.fish
@@ -401,6 +406,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/source.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ssh.fish
 -rw-r--r--	root/root	usr/share/fish/completions/sshfs.fish
+-rw-r--r--	root/root	usr/share/fish/completions/stack.fish
 -rw-r--r--	root/root	usr/share/fish/completions/stat.fish
 -rw-r--r--	root/root	usr/share/fish/completions/status.fish
 -rw-r--r--	root/root	usr/share/fish/completions/stream.fish
