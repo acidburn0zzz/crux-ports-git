@@ -1,4 +1,6 @@
 drwxr-xr-x	root/root	include/
+drwxr-xr-x	root/root	include/libmypaint-gegl/
+-rw-r--r--	root/root	include/libmypaint-gegl/mypaint-gegl-surface.h
 drwxr-xr-x	root/root	include/libmypaint/
 drwxr-xr-x	root/root	include/libmypaint/glib/
 -rw-r--r--	root/root	include/libmypaint/glib/mypaint-brush.h
@@ -13,8 +15,10 @@ drwxr-xr-x	root/root	include/libmypaint/glib/
 -rw-r--r--	root/root	include/libmypaint/mypaint-surface.h
 -rw-r--r--	root/root	include/libmypaint/mypaint-tiled-surface.h
 drwxr-xr-x	root/root	lib/
+-rw-r--r--	root/root	lib/libmypaint-gegl.a
 -rw-r--r--	root/root	lib/libmypaint.a
 drwxr-xr-x	root/root	lib/pkgconfig/
+-rw-r--r--	root/root	lib/pkgconfig/libmypaint-gegl.pc
 -rw-r--r--	root/root	lib/pkgconfig/libmypaint.pc
 drwxr-xr-x	root/root	share/
 drwxr-xr-x	root/root	share/libmypaint/

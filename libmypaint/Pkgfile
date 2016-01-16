@@ -19,5 +19,5 @@ build() {
 		cd $name
 	fi
 
-	scons prefix=$PKG install
+	scons prefix=$PKG enable_gegl=true install
 }
