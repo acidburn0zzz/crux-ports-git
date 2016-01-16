@@ -20,4 +20,6 @@ build() {
 	fi
 
 	scons prefix=$PKG enable_gegl=true install
+
+	rm -rf $PKG/share/locale
 }
