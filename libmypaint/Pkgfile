@@ -6,7 +6,7 @@
 
 name=libmypaint
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -19,7 +19,8 @@ build() {
 		cd $name
 	fi
 
-	scons prefix=$PKG enable_gegl=true install
+	scons prefix=/usr enable_gegl=true use_sharedlib=yes \
+		--install-sandbox=$PKG $PKG
 
 	rm -rf $PKG/share/locale
 }
