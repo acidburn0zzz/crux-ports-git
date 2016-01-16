@@ -23,7 +23,9 @@ build() {
 	./autogen.sh \
 		--prefix=/usr \
 		--disable-docs \
-		--disable-nls
+		--disable-nls \
+		--enable-workshop \
+		--with-sdl
 
 	make
 	make DESTDIR=$PKG install
