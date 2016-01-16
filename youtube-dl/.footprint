@@ -8,7 +8,7 @@ drwxr-xr-x	root/root	usr/etc/fish/completions/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.01.14-py2.7.egg-info
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.01.15-py2.7.egg-info
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.pyc
@@ -321,6 +321,12 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/ctsnews.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/ctsnews.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/ctsnews.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cultureunplugged.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cultureunplugged.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cultureunplugged.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cwtv.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cwtv.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cwtv.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/dailymotion.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/dailymotion.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/dailymotion.pyo
@@ -1740,6 +1746,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/zingmp3.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/zingmp3.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/zingmp3.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/zippcast.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/zippcast.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/zippcast.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/jsinterp.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/jsinterp.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/jsinterp.pyo
