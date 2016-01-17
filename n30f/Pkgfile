@@ -1,7 +1,7 @@
 # Description: A dirty hack for displaying shaped windows in X11. (git checkout)
 # URL:         https://github.com/kyubiko/n30f
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  cairo xorg-libxcb
 
 name=n30f

@@ -1,7 +1,7 @@
 # Description: Graph based image processing framework. (git checkout)
 # URL:         http://gegl.org
 # Packager:    Simone Rota, sip at crux dot nu
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git babl gtk intltool json-glib
 # Optional:    ffmpeg openexr libtiff librsvg jasper lua
 

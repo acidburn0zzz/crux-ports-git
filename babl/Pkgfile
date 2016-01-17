@@ -1,7 +1,7 @@
 # Description: Dynamic, any to any, pixel format translation library. (git checkout)
 # URL:         http://gegl.org/babl
 # Packager:    Simone Rota, sip at crux dot nu
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
 
 name=babl

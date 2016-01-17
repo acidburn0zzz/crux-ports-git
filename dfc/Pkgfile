@@ -1,7 +1,7 @@
 # Description: Display file system space usage using graph and colors. (git checkout)
 # URL:         https://github.com/Rolinh/dfc
 # Packager:    Luiz de Milon, kori at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git cmake
 
 name=dfc

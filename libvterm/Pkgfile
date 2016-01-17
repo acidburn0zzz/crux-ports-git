@@ -1,7 +1,7 @@
 # Description: Abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator - neovim fork
 # URL:         https://github.com/neovim/libvterm
 # Packager:    Luiz de Milon, kori at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
 
 name=libvterm

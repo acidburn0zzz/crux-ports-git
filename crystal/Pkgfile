@@ -1,7 +1,7 @@
 # Description: The Crystal Programming Language. (git checkout)
 # URL:         http://crystal-lang.org/
 # Packager:    Luiz de Milon, kori at openmailbox.org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  boehm-gc libgmp libpcl libpcre libunwind libxml2 libyaml
 
 name=crystal

@@ -1,7 +1,7 @@
 # Description: A a 'cd' wrapper that fuzzy finds and cd into a directory. (git checkout)
 # URL:         https://github.com/miguelvps/c
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
 
 name=c

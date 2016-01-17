@@ -1,7 +1,7 @@
 # Description: A tiny launcher menu packing a big bang.
 # URL:         https://github.com/TrilbyWhite/interrobang
 # Packager:    arcetera, arcetera@openmailbox.org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libx11
 
 name=interrobang

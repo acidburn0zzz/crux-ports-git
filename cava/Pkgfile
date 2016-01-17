@@ -1,7 +1,7 @@
 # Description: Console-based Audio Visualizer for Alsa. (git checkout)
 # URL:         https://github.com/karlstav/cava
 # Packager:    wildefyr, wildefur at gmail dot com
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git fftw
 
 name=cava

@@ -1,7 +1,7 @@
 # Description: Openbox rc.xml generator (Scheme/Sexpr to XML).
 # URL:         https://github.com/nv-vn/boxcutter
 # Packager:    arcetera, arcetera@openmailbox.org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git guile openbox
 
 name=unbox

@@ -1,7 +1,7 @@
 # Description:  Configuration tool for AMD Overdrive6 devices.
 # URL:          http://epixoip.github.io/od6config/
 # Packager:     esmth, esmth at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:   fglrx
 
 name=od6config

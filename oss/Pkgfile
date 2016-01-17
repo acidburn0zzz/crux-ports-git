@@ -1,7 +1,7 @@
 # Description: Open Sound System UNIX audio architecture.
 # URL:         http://developer.opensound.com/
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  gtk
 
 name=oss

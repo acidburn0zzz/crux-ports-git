@@ -1,7 +1,7 @@
 # Description: General purpose messaging, notification and menuing program for X11. (git checkout)
 # URL:         https://github.com/robm/dzen
 # Packager:    Joe Schillinger, js1 at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libx11 xorg-libxpm xorg-libxinerama xorg-libxft
 
 name=dzen

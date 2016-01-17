@@ -1,7 +1,7 @@
 # Description: Allows easy processing of keyboard entry from terminal-based programs - neovim fork. (git checkout)
 # URL:         https://github.com/neovim/libtermkey
 # Packager:    Luiz de Milon, kori at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git unibilium
 
 name=libtermkey

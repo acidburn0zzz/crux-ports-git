@@ -1,6 +1,6 @@
 # Description: Modified killw with atom support. (git checkout)
 # URL:         https://github.com/wmutils/opt
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Packager:    onodera, onodera at openmailbox dot org
 # Depends on:  xorg-xcb-util-wm
 

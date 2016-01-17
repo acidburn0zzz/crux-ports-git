@@ -1,6 +1,6 @@
 # Description: wmutils opt is an addition to wmutils core
 # URL:         https://github.com/wmutils/opt
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Packager:    Eduardo Lavaque, me at greduan dot com
 # Depends on:  git libwm
 

@@ -1,7 +1,7 @@
 # Description: Complete solution to record, convert and stream audio and video.
 # URL:         http://ffmpeg.org
 # Packager:    skrzyp, jot dot skrzyp at gmail dot com
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  gnutls lame libass libbluray libgmp libmodplug libsdl libtheora ibva libvpx libxvid opencore-amr openjpeg opus rtmpdump schroedinger speex x264 x265
 
 name=ffmpeg

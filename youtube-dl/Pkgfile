@@ -1,7 +1,7 @@
 # Description: Download videos from youtube.com or other video platforms. (git checkout)
 # URL:         https://github.com/rg3/youtube-dl/
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git setuptools
 
 name=youtube-dl

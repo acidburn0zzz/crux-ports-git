@@ -1,7 +1,7 @@
 # Description: Small ncurses-based file browser. (git checkout)
 # URL:         http://git.2f30.org/noice/about/
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
 
 name=noice

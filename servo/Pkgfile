@@ -1,7 +1,7 @@
 # Description: Web browser written in Rust. (git checkout)
 # URL:         https://github.com/mozilla/servo
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git python xorg-libxmu virtualenv gperf cmake freetype xorg-libxrandr mesa3d xorg-libxi xorg-libxcursor xorg-libxxf86vm glu
 
 name=servo

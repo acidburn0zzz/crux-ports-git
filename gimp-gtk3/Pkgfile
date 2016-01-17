@@ -1,7 +1,7 @@
 # Description: GNU Image Manipulation Program. (git checkout)
 # URL:         http://gimp.org
 # Packager:    Simone Rota, sip at crux dot nu
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libsdl gexiv2 pygtk gtk3 gegl libmypaint
 
 name=gimp-gtk3

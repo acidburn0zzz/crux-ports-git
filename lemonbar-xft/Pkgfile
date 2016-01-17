@@ -1,7 +1,7 @@
 # Description: A featherweight, lemon-scented bar based on xcb with xft support. (git checkout)
 # URL:         https://github.com/krypt-n/bar
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  xorg-libxcb
 
 name=lemonbar-xft

@@ -1,7 +1,7 @@
 # Description: A serif design that is metrically compatible with Times New Roman™.
 # URL:         https://www.google.com/fonts/specimen/Tinos
 # Packager:    Luiz de Milon, kori at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:
 
 name=ttf-tinos

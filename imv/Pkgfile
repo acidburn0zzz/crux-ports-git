@@ -1,7 +1,7 @@
 # Description: Image viewer for Wayland and X11. (git checkout)
 # URL:         http://github.com/eXeC64/imv
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git freeimage sld2_ttf
 
 name=pqiv

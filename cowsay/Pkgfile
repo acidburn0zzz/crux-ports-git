@@ -1,7 +1,7 @@
 # Description: Configurable talking ASCII cow.
 # URL:         https://github.com/schacon/cowsay
 # Packager:    arcetera, arcetera@openmailbox.org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues  
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues  
 # Depends on:
 
 name=cowsay

@@ -1,7 +1,7 @@
 # Description: A lightweight window manager for the X11 Window System. (git checkout)
 # URL:         http://fvwm.org/
 # Packager:    onodera, onodera at openmailbox dot org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libx11
 
 name=jwm

@@ -1,7 +1,7 @@
 # Description: An X window virtual filesystem.
 # URL:         https://github.com/6c37/akemi
 # Packager:    arcetera, arcetera@openmailbox.org
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git fuse xorg-libxcb
 
 name=akemi
