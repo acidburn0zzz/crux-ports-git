@@ -2,11 +2,12 @@
 # URL:         http://gimp.org
 # Packager:    Simone Rota, sip at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git libsdl gexiv2 pygtk gtk3 gegl libmypaint
+# Depends on:  git libsdl gexiv2 pygtk gegl gtk3 p5-xml-parser
+# Optional:    librsvg openexr poppler-glib
 
 name=gimp-gtk3
 version=git
-release=3
+release=4
 source=()
 
 build() {
@@ -19,7 +20,8 @@ build() {
 		cd $name
 	fi
 
-	./autogen.sh --prefix=/usr \
+	./autogen.sh \
+			--prefix=/usr \
 			--disable-static \
 			--disable-gtk-doc \
 			--disable-nls \
@@ -29,6 +31,9 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-  
+
+	ln -s /usr/bin/gimp-2.9 $PKG/usr/bin/gimp
+	ln -s /usr/bin/gimp-console-2.9 $PKG/usr/bin/gimp-console
+
 	rm -rf $PKG/usr/share/{gtk-doc,locale}
 }
