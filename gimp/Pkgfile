@@ -20,7 +20,8 @@ build() {
 		cd $name
 	fi
 
-	./autogen.sh --prefix=/usr \
+	./autogen.sh \
+			--prefix=/usr \
 			--disable-static \
 			--disable-nls \
 			--without-webkit \
