@@ -7,7 +7,7 @@
 
 name=mpv
 version=git
-release=2
+release=3
 source=()
 
 build () {
@@ -23,7 +23,8 @@ build () {
 	./bootstrap.py
 	./waf configure \
 		--prefix=/usr \
-		--confdir=/etc/mpv
+		--confdir=/etc/mpv \
+		--enable-gpl3
 
 	./waf build
 	./waf install --destdir=$PKG
