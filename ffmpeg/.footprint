@@ -124,9 +124,9 @@ lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.57.0.100
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so.57 -> libavdevice.so.57.0.100
 -rwxr-xr-x	root/root	usr/lib/libavdevice.so.57.0.100
 -rw-r--r--	root/root	usr/lib/libavfilter.a
-lrwxrwxrwx	root/root	usr/lib/libavfilter.so -> libavfilter.so.6.24.100
-lrwxrwxrwx	root/root	usr/lib/libavfilter.so.6 -> libavfilter.so.6.24.100
--rwxr-xr-x	root/root	usr/lib/libavfilter.so.6.24.100
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so -> libavfilter.so.6.25.100
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so.6 -> libavfilter.so.6.25.100
+-rwxr-xr-x	root/root	usr/lib/libavfilter.so.6.25.100
 -rw-r--r--	root/root	usr/lib/libavformat.a
 lrwxrwxrwx	root/root	usr/lib/libavformat.so -> libavformat.so.57.21.101
 lrwxrwxrwx	root/root	usr/lib/libavformat.so.57 -> libavformat.so.57.21.101
