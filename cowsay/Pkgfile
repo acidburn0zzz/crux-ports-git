@@ -1,11 +1,11 @@
-# Description: Configurable talking ASCII cow.
+# Description: Configurable talking ASCII cow. (git checkout)
 # URL:         https://github.com/schacon/cowsay
 # Packager:    arcetera, arcetera@openmailbox.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues  
 # Depends on:
 
 name=cowsay
-version=3.03
+version=git
 release=1
 source=(cowsay-3.03.patch)
 
