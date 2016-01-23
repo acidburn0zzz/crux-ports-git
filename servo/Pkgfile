@@ -20,7 +20,7 @@ build () {
 	fi
 
 	unset CPPFLAGS
-	./mach build -d
+	./mach build --dev
 
 	echo $PWD
 	install -Dm755 target/debug/servo $PKG/usr/bin/servo
