@@ -2,10 +2,8 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/servo
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libhtml5ever_macros-3fb101950ecfdc11.so
+-rw-r--r--	root/root	usr/lib/libheapsize_plugin-516b4b77d13e3836.so
 -rw-r--r--	root/root	usr/lib/libplugins-b6f3b0a8f4a0e331.so
--rw-r--r--	root/root	usr/lib/libquasi_macros-6b6825cab5d44d80.so
--rw-r--r--	root/root	usr/lib/libregex_macros-ed47cfffdeca22b7.so
--rw-r--r--	root/root	usr/lib/libserde_macros-31063f68c46c89e2.so
--rw-r--r--	root/root	usr/lib/libstring_cache_plugin-5c20d11a40b4ae8d.so
--rw-r--r--	root/root	usr/lib/libtenacious-ee4b2f78c5a44306.so
+-rw-r--r--	root/root	usr/lib/libquasi_macros-1284e50d9078714d.so
+-rw-r--r--	root/root	usr/lib/libserde_macros-29166daf0080a6c2.so
+-rw-r--r--	root/root	usr/lib/libtenacious-f1a5a76a731e117c.so
