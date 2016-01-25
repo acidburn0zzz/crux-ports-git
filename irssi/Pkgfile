@@ -2,7 +2,7 @@
 # URL:         http://www.irssi.org/
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  elinks git glib
+# Depends on:  git glib elinks
 
 name=irssi
 version=git
@@ -22,6 +22,7 @@ build () {
 	./autogen.sh \
 		--prefix=/usr \
 		--enable-ipv6 \
+		--disable-static \
 		--with-proxy \
 		--with-perl-lib=site
 
