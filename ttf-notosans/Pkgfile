@@ -8,10 +8,10 @@ name=ttf-notosans
 version=git
 release=1
 source=(
-	https://github.com/google/fonts/raw/master/apache/notosans/NotoSans-Regular.ttf
-	https://github.com/google/fonts/raw/master/apache/notosans/NotoSans-Italic.ttf
-	https://github.com/google/fonts/raw/master/apache/notosans/NotoSans-Bold.ttf
-	https://github.com/google/fonts/raw/master/apache/notosans/NotoSans-BoldItalic.ttf
+	https://github.com/google/fonts/raw/master/ofl/notosans/NotoSans-Regular.ttf
+	https://github.com/google/fonts/raw/master/ofl/notosans/NotoSans-Italic.ttf
+	https://github.com/google/fonts/raw/master/ofl/notosans/NotoSans-Bold.ttf
+	https://github.com/google/fonts/raw/master/ofl/notosans/NotoSans-BoldItalic.ttf
 )
 
 build() {
