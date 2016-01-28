@@ -1,0 +1,28 @@
+# Description: Repository of firmware blobs for use with the Linux kernel. (git checkout)
+# URL:         https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/
+# Packager:    wildefyr, wildefur at gmail dot com
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git
+
+name=linux-firmware-git
+version=git
+release=1
+source=()
+branch=master
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+		if cd $name; then
+			git fetch -q; git reset --hard origin/$branch
+		else
+			git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git -b $branch $name
+			cd $name
+		fi
+
+	# Build/Package
+	make DESTDIR=$PKG FIRMWAREDIR=/lib/firmware install
+
+	# Cleanup
+	rm $PKG/lib/firmware/{Makefile,README,configure,GPL-3}
+}
