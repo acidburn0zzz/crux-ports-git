@@ -8,10 +8,10 @@ name=ttf-notoserif
 version=git
 release=1
 source=(
-	https://github.com/google/fonts/raw/master/apache/notoserif/NotoSerif-Regular.ttf
-	https://github.com/google/fonts/raw/master/apache/notoserif/NotoSerif-Italic.ttf
-	https://github.com/google/fonts/raw/master/apache/notoserif/NotoSerif-Bold.ttf
-	https://github.com/google/fonts/raw/master/apache/notoserif/NotoSerif-BoldItalic.ttf
+	https://github.com/google/fonts/raw/master/ofl/notoserif/NotoSerif-Regular.ttf
+	https://github.com/google/fonts/raw/master/ofl/notoserif/NotoSerif-Italic.ttf
+	https://github.com/google/fonts/raw/master/ofl/notoserif/NotoSerif-Bold.ttf
+	https://github.com/google/fonts/raw/master/ofl/notoserif/NotoSerif-BoldItalic.ttf
 )
 
 build() {
