@@ -277,6 +277,8 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/layer.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lcms-from-profile.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lcms-from-profile.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-correct.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-correct.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-distortion.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-distortion.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-flare.la
@@ -463,6 +465,8 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/supernova.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/svg-huerotate.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/svg-huerotate.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/svg-load.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/svg-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/svg-luminancetoalpha.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/svg-luminancetoalpha.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/svg-matrix.la
