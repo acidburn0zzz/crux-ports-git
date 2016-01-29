@@ -32,8 +32,8 @@ build() {
 	make
 	make DESTDIR=$PKG install
 
-	ln -s /usr/bin/gimp-2.9 $PKG/usr/bin/gimp
-	ln -s /usr/bin/gimp-console-2.9 $PKG/usr/bin/gimp-console
+	ln -s /usr/bin/gimp-2.99 $PKG/usr/bin/gimp
+	ln -s /usr/bin/gimp-console-2.99 $PKG/usr/bin/gimp-console
 
 	rm -rf $PKG/usr/share/{gtk-doc,locale}
 }

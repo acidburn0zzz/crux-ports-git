@@ -77,6 +77,7 @@ drwxr-xr-x	root/root	usr/include/libavutil/
 -rw-r--r--	root/root	usr/include/libavutil/log.h
 -rw-r--r--	root/root	usr/include/libavutil/lzo.h
 -rw-r--r--	root/root	usr/include/libavutil/macros.h
+-rw-r--r--	root/root	usr/include/libavutil/mastering_display_metadata.h
 -rw-r--r--	root/root	usr/include/libavutil/mathematics.h
 -rw-r--r--	root/root	usr/include/libavutil/md5.h
 -rw-r--r--	root/root	usr/include/libavutil/mem.h
@@ -116,29 +117,29 @@ drwxr-xr-x	root/root	usr/include/libswscale/
 -rw-r--r--	root/root	usr/include/libswscale/version.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libavcodec.a
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.57.22.100
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so.57 -> libavcodec.so.57.22.100
--rwxr-xr-x	root/root	usr/lib/libavcodec.so.57.22.100
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.57.22.102
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so.57 -> libavcodec.so.57.22.102
+-rwxr-xr-x	root/root	usr/lib/libavcodec.so.57.22.102
 -rw-r--r--	root/root	usr/lib/libavdevice.a
-lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.57.0.100
-lrwxrwxrwx	root/root	usr/lib/libavdevice.so.57 -> libavdevice.so.57.0.100
--rwxr-xr-x	root/root	usr/lib/libavdevice.so.57.0.100
+lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.57.0.101
+lrwxrwxrwx	root/root	usr/lib/libavdevice.so.57 -> libavdevice.so.57.0.101
+-rwxr-xr-x	root/root	usr/lib/libavdevice.so.57.0.101
 -rw-r--r--	root/root	usr/lib/libavfilter.a
-lrwxrwxrwx	root/root	usr/lib/libavfilter.so -> libavfilter.so.6.25.100
-lrwxrwxrwx	root/root	usr/lib/libavfilter.so.6 -> libavfilter.so.6.25.100
--rwxr-xr-x	root/root	usr/lib/libavfilter.so.6.25.100
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so -> libavfilter.so.6.27.100
+lrwxrwxrwx	root/root	usr/lib/libavfilter.so.6 -> libavfilter.so.6.27.100
+-rwxr-xr-x	root/root	usr/lib/libavfilter.so.6.27.100
 -rw-r--r--	root/root	usr/lib/libavformat.a
-lrwxrwxrwx	root/root	usr/lib/libavformat.so -> libavformat.so.57.21.101
-lrwxrwxrwx	root/root	usr/lib/libavformat.so.57 -> libavformat.so.57.21.101
--rwxr-xr-x	root/root	usr/lib/libavformat.so.57.21.101
+lrwxrwxrwx	root/root	usr/lib/libavformat.so -> libavformat.so.57.23.101
+lrwxrwxrwx	root/root	usr/lib/libavformat.so.57 -> libavformat.so.57.23.101
+-rwxr-xr-x	root/root	usr/lib/libavformat.so.57.23.101
 -rw-r--r--	root/root	usr/lib/libavresample.a
 lrwxrwxrwx	root/root	usr/lib/libavresample.so -> libavresample.so.3.0.0
 lrwxrwxrwx	root/root	usr/lib/libavresample.so.3 -> libavresample.so.3.0.0
 -rwxr-xr-x	root/root	usr/lib/libavresample.so.3.0.0
 -rw-r--r--	root/root	usr/lib/libavutil.a
-lrwxrwxrwx	root/root	usr/lib/libavutil.so -> libavutil.so.55.13.100
-lrwxrwxrwx	root/root	usr/lib/libavutil.so.55 -> libavutil.so.55.13.100
--rwxr-xr-x	root/root	usr/lib/libavutil.so.55.13.100
+lrwxrwxrwx	root/root	usr/lib/libavutil.so -> libavutil.so.55.16.100
+lrwxrwxrwx	root/root	usr/lib/libavutil.so.55 -> libavutil.so.55.16.100
+-rwxr-xr-x	root/root	usr/lib/libavutil.so.55.16.100
 -rw-r--r--	root/root	usr/lib/libpostproc.a
 lrwxrwxrwx	root/root	usr/lib/libpostproc.so -> libpostproc.so.54.0.100
 lrwxrwxrwx	root/root	usr/lib/libpostproc.so.54 -> libpostproc.so.54.0.100

@@ -19,6 +19,8 @@ drwxr-xr-x	root/root	usr/lib/babl-0.1/
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/cairo.so
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/fast-float.la
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/fast-float.so
+-rwxr-xr-x	root/root	usr/lib/babl-0.1/float-half.la
+-rwxr-xr-x	root/root	usr/lib/babl-0.1/float-half.so
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/float.la
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/float.so
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/gegl-fixups.la

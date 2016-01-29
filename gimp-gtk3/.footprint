@@ -1,8 +1,8 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
-lrwxrwxrwx	root/root	usr/bin/gimp -> /usr/bin/gimp-2.9
+lrwxrwxrwx	root/root	usr/bin/gimp -> /usr/bin/gimp-2.99
 -rwxr-xr-x	root/root	usr/bin/gimp-2.99
-lrwxrwxrwx	root/root	usr/bin/gimp-console -> /usr/bin/gimp-console-2.9
+lrwxrwxrwx	root/root	usr/bin/gimp-console -> /usr/bin/gimp-console-2.99
 -rwxr-xr-x	root/root	usr/bin/gimp-console-2.99
 -rwxr-xr-x	root/root	usr/bin/gimptool-3.0
 drwxr-xr-x	root/root	usr/etc/
@@ -333,6 +333,7 @@ drwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-raw-data
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-sgi
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-sunras
+-rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-svg
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tga
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-tiff
 -rwxr-xr-x	root/root	usr/lib/gimp/3.0/plug-ins/file-xbm
