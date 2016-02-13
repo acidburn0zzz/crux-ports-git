@@ -2,8 +2,12 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/servo
 drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libheapsize_plugin-3dc5c59881cb3546.so
 -rw-r--r--	root/root	usr/lib/libheapsize_plugin-516b4b77d13e3836.so
 -rw-r--r--	root/root	usr/lib/libplugins-b6f3b0a8f4a0e331.so
+-rw-r--r--	root/root	usr/lib/libplugins-f0e351f3bdf2aaea.so
 -rw-r--r--	root/root	usr/lib/libquasi_macros-1284e50d9078714d.so
+-rw-r--r--	root/root	usr/lib/libquasi_macros-172af7e27ca087ac.so
 -rw-r--r--	root/root	usr/lib/libserde_macros-29166daf0080a6c2.so
+-rw-r--r--	root/root	usr/lib/libserde_macros-cc8fd08d94a4bbe6.so
 -rw-r--r--	root/root	usr/lib/libtenacious-f1a5a76a731e117c.so
