@@ -104,8 +104,6 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/box-blur.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/brightness-contrast.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/brightness-contrast.so
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/buffer-cache.la
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/buffer-cache.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/buffer-sink.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/buffer-sink.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/buffer-source.la
@@ -259,6 +257,10 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/image-compare.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/ink-simulator.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/ink-simulator.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-curve.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-curve.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-filter.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-filter.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/introspect.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/introspect.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/invert-gamma.la
@@ -277,8 +279,6 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/layer.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lcms-from-profile.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lcms-from-profile.so
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-correct.la
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-correct.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-distortion.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-distortion.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/lens-flare.la
