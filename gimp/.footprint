@@ -342,6 +342,7 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-raw-data
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-sgi
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-sunras
+-rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-svg
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-tga
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-tiff
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-xbm
@@ -984,6 +985,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-shape-circle.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-shape-diamond.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-shape-square.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-text-layer.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-toilet-paper.png
@@ -1203,6 +1205,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-move-to-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-print-resolution.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-sample-point.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-text-dir-ltr.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-text-dir-rtl.png
@@ -1455,6 +1458,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-shape-circle.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-shape-diamond.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-shape-square.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-text-layer.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-toilet-paper.png
@@ -1676,6 +1680,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-move-to-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-print-resolution.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-sample-point.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-text-dir-ltr.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-text-dir-rtl.png
@@ -1928,6 +1933,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-shape-circle.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-shape-diamond.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-shape-square.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-text-layer.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-toilet-paper.png
@@ -2149,6 +2155,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-move-to-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-print-resolution.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-sample-point.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-text-dir-ltr.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-text-dir-rtl.png
@@ -2564,6 +2571,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/menu-arrow.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/menu.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/menubar.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/menuitem-prelight.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/menuitem.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/minus.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Dark-Side-of-Gimp/ui/notebook.png
@@ -2644,7 +2652,6 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/entry-border-active-notebook.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/entry-border-disabled-bg.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/entry-border-disabled-notebook.png
--rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/entry-border-fill-active-item.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/entry-border-fill-active.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/entry-border-fill.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/entry-border-notebook-null.png
@@ -2669,7 +2676,6 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/gimp-arrow-down.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/gimp-arrow-left.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/gimp-arrow-right-dark.png
--rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/gimp-arrow-right-prelight.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/gimp-arrow-right.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/gimp-arrow-up.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/gimp-button-default.png
@@ -2689,6 +2695,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/menu-arrow.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/menu.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/menubar.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/menuitem-prelight.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/menuitem.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/minus.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/themes/The-Light-Side-of-Gimp/ui/notebook.png

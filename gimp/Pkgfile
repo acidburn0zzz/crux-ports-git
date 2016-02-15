@@ -2,7 +2,7 @@
 # URL:         http://gimp.org
 # Packager:    Simone Rota, sip at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git libsdl gexiv2 pygtk gegl p5-xml-parser
+# Depends on:  git libsdl gexiv2 pygtk gegl p5-xml-parser libmypaint
 # Optional:    librsvg openexr poppler-glib
 
 name=gimp
