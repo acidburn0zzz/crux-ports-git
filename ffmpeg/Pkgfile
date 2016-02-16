@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://source.ffmpeg.org/ffmpeg.git -b master $name
+		git clone git://source.ffmpeg.org/ffmpeg -b master $name
 		cd $name
 	fi
 
@@ -57,7 +57,6 @@ build() {
 			--enable-version3 \
 			--enable-x11grab
 
-	[ "$CC" ] || CC=gcc
-	make CC="$CC" SHARED_PP='yes' $MAKEFLAGS
+	make
 	make DESTDIR=$PKG install install-man
 }
