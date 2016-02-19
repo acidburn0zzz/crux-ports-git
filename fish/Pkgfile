@@ -8,7 +8,7 @@
 name=fish
 version=git
 release=3
-source=()
+source=(fix-help.patch)
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -19,6 +19,9 @@ build() {
 		git clone git://github.com/fish-shell/fish-shell $name
 		cd $name
 	fi
+
+	# Fix help (thanks ryu0 for the patch)
+	patch -p1 < $SRC/fix-help.patch
 
 	autoconf
 	./configure \
