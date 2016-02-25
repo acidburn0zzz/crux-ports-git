@@ -1,6 +1,6 @@
 # Description: A font family designed to cover all the scripts encoded in the Unicode standard, sans serif version.
 # URL:         https://www.google.com/fonts/specimen/Noto+Sans
-# Packager:    Luiz de Milon, kori at notomailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:
 
@@ -15,8 +15,8 @@ source=(
 )
 
 build() {
-	 install -Dm644 NotoSans-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/NotoSans/Regular.ttf
-	 install -Dm644 NotoSans-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/NotoSans/Italic.ttf
-	 install -Dm644 NotoSans-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/NotoSans/Bold.ttf
-	 install -Dm644 NotoSans-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/NotoSans/BoldItalic.ttf
+	 install -Dm644 NotoSans-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Noto/Sans/Regular.ttf
+	 install -Dm644 NotoSans-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Noto/Sans/Italic.ttf
+	 install -Dm644 NotoSans-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Noto/Sans/Bold.ttf
+	 install -Dm644 NotoSans-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Noto/Sans/BoldItalic.ttf
 }
