@@ -4,7 +4,7 @@
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:
 
-name=ttf-notosans
+name=ttf-noto-sans
 version=git
 release=1
 source=(
