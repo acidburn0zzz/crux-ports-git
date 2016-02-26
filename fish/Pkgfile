@@ -2,12 +2,12 @@
 # URL:         http://fishshell.com
 # Packager:    lee, rtlanceroad at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git doxygen
+# Depends on:  git doxygen libpcre2
 # Optional:    python
 
 name=fish
 version=git
-release=3
+release=4
 source=(fix-help.patch)
 
 build() {
@@ -27,7 +27,8 @@ build() {
 	autoconf
 	./configure \
 		--prefix=/usr \
-		--sysconfdir=/etc
+		--sysconfdir=/etc \
+		--without-included-pcre2
 
 	make
 	make DESTDIR=$PKG install
