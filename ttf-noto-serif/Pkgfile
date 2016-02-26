@@ -1,10 +1,10 @@
 # Description: Noto is a font family designed to cover all the scripts encoded in the Unicode standard, serif version.
 # URL:         https://www.google.com/fonts/specimen/Noto+Serif
-# Packager:    Luiz de Milon, kori at notomailbox dot org
+# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:
 
-name=ttf-notoserif
+name=ttf-noto-serif
 version=git
 release=1
 source=(
@@ -15,8 +15,8 @@ source=(
 )
 
 build() {
-	 install -Dm644 NotoSerif-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/NotoSerif/Regular.ttf
-	 install -Dm644 NotoSerif-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/NotoSerif/Italic.ttf
-	 install -Dm644 NotoSerif-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/NotoSerif/Bold.ttf
-	 install -Dm644 NotoSerif-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/NotoSerif/BoldItalic.ttf
+	 install -Dm644 NotoSerif-Regular.ttf    $PKG/usr/share/fonts/X11/TTF/Noto/Serif/Regular.ttf
+	 install -Dm644 NotoSerif-Italic.ttf     $PKG/usr/share/fonts/X11/TTF/Noto/Serif/Italic.ttf
+	 install -Dm644 NotoSerif-Bold.ttf       $PKG/usr/share/fonts/X11/TTF/Noto/Serif/Bold.ttf
+	 install -Dm644 NotoSerif-BoldItalic.ttf $PKG/usr/share/fonts/X11/TTF/Noto/Serif/BoldItalic.ttf
 }
