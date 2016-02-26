@@ -152,6 +152,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/dd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/df.fish
 -rw-r--r--	root/root	usr/share/fish/completions/diff.fish
+-rw-r--r--	root/root	usr/share/fish/completions/diskutil.fish
 -rw-r--r--	root/root	usr/share/fish/completions/display.fish
 -rw-r--r--	root/root	usr/share/fish/completions/djview.fish
 -rw-r--r--	root/root	usr/share/fish/completions/djview3.fish

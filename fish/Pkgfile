@@ -20,7 +20,8 @@ build() {
 		cd $name
 	fi
 
-	# Fix help (thanks ryu0 for the patch)
+	# Fix --help (thanks ryu0 for the patch)
+	# pkgmk compresses all man pages, and unpatched fish can't read that
 	patch -p1 < $SRC/fix-help.patch
 
 	autoconf
