@@ -7,17 +7,8 @@
 name=ttf-noto-emoji
 version=git
 release=1
-source=()
+source=(https://github.com/googlei18n/noto-emoji/raw/master/fonts/NotoEmoji-Regular.ttf)
 
 build()	{
-	cd $PKGMK_SOURCE_DIR
-
-	if cd $name; then
-		git fetch -q; git reset --hard origin/master
-	else
-		git clone git://github.com/googlei18n/noto-emoji $name
-		cd $name
-	fi
-
-	install -Dm644 fonts/NotoEmoji-Regular.ttf $PKG/usr/share/fonts/X11/TTF/Noto-Emoji/Regular.ttf
+	install -Dm644 NotoEmoji-Regular.ttf $PKG/usr/share/fonts/X11/TTF/Noto/Emoji/Regular.ttf
 }
