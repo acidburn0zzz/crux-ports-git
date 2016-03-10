@@ -26,7 +26,7 @@ build () {
 		--confdir=/etc/mpv \
 		--enable-gpl3
 
-	./waf build -j$(/usr/bin/getconf _NPROCESSORS_ONLN)
+	./waf build -j$(printf '%s\n' "$MAKEFLAGS" | grep -o "\-j[0-9]*" | grep -o "[0-9]*")
 	./waf install --destdir=$PKG
 
 	rm -rf $PKG/usr/share/doc
