@@ -7,7 +7,7 @@
 
 name=mpv
 version=git
-release=3
+release=4
 source=()
 
 build () {
@@ -26,7 +26,8 @@ build () {
 		--confdir=/etc/mpv \
 		--enable-gpl3
 
-	./waf build -j$(printf '%s\n' "$MAKEFLAGS" | grep -o "\-j[0-9]*" | grep -o "[0-9]*")
+	./waf clean
+	./waf build $MAKEFLAGS
 	./waf install --destdir=$PKG
 
 	rm -rf $PKG/usr/share/doc
