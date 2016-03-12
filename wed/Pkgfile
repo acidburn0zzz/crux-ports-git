@@ -5,7 +5,7 @@
 # Depends on:  git
 
 name=wed
-version=1
+version=2
 release=git
 source=()
 
@@ -20,5 +20,5 @@ build() {
 	fi
 
 	make
-	make PREFIX=$PKG/usr install
+	make DESTDIR=$PKG PREFIX=/usr install
 }
