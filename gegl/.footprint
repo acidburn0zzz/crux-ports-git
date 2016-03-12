@@ -257,10 +257,6 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/image-compare.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/ink-simulator.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/ink-simulator.so
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-curve.la
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-curve.so
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-filter.la
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/insta-filter.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/introspect.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/introspect.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/invert-gamma.la
@@ -528,9 +524,9 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Gegl-0.3.typelib
 -rwxr-xr-x	root/root	usr/lib/libgegl-0.3.la
-lrwxrwxrwx	root/root	usr/lib/libgegl-0.3.so -> libgegl-0.3.so.0.305.0
-lrwxrwxrwx	root/root	usr/lib/libgegl-0.3.so.0 -> libgegl-0.3.so.0.305.0
--rwxr-xr-x	root/root	usr/lib/libgegl-0.3.so.0.305.0
+lrwxrwxrwx	root/root	usr/lib/libgegl-0.3.so -> libgegl-0.3.so.0.307.0
+lrwxrwxrwx	root/root	usr/lib/libgegl-0.3.so.0 -> libgegl-0.3.so.0.307.0
+-rwxr-xr-x	root/root	usr/lib/libgegl-0.3.so.0.307.0
 -rwxr-xr-x	root/root	usr/lib/libgegl-npd-0.3.la
 -rwxr-xr-x	root/root	usr/lib/libgegl-npd-0.3.so
 -rwxr-xr-x	root/root	usr/lib/libgegl-sc-0.3.la
