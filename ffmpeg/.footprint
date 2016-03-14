@@ -121,9 +121,9 @@ drwxr-xr-x	root/root	usr/include/libswscale/
 -rw-r--r--	root/root	usr/include/libswscale/version.h
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libavcodec.a
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.57.28.101
-lrwxrwxrwx	root/root	usr/lib/libavcodec.so.57 -> libavcodec.so.57.28.101
--rwxr-xr-x	root/root	usr/lib/libavcodec.so.57.28.101
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so -> libavcodec.so.57.28.103
+lrwxrwxrwx	root/root	usr/lib/libavcodec.so.57 -> libavcodec.so.57.28.103
+-rwxr-xr-x	root/root	usr/lib/libavcodec.so.57.28.103
 -rw-r--r--	root/root	usr/lib/libavdevice.a
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so -> libavdevice.so.57.0.101
 lrwxrwxrwx	root/root	usr/lib/libavdevice.so.57 -> libavdevice.so.57.0.101
