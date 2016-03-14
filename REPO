@@ -96,6 +96,8 @@ d:ttf-noto-sans
 d:ttf-noto-serif
 d:netsurf
 d:xxd
+d:lemonbar
+d:wed
 f:d41d8cd98f00b204e9800998ecf8427e:babl/.md5sum
 f:914ec1a9bd072105dcfabe6f01961d12:babl/Pkgfile
 f:0854073ea1dcc5d8f8a462a302041964:babl/.footprint
@@ -160,7 +162,7 @@ f:d41d8cd98f00b204e9800998ecf8427e:ewmhstatus/.md5sum
 f:d4f5e6d95b48b73eda6307dbbc07494d:ewmhstatus/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:ffmpeg/.md5sum
 f:55414418b8b15ef06591f2061aebd3e6:ffmpeg/Pkgfile
-f:c2f41dba89662f98f7e6e8a908c21f68:ffmpeg/.footprint
+f:877ee37a0094e2d2e7d731be6d5e982e:ffmpeg/.footprint
 f:f22b2f11c4721a1cd2aeca7797d43665:fish/.md5sum
 f:f3f3f1fd866a4f8cb4c54d3d412acb72:fish/fix-help.patch
 f:f85ba5c2015cff1267efaf50d8a90c83:fish/.footprint
@@ -170,13 +172,13 @@ f:d41d8cd98f00b204e9800998ecf8427e:fvwm/.md5sum
 f:83516b5e0d44178d6071602503c37b96:fvwm/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:gegl/.md5sum
 f:f13e46d547f9e549d25fc15f1aca13ae:gegl/Pkgfile
-f:8576bef6a581ce8825f73c7f582859da:gegl/.footprint
+f:512d2110dcf4c75334fa40b25f18f3ba:gegl/.footprint
 f:08a7e86f6a9a47b7977b1dab69df50d7:gimp-gtk3/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:gimp-gtk3/.md5sum
 f:a609def23362e493be0c99b90da6f36e:gimp-gtk3/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:gimp/.md5sum
-f:064b690bfd43e213f91fb597bb27cc5d:gimp/.footprint
 f:ffb42e00a30a898354794bde901585c0:gimp/Pkgfile
+f:de1a8bb14d5b34585c9c1564051a95c0:gimp/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:gpick/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:gpick/.md5sum
 f:790e632ac4e4ff3e47d591324449290f:gpick/Pkgfile
@@ -242,9 +244,9 @@ f:7255fc564cb54434441586b81e614dc0:mpdscribble/mpdscribble
 f:5f1b04269f8ccfc92de403d91eab3029:mpdviz/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:mpdviz/.md5sum
 f:85a9b51c1447b0695afca3ce40e5965b:mpdviz/Pkgfile
-f:7a8fa12ab1564599d242110b6dae0a42:mpv/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:mpv/.md5sum
-f:2aca4cfecf59e60e1b7f898c1d6e8ccc:mpv/Pkgfile
+f:acc86d85357a22edacf9f7c9ccbc9aca:mpv/.footprint
+f:9c00843e05f10ed96544e7bfe13fa3cb:mpv/Pkgfile
 f:8ce14cac34b3d25c9a4fb8cbcc69299b:mvwm/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:mvwm/.md5sum
 f:f22e1eb1b8b792ac9142271be9a0768c:mvwm/Pkgfile
@@ -379,7 +381,7 @@ f:d41d8cd98f00b204e9800998ecf8427e:xtitle/.md5sum
 f:9e105d91850c4210313240e4826c4006:xtitle/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:youtube-dl/.md5sum
 f:4b7e93e2abd9fb95ce6aa27857f08109:youtube-dl/Pkgfile
-f:88d3da8486948f04c004350781236fec:youtube-dl/.footprint
+f:ce69625680bd105b121dfdc5115397ed:youtube-dl/.footprint
 f:bb1b0daaf0185df462601f09cc89690b:mpvc/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:mpvc/.md5sum
 f:8189026082fb13ab9b64672fc6fdbe9b:mpvc/.footprint
@@ -404,3 +406,9 @@ f:5353c82471b8a17c470e6f7c00187847:netsurf/Pkgfile
 f:4dd0c249b609aeac42b66552e80787c5:netsurf/netsurf.sh
 f:d41d8cd98f00b204e9800998ecf8427e:xxd/.md5sum
 f:c3efb1cd2287a1615de86b8c3859a2d9:xxd/Pkgfile
+f:eff5abd4a9dc6b034f4d5a40b30d9810:lemonbar/.footprint
+f:d41d8cd98f00b204e9800998ecf8427e:lemonbar/.md5sum
+f:a2533700f0f4941a65bd1771d41e73ba:lemonbar/Pkgfile
+f:5730e6e7dba18cdbff8d492a10813143:wed/.footprint
+f:d41d8cd98f00b204e9800998ecf8427e:wed/.md5sum
+f:b5f09050a0d29527bdfeafb8cdf79b72:wed/Pkgfile
