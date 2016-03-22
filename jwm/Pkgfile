@@ -6,7 +6,7 @@
 
 name=jwm
 version=git
-release=2
+release=3
 source=()
 
 build() {
@@ -19,7 +19,7 @@ build() {
 		cd $name
 	fi
 
-	autoreconf
+	./autogen.sh
 	./configure \
 		--prefix=/usr \
 		--disable-nls
