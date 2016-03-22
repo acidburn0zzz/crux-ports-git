@@ -29,7 +29,7 @@ build() {
 	cp $SRC/core_config.h core/config.h
 	mkdir -p ../themes/theme
 	cp $SRC/{colorsfonts.h,decorations.ppm,layout.h,metadata} ../themes/theme
-	../themes/make_theme_h.sh ../themes/theme
+	../themes/make_theme_h.sh ../themes/theme > core/theme.h
 
 	make
 	make DESTDIR=$PKG prefix=/usr install
