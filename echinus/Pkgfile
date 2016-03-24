@@ -2,12 +2,12 @@
 # URL:         http://plhk.ru/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git xorg-libxrandr
+# Depends on:  git
 
 name=echinus
 version=git
-release=1
-source=()
+release=2
+source=(fix-makefile.patch)
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -19,6 +19,8 @@ build() {
 		cd $name
 	fi
 
+	patch -p1 < $SRC/fix-makefile.patch
+
 	make
-	make PREFIX=/usr DESTDIR=$PKG install
+	make DESTDIR=$PKG PREFIX=/usr install
 }
