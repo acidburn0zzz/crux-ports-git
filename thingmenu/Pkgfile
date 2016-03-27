@@ -1,0 +1,26 @@
+# Description: A simple graphical menu launcher for X11. (git checkout)
+# URL:         http://git.r-36.net/thingmenu/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git xorg-libx11
+
+name=thingmenu
+version=git
+release=1
+source=(config.h)
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://git.r-36.net/thingmenu $name
+		cd $name
+	fi
+
+	cp $SRC/config.h .
+
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}
