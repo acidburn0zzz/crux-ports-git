@@ -1,3 +1,4 @@
+d:echinus
 d:wmutils-opt
 d:linux-firmware-git
 d:mp3fs
@@ -46,6 +47,7 @@ d:od6config
 d:xcape
 d:babl
 d:cp437
+d:thingmenu
 d:simple-mtpfs
 d:connman-ncurses
 d:redshift
@@ -100,6 +102,10 @@ d:clib
 d:ranger
 d:ttf-noto-sans
 d:pianobar
+f:453cb490cfb25c7b2b34d99971581554:echinus/fix-makefile.patch
+f:0b86b356332c504db0b536f937daabac:echinus/.footprint
+f:bb72174b8443959c61827027e9ec57d6:echinus/.md5sum
+f:9e15aa040c357ce126ee1478c4c4f347:echinus/Pkgfile
 f:2d9af8336bc32e4e7058d04cbc2cf406:wmutils-opt/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:wmutils-opt/.md5sum
 f:dad4fb7e494995859222f70eea74f156:wmutils-opt/Pkgfile
@@ -255,6 +261,10 @@ f:914ec1a9bd072105dcfabe6f01961d12:babl/Pkgfile
 f:90ff8e7522e3252d191463d0913a2ced:cp437/.footprint
 f:98002f3d5817acd90dbe632ae936c6e5:cp437/.md5sum
 f:0a7fca8b35e51b02a3c7960b923228fa:cp437/Pkgfile
+f:1a4407be0f680777abbc6f251c52a6b1:thingmenu/config.h
+f:ce0947ee4ba9ab5fffcc3c3b6fe17c89:thingmenu/.footprint
+f:253b166b303980815ec5f25ff87f36ff:thingmenu/.md5sum
+f:2534e5ca7f85ede45aa3fe0e094ab593:thingmenu/Pkgfile
 f:e0ec71c7793a738bd5a3a484631c7a96:simple-mtpfs/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:simple-mtpfs/.md5sum
 f:feb5a1c8efb84789f2a0f3806db3e4d8:simple-mtpfs/Pkgfile
