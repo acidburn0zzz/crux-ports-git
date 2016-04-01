@@ -7,6 +7,7 @@ d:gpick
 d:xdesktop
 d:ttf-arimo
 d:libmypaint
+d:x11fs
 d:xtitle
 d:tint2
 d:n30f
@@ -37,7 +38,6 @@ d:ttf-noto-cjk
 d:cava
 d:servo
 d:st-xresources
-d:xdo
 d:ttf-opensans
 d:ttf-cousine
 d:resynthesizer
@@ -130,6 +130,9 @@ f:6987e2b3ceba5b6a8373f48e56d88955:ttf-arimo/Pkgfile
 f:6f3f76b79cd3c9d27f11f7600f667c46:libmypaint/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:libmypaint/.md5sum
 f:a93920d37ab6764933ac578beaf0a5f1:libmypaint/Pkgfile
+f:3b72d792a8f17d6859509f2fa7e55d71:x11fs/.footprint
+f:d41d8cd98f00b204e9800998ecf8427e:x11fs/.md5sum
+f:5afefbc436804a0a80630060f481f1ca:x11fs/Pkgfile
 f:df5c8d655d684eafaa8e17509818462c:xtitle/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:xtitle/.md5sum
 f:9e105d91850c4210313240e4826c4006:xtitle/Pkgfile
@@ -231,9 +234,6 @@ f:facdbee85dd1f88c6fec5c2ea113b02f:st-xresources/config.h
 f:6b0d6180cf988e7ee7779c0dce6ded3b:st-xresources/.footprint
 f:de7ac5ba5379fa201fce17d73d9e80b1:st-xresources/.md5sum
 f:8e0affa62282e0dee75d4898a68880f3:st-xresources/Pkgfile
-f:75377c19a8acff01bbaa26292059ee8b:xdo/.footprint
-f:d41d8cd98f00b204e9800998ecf8427e:xdo/.md5sum
-f:61c0b5d75208acd89c851a97987a16dc:xdo/Pkgfile
 f:b207ad4ef415122edeaff2a50aed14cb:ttf-opensans/.footprint
 f:4053b84050139d509f0ba6939e102616:ttf-opensans/.md5sum
 f:2fa7b0c4d91828d74bad02d9158c98e0:ttf-opensans/Pkgfile
@@ -369,7 +369,7 @@ f:83516b5e0d44178d6071602503c37b96:fvwm/Pkgfile
 f:cc68217707ec2c454e2ec1d819fd4497:ttf-inconsolata/.footprint
 f:602a4e3602875caa573b171a7ddd4b98:ttf-inconsolata/.md5sum
 f:8738aacf430319e0c48a2725f6ab1664:ttf-inconsolata/Pkgfile
-f:acc86d85357a22edacf9f7c9ccbc9aca:mpv/.footprint
+f:3114e2bc6a98c182f60399404ab88584:mpv/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:mpv/.md5sum
 f:9c00843e05f10ed96544e7bfe13fa3cb:mpv/Pkgfile
 f:9f35599bc19e43d05efac7fb1ed55c1a:kakoune/.footprint
