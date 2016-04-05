@@ -1,6 +1,6 @@
-# Description: Tiny system info for CRUX.
+# Description: Info script for minimal *nix systems.
 # URL:         https://github.com/jschx/ufetch
-# Packager:    Joe Schillinger, js1 at openmailbox dot org
+# Packager:    Joe Schillinger, me at schil dot li
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  
 
@@ -19,5 +19,5 @@ build() {
 		cd $name
 	fi
 
-	install -Dm755 ufetch $PKG/usr/bin/ufetch
+	install -Dm755 ufetch-crux $PKG/usr/bin/ufetch
 }
