@@ -7,7 +7,10 @@
 name=slock
 version=git
 release=1
-source=(http://tools.suckless.org/slock/patches/slock-20160316-quickcancel.diff)
+source=(
+	http://tools.suckless.org/slock/patches/slock-20160316-quickcancel.diff
+	config.h
+)
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -20,6 +23,8 @@ build() {
 	fi
 
 	patch -p1 < $SRC/slock-20160316-quickcancel.diff
+
+	cp $SRC/config.h .
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install
