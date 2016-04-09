@@ -1,0 +1,26 @@
+# Description: Simple X display locker. (git checkout)
+# URL:         http://tools.suckless.org/slock/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git xorg-libxext
+
+name=slock
+version=git
+release=1
+source=(http://tools.suckless.org/slock/patches/slock-20160316-quickcancel.diff)
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://git.suckless.org/slock $name
+		cd $name
+	fi
+
+	patch -p1 < $SRC/slock-20160316-quickcancel.diff
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}
