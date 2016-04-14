@@ -2,7 +2,6 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gegl
 -rwxr-xr-x	root/root	usr/bin/gegl-imgcmp
--rwxr-xr-x	root/root	usr/bin/gegl-tester
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/gegl-0.3/
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-apply.h
@@ -12,10 +11,10 @@ drwxr-xr-x	root/root	usr/include/gegl-0.3/
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-buffer-iterator.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-buffer.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-c.h
--rw-r--r--	root/root	usr/include/gegl-0.3/gegl-chant.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-color.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-cpuaccel.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-curve.h
+-rw-r--r--	root/root	usr/include/gegl-0.3/gegl-debug.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-enums.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-graph-debug.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/gegl-init.h
@@ -162,8 +161,6 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/cubism.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/darken.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/darken.so
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/dcraw-load.la
--rwxr-xr-x	root/root	usr/lib/gegl-0.3/dcraw-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/deinterlace.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/deinterlace.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/demosaic-bimedian.la
@@ -238,6 +235,10 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/gegl-buffer-load-op.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/gegl-buffer-save-op.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/gegl-buffer-save-op.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/gegl.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/gegl.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/gluas.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/gluas.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/gradient-map.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/gradient-map.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/grey.la
@@ -503,6 +504,8 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.3/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/vector-fill.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/vector-stroke.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/vector-stroke.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/vhsfix.la
+-rwxr-xr-x	root/root	usr/lib/gegl-0.3/vhsfix.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/video-degradation.la
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/video-degradation.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.3/vignette.la
