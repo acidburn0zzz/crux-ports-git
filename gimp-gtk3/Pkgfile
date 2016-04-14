@@ -20,8 +20,18 @@ build() {
 		cd $name
 	fi
 
+	sed -i -e 's/automake-1.11/automake-1.14/g;s/aclocal-1.11/aclocal-1.14/g' autogen.sh
+
 	./autogen.sh \
 			--prefix=/usr \
+			--sysconfdir=/etc \
+			--enable-mp \
+			--disable-python \
+			--with-gif-compression=lzw \
+			-with-libcurl \
+			--without-hal \
+			--without-gvfs \
+			--without-gnomevfs \
 			--disable-static \
 			--disable-gtk-doc \
 			--disable-nls \
