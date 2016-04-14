@@ -8,7 +8,12 @@ drwxr-xr-x	root/root	usr/etc/fish/completions/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/python2.7/
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/
--rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.04.06-py2.7.egg-info
+drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.4.13-py2.7.egg-info/
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.4.13-py2.7.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.4.13-py2.7.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.4.13-py2.7.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.4.13-py2.7.egg-info/entry_points.txt
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl-2016.4.13-py2.7.egg-info/top_level.txt
 drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/YoutubeDL.pyc
@@ -288,6 +293,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cliphunter.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cliphunter.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cliphunter.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cliprs.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cliprs.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/cliprs.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/clipsyndicate.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/clipsyndicate.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/clipsyndicate.pyo
@@ -495,6 +503,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/expotv.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/expotv.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/expotv.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/extractors.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/extractors.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/extractors.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/extremetube.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/extremetube.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/extremetube.pyo
@@ -1170,6 +1181,9 @@ drwxr-xr-x	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/pornoxo.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/pornoxo.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/pornoxo.pyo
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/presstv.py
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/presstv.pyc
+-rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/presstv.pyo
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/primesharetv.py
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/primesharetv.pyc
 -rw-r--r--	root/root	usr/lib/python2.7/site-packages/youtube_dl/extractor/primesharetv.pyo
