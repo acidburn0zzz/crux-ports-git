@@ -20,5 +20,5 @@ build() {
 	fi
 
 	make
-	make PREFIX=$PKG/usr install
+	make DESTDIR=$PKG install
 }
