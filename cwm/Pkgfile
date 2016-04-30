@@ -1,0 +1,24 @@
+# Description: Portable version of OpenBSD's cwm. (git checkout)
+# URL:         https://github.com/chneukirchen/cwm
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git xorg-libxft xorg-libx11 xorg-libxinerama xorg-libxrandr fontconfig
+
+name=cwm
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/chneukirchen/cwm $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}
