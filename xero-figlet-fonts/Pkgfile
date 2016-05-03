@@ -20,7 +20,7 @@ build() {
 			cd $name
 		fi
 
-		for i in *.flf; do
+		for i in *.{f,t}lf; do
 			install -Dm755 "$i" $PKG/usr/share/figlet/"$i"
 		done
 }
