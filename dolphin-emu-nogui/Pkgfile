@@ -2,7 +2,7 @@
 # URL:         http://www.dolphin-emu.org/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  cmake git libsdl2 ffmpeg xorg-libxxf86vm xorg-libevdev 
+# Depends on:  cmake git libsdl2 ffmpeg xorg-libxxf86vm xorg-libevdev
 
 name=dolphin-emu-nogui
 version=git
