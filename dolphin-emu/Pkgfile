@@ -1,0 +1,33 @@
+# Description: A GameCube / Wii / Triforce emulator. (git checkout)
+# URL:         http://www.dolphin-emu.org/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  cmake git libsdl2 ffmpeg xorg-libxxf86vm xorg-libevdev wxgtk
+
+name=dolphin-emu
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/dolphin-emu/dolphin $name
+		cd $name
+	fi
+
+	rm -rf build && mkdir build && cd build
+	cmake .. \
+		-DDISABLE_WX=FALSE \
+		-DENABLE_QT2=FALSE \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_CXX_FLAGS=-fno-pie \
+		-DENABLE_LTO=TRUE \
+		-DENABLE_SDL=TRUE
+
+	make all
+	make DESTDIR=$PKG install
+}
