@@ -2,7 +2,7 @@
 # URL:         http://www.dolphin-emu.org/
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  cmake git libsdl2 ffmpeg xorg-libxxf86vm
+# Depends on:  cmake git libsdl2 ffmpeg xorg-libxxf86vm xorg-libevdev 
 
 name=dolphin-emu
 version=git
@@ -19,17 +19,14 @@ build() {
 		cd $name
 	fi
 
-	if cd build; then
-		rm -r *
-	else
-		mkdir build
-		cd build
-	fi
-
-	cmake ../ \
-		-DDISABLE_WX=ON \
+	rm -rf build && mkdir build && cd build
+	cmake .. \
+		-DDISABLE_WX=TRUE \
+		-DENABLE_QT2=FALSE \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DCMAKE_BUILD_TYPE=Release
+		-DCMAKE_CXX_FLAGS=-fno-pie \
+		-DENABLE_LTO=TRUE \
+		-DENABLE_SDL=TRUE
 
 	make all
 	make DESTDIR=$PKG install

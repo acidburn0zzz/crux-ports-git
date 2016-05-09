@@ -15,11 +15,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GC/
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/010.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/301.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/C94.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/C96.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/C97.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/C9M.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/C9X.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/C.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/D43.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/D43E01.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/D43J01.ini
@@ -27,86 +23,46 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/DD2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/DLS.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/DTL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FA6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FA7.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FA8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FA9.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAK.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAO.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAX.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FB4.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FB5.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBR.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBY.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FBZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FC3.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FC6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FC7.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FC8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCR.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCY.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FCZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FD2.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FD6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FD7.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDF.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDO.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FDV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FEC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FED.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FEI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FEM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FEN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FEQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FER.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FES.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FEU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FFA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FFD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FFE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FFL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FFM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FFN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FFQ.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E52.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E53.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E54.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E55.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E56.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E57.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E5W.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E5Z.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E62.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E63.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E6M.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E6N.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E6Q.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E6V.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E6W.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E6X.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E73.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E79.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/E7Z.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/F.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAAE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FABE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FABP01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FACE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FACP01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAFE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAGE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAHE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAIE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAJE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAJP01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAKE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAKP01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FALE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAME01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FANE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FAOE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FARE01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/FASE01.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/G2B.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/G2C.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/G2F.ini
@@ -185,6 +141,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GAK.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GAL.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GALE01r0.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GALE01r1.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GALE01r2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GALP01.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GAM.ini
@@ -312,6 +269,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GFG.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GFH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GFK.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GFO.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GFP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GFQ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GFT.ini
@@ -431,6 +389,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GLB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GLC.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GLE.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GLG.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GLL.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GLM.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GLME01.ini
@@ -588,6 +547,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GSO.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GSP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GSQ.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GSR.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GSS.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GSSE8P.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GST.ini
@@ -681,6 +641,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GXR.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GXS.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GXSP8P.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GXU.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GXX.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GY2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GYA.ini
@@ -693,6 +654,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GYW.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GZ2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GZ2E01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GZ2J01.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GZ2P01.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GZ3.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/GZ3E70.ini
@@ -719,230 +681,57 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/HCL.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/HCQ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/HCS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JA4.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JA6.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/J.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JA7.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JA8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAD.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAF.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JAZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JB3.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBI.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBK.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBR.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBT.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JBY.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JC4.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JC7.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JC8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCC.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCK.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCN.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCW.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCX.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCY.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JCZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDN.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDX.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JDZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JEB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JEC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JEH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/JOD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAF.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAK.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAO.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/LAQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MA3.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MA6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MA7.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MA8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAF.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAO.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAR.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAX.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAY.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MB6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MB7.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MB8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBF.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBK.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBO.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBR.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBX.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBY.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCC.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/L.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/M.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MAK.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MB3.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MBA.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCK.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCQ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCR.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCS.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCV.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCW.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCY.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/MCZ.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/N.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAA.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAC.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAD.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAE.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAF.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAK.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAL.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAN.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/NAR.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PA6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PA7.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PA8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PA9.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAF.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAK.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAL.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAO.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAR.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PAW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PB2.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PB3.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PB6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PB8.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PB9.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBI.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBJ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBM.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBN.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBX.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PBZ.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PC2.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/P.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PC6.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCE.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCH.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCO.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCR.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PCV.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PDJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PM4.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PRJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PZL.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/PZLE01.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QA3.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAA.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAB.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAC.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAD.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAF.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAG.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAP.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAS.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAT.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAU.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QAW.ini
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/QBB.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/Q.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R22.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R25.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R29.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R2D.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R2G.ini
@@ -977,6 +766,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R69.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R6B.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R6N.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R6Q.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R6T.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R6Y.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R7E.ini
@@ -993,15 +783,20 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R8L.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R8P.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R8X.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R92.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R96.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R9D.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R9F.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/R9I.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RB4.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RB7.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBI.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBK.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBL.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBM.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBO.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBQ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBR.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBT.ini
@@ -1009,6 +804,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBW.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBX.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RBZ.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RCC.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RCJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RCJE8P.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RCK.ini
@@ -1039,12 +835,17 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RFF.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RFQ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RFS.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RG2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RG5.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RG6.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGA.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGL.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGM.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGQ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGQE70.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGS.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGV.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RGW.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RH2.ini
@@ -1055,6 +856,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RHO.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RHT.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RHU.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RI3.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RIB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RIH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RIJ.ini
@@ -1062,6 +864,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RIP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RIU.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RIV.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RJ2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RJ3.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RJA.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RJC.ini
@@ -1076,6 +879,8 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RLE.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RLG.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RLJ.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RLS.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RLT.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RLX.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RM2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RM3.ini
@@ -1091,6 +896,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RMHP08.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RMK.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RML.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RMP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RMS.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RNE.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RNH.ini
@@ -1098,6 +904,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RNJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RNM.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RNO.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RNX.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RO2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RO2P7N.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RO3.ini
@@ -1114,6 +921,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RP7.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RPB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RPD.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RPG.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RPJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RPO.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RPP.ini
@@ -1157,12 +965,15 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RT3.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RT4.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RT5.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RT8.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RT9.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTB.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTC.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTM.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTN.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTR.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTU.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RTZ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RUC.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RUU.ini
@@ -1194,11 +1005,13 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZDE01r2.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZDJ01.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZDP01.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZF.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZJP69.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZO.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZT.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZY.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/RZZ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/S2E.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/S2I.ini
@@ -1270,6 +1083,7 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SN4.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SNC.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SND.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SNG.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SNJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SNJE69.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SNY.ini
@@ -1282,8 +1096,10 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SPP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SPT.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SPV.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SQD.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SQM.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SR5.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SRO.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SRQ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SS3.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/SSQ.ini
@@ -1382,7 +1198,10 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/GameSettings/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WOT.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WOY.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WP4.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WPA.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WPC.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WPF.ini
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WPH.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WPJ.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WPP.ini
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/GameSettings/WPS.ini
@@ -1417,33 +1236,87 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Maps/
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Resources/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Dolphin.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Australia.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Australia@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Australia@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Europe.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Europe@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Europe@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_France.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_France@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_France@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Germany.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Germany@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Germany@4x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_International.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_International@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_International@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Italy.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Italy@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Italy@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Japan.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Japan@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Japan@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Korea.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Korea@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Korea@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Netherlands.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Netherlands@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Netherlands@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Russia.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Russia@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Russia@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Spain.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Spain@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Spain@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Taiwan.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Taiwan@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Taiwan@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_USA.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_USA@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_USA@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Unknown.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Unknown@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Flag_Unknown@4x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_File.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_File@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_File@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Gamecube.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Gamecube@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Gamecube@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Wad.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Wad@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Wad@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Wii.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Wii@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/Platform_Wii@4x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/dolphin_logo.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/dolphin_logo@2x.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/isoproperties_disc.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/isoproperties_file.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/isoproperties_folder.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/nobanner.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/nobanner@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/rating0.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/rating1.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/rating2.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/rating3.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/rating4.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/rating5.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_add_breakpoint.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_add_memorycheck.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_debugger_delete.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_debugger_goto_pc.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_debugger_set_pc.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_debugger_skip.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_debugger_step.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_debugger_step_out.png
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Resources/toolbar_debugger_step_over.png
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Shaders/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Shaders/16bit.glsl
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Shaders/32bit.glsl
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Shaders/Anaglyph/
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Shaders/Anaglyph/dubois-LCD-Amber-Blue.glsl
+-rw-r--r--	root/root	usr/share/dolphin-emu/sys/Shaders/Anaglyph/dubois-LCD-Green-Magenta.glsl
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Shaders/Anaglyph/dubois.glsl
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Shaders/Anaglyph/fullcolor.glsl
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Shaders/Anaglyph/grayscale.glsl
@@ -1490,7 +1363,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Shaders/Anaglyph/
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/README.txt
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/audio.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/browse.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/classic.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/config.png
@@ -1498,21 +1370,14 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/gcpad.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/graphics.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/help.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/nobanner.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/open.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/pause.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/play.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/refresh.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/screenshot.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/stop.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/toolbar_add_breakpoint.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/toolbar_add_memorycheck.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/toolbar_debugger_delete.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Boomy/wiimote.png
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/README.txt
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/audio.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/audio@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/browse.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/browse@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/classic.png
@@ -1525,8 +1390,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/gcpad@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/graphics.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/graphics@2x.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/nobanner.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/nobanner@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/open.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/open@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/pause.png
@@ -1542,9 +1405,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/wiimote.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Blue/wiimote@2x.png
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/README.txt
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/audio.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/audio@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/browse.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/browse@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/classic.png
@@ -1557,8 +1417,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/gcpad@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/graphics.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/graphics@2x.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/nobanner.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/nobanner@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/open.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/open@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/pause.png
@@ -1574,9 +1432,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/wiimote.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Lite/wiimote@2x.png
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/README.txt
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/audio.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/audio@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/browse.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/browse@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/classic.png
@@ -1589,8 +1444,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/gcpad@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/graphics.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/graphics@2x.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/nobanner.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/nobanner@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/open.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/open@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/pause.png
@@ -1606,9 +1459,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/wiimote.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean Pink/wiimote@2x.png
 drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean/
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/README.txt
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/audio.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/audio@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/browse.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/browse@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/classic.png
@@ -1621,8 +1471,6 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Themes/Clean/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/gcpad@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/graphics.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/graphics@2x.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/nobanner.png
--rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/nobanner@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/open.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/open@2x.png
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Themes/Clean/pause.png
@@ -1660,5 +1508,15 @@ drwxr-xr-x	root/root	usr/share/dolphin-emu/sys/Wii/shared2/wc24/mbox/
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/Wii/shared2/wc24/nwc24msg.cfg
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/codehandler.bin
 -rw-r--r--	root/root	usr/share/dolphin-emu/sys/totaldb.dsy
-drwxr-xr-x	root/root	usr/share/pixmaps/
--rw-r--r--	root/root	usr/share/pixmaps/dolphin-emu.xpm
+drwxr-xr-x	root/root	usr/share/icons/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/48x48/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/48x48/apps/dolphin-emu.png
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/dolphin-emu.svg
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man6/
+-rw-r--r--	root/root	usr/share/man/man6/dolphin-emu-nogui.6.gz
+-rw-r--r--	root/root	usr/share/man/man6/dolphin-emu.6.gz
