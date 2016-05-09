@@ -2,10 +2,10 @@
 # URL:         https://github.com/rgburke/wed
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Packager:    onodera, onodera at openmailbox dot org
-# Depends on:  git
+# Depends on:  git source-highlight
 
 name=wed
-version=2
+version=3
 release=git
 source=()
 
