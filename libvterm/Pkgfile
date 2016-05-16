@@ -1,4 +1,4 @@
-# Description: Abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator - neovim fork
+# Description: Abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator. (git checkout)
 # URL:         https://github.com/neovim/libvterm
 # Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
@@ -20,5 +20,5 @@ build() {
 	fi
 
 	make
-	make PREFIX="/usr" MANDIR="/usr/man" DESTDIR=${PKG} install
+	make PREFIX=/usr DESTDIR=$PKG install
 }
