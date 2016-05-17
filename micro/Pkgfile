@@ -1,0 +1,27 @@
+# Description: A modern and intuitive terminal-based text editor. (git checkout)
+# URL:         https://github.com/zyedidia/micro
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  onodera, https://github.com/onodera-punpun/crux-ports/issues
+# Depends on:  go
+# Optional:    xclip
+
+name=micro
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/zyedidia/micro $name
+		cd $name
+	fi
+
+	export GOPATH=$(pwd)
+
+	make
+	install -Dm755 micro $PKG/usr/bin/micro
+}
