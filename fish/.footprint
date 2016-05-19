@@ -8,6 +8,7 @@ drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/fish
 -rwxr-xr-x	root/root	usr/bin/fish_indent
+-rwxr-xr-x	root/root	usr/bin/fish_key_reader
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/fish/
@@ -373,6 +374,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/rgrep.fish
 -rw-r--r--	root/root	usr/share/fish/completions/rm.fish
 -rw-r--r--	root/root	usr/share/fish/completions/rmdir.fish
+-rw-r--r--	root/root	usr/share/fish/completions/rmmod.fish
 -rw-r--r--	root/root	usr/share/fish/completions/root.fish
 -rw-r--r--	root/root	usr/share/fish/completions/rpm.fish
 -rw-r--r--	root/root	usr/share/fish/completions/rsync.fish
@@ -690,6 +692,7 @@ drwxr-xr-x	root/root	usr/share/fish/man/man1/
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_config.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_indent.1.gz
+-rw-r--r--	root/root	usr/share/fish/man/man1/fish_key_reader.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_prompt.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_realpath.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_right_prompt.1.gz
@@ -783,5 +786,6 @@ drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/fish.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/fish_indent.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/fish_key_reader.1.gz
 drwxr-xr-x	root/root	usr/share/pkgconfig/
 -rw-r--r--	root/root	usr/share/pkgconfig/fish.pc
