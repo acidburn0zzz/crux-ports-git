@@ -1,0 +1,3 @@
+#!/bin/fish
+
+fish_update_completions
