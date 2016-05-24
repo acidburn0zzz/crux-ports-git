@@ -3,11 +3,11 @@
 # Packager:    Simone Rota, sip at crux dot nu
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git babl gtk intltool json-glib
-# Optional:    ffmpeg openexr libtiff librsvg jasper lua
+# Optional:    ffmpeg openexr libtiff librsvg lua jasper lensfun
 
 name=gegl
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -29,6 +29,6 @@ build() {
 
 	make
 	make DESTDIR=$PKG install
-  
-	rm -r $PKG/usr/share
+
+	rm -rf $PKG/usr/share/locale
 }

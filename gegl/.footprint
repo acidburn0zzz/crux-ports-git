@@ -538,3 +538,6 @@ lrwxrwxrwx	root/root	usr/lib/libgegl-0.3.so.0 -> libgegl-0.3.so.0.307.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gegl-0.3.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gegl-sc-0.3.pc
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/gir-1.0/
+-rw-r--r--	root/root	usr/share/gir-1.0/Gegl-0.3.gir
