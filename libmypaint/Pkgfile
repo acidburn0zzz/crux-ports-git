@@ -2,11 +2,11 @@
 # URL:         https://github.com/mypaint/libmypaint
 # Packager:    Lains, lainsce at airmail dot cc
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  scons json-c python gegl gobject-introspection
+# Depends on:  json-c python gegl gobject-introspection
 
 name=libmypaint
 version=git
-release=2
+release=3
 source=()
 
 build() {
@@ -19,8 +19,13 @@ build() {
 		cd $name
 	fi
 
-	scons prefix=/usr enable_gegl=true use_sharedlib=yes \
-		--install-sandbox=$PKG $PKG
+	./autogen.sh
+	./configure --prefix=/usr \
+		--enable-gegl \
+		--disable-nls
 
-	rm -rf $PKG/share/locale
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
 }
