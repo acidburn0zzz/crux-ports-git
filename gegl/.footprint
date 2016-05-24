@@ -65,6 +65,7 @@ drwxr-xr-x	root/root	usr/include/gegl-0.3/operation/
 -rw-r--r--	root/root	usr/include/gegl-0.3/operation/gegl-operation-composer3.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/operation/gegl-operation-context.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/operation/gegl-operation-filter.h
+-rw-r--r--	root/root	usr/include/gegl-0.3/operation/gegl-operation-handlers.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/operation/gegl-operation-meta-json.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/operation/gegl-operation-meta.h
 -rw-r--r--	root/root	usr/include/gegl-0.3/operation/gegl-operation-point-composer.h
