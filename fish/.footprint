@@ -620,6 +620,8 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/down-or-search.fish
 -rw-r--r--	root/root	usr/share/fish/functions/eval.fish
 -rw-r--r--	root/root	usr/share/fish/functions/export.fish
+-rw-r--r--	root/root	usr/share/fish/functions/fish_clipboard_copy.fish
+-rw-r--r--	root/root	usr/share/fish/functions/fish_clipboard_paste.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_config.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_default_key_bindings.fish
 -rw-r--r--	root/root	usr/share/fish/functions/fish_fallback_prompt.fish
