@@ -1,0 +1,24 @@
+# Description: A small tool for X11 that writes the color value on your screen at the cursor position to stdout, in RGB. (git checkout)
+# URL:         https://github.com/Ancurio/colorpicker
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  gtk
+
+name=colorpicke
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/Ancurio/colorpicker $name
+		cd $name
+	fi
+
+	make
+	install -Dm755 colorpicker $PKG/usr/bin/colorpicker
+}
