@@ -3,7 +3,7 @@
 # Packager:    lee, rtlanceroad at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git doxygen libpcre2
-# Optional:    python
+# Optional:    python xsel
 
 name=fish
 version=git
