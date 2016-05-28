@@ -4,7 +4,7 @@
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  gtk
 
-name=colorpicke
+name=colorpicker
 version=git
 release=1
 source=()
