@@ -3,7 +3,7 @@
 # Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, https://github.com/onodera-punpun/crux-ports/issues
 # Depends on:  go
-# Optional:    xclip
+# Optional:    xclip xsel
 
 name=micro
 version=git
