@@ -501,6 +501,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_ant_targets.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_atool_archive_contents.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_bittorrent.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_blockdevice.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_cd.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_command.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_complete_convert_options.fish
