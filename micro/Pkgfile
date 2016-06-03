@@ -1,6 +1,5 @@
 # Description: A modern and intuitive terminal-based text editor. (git checkout)
 # URL:         https://github.com/zyedidia/micro
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, https://github.com/onodera-punpun/crux-ports/issues
 # Depends on:  go
 # Optional:    xclip xsel

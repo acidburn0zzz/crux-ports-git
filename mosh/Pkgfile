@@ -1,6 +1,5 @@
 # Description: Mobile shell. (git checkout)
 # URL:         https://github.com/mobile-shell/mosh
-# Packager:    wildefyr, wildefur at gmail dot come
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git protobuf
 

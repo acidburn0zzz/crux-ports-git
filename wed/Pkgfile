@@ -1,7 +1,6 @@
 # Description: A terminal text editor with key bindings commonly used in Windows based editors. (git checkout)
 # URL:         https://github.com/rgburke/wed
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Packager:    onodera, onodera at openmailbox dot org
 # Depends on:  git source-highlight
 
 name=wed

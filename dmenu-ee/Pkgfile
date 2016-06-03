@@ -1,6 +1,5 @@
 # Description: dmenu with XFT, quiet, xy, token, fuzzy matching, followfocus, tabnav, filter and mouse support. (git checkout)
 # URL:         https://github.com/toolpunk/dmenu-ee
-# Packager:    skrzyp, jot dot skrzyp at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxft xorg-libxinerama
 

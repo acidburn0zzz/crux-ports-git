@@ -1,6 +1,5 @@
 # Description: A collection of tools similar in spirit to util-linux but much simpler (git checkout)
 # URL:         http://tools.suckless.org/ubase
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
 

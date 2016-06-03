@@ -1,6 +1,5 @@
 # Description: Simple MTP fuse filesystem driver. (git checkout)
 # URL:         https://github.com/phatina/simple-mtpfs/
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libid3tag fuse glib libmtp
 

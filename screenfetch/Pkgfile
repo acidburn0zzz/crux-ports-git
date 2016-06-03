@@ -1,6 +1,5 @@
 # Description: Fetches system/theme information in terminal for Linux desktop screenshots.
 # URL:         https://github.com/KittyKatt/screenFetch
-# Packager:    Joe Schillinger, me at schil dot li
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  
 # Optional:    scrot

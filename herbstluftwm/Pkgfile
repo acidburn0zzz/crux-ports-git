@@ -1,6 +1,5 @@
 # Description: Manual tiling window manager for X.
 # URL:         http://herbstluftwm.org
-# Packager:    skrzyp, jot dot skrzyp at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libx11 xorg-libxinerama glib 
 

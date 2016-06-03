@@ -1,6 +1,5 @@
 # Description: A dynamic, functional language designed for building scalable and maintainable applications. (git checkout)
 # URL:         http://elixir-lang.org/
-# Packager:    Luiz de Milon, kori at openmailbox.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git erlang
 

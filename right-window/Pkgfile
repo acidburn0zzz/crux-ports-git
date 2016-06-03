@@ -1,6 +1,5 @@
 # Description: Utility to move the focus between windows following cardinal directions. (git checkout)
 # URL:         https://github.com/ntrrgc/right-window
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-server
 

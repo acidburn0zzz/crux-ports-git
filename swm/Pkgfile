@@ -1,6 +1,5 @@
 # Description: Simple window manager (git checkout)
 # URL:         https://github.com/dcat/swm
-# Packager:    Eduardo Lavaque, me at greduan dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxcb
 

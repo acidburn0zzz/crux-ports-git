@@ -1,6 +1,5 @@
 # Description: A simple compositing manager for X. (git checkout)
 # URL:         https://github.com/aoba1217/ortle
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxcomposite mesa3d
 

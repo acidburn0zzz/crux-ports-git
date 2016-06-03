@@ -1,6 +1,5 @@
 # Description:  Console-based pandora.com player
 # URL:          http://6xq.net/projects/pianobar/
-# Packager:     Ethan Smith, esmth at openmailbox dot org
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:   git	json-c libao 
 

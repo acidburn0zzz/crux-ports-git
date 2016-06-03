@@ -1,6 +1,5 @@
 # Description: A kernel module to create V4L2 loopback devices. (git checkout)
 # URL:         https://github.com/umlaeute/v4l2loopback/
-# Packager:    onodera, ondera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  
 

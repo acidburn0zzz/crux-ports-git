@@ -1,6 +1,5 @@
 # Description: A compositor for X. (git checkout)
 # URL:         https://github.com/chjj/compton
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libconfig libpcre mesa3d xorg-libxcomposite xorg-libxinerama xorg-libxrandr xorg-libxdamage
 

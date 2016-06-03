@@ -1,6 +1,5 @@
 # Description: A tool that outputs X virtual desktop numbers. (git checkout)
 # URL:         https://github.com/onodera-punpun/xdesktop
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  xorg-xcb-util-wm
 

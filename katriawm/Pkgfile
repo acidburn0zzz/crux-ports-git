@@ -1,6 +1,5 @@
 # Description: A non-reparenting, dynamic window manager with decorations. (git checkout)
 # URL:         https://www.uninformativ.de/projects/katriawm/
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libx11 xorg-libxft xorg-libxrandr
 

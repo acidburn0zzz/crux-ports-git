@@ -1,6 +1,5 @@
 # Description: Experiment for a better code editor. (git checkout)
 # URL:         https://github.com/mawww/kakoune
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  onodera, onodera at openmailbox dot org
 # Depends on:  boost git
 

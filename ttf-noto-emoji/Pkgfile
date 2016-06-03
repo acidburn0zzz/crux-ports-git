@@ -1,6 +1,5 @@
 # Description: Google Noto emoji fonts. (git checkout)
 # URL:         https://www.google.com/get/noto/
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  fontconfig
 

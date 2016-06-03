@@ -1,6 +1,5 @@
 # Description: C++ command line client for tldr. (git checkout)
 # URL:         https://github.com/tldr-pages/tldr-cpp-client
-# Packager:    arcetera, arcetera@openmailbox.org
 # Depends on:  git clang
 
 name=tldr

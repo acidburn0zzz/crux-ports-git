@@ -1,6 +1,5 @@
 # Description: Repository of firmware blobs for use with the Linux kernel. (git checkout)
 # URL:         https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/
-# Packager:    wildefyr, wildefur at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
 

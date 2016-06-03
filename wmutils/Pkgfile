@@ -1,7 +1,6 @@
 # Description: wmutils' core is a set of tools for X windows manipulation (git checkout)
 # URL:         https://github.com/wmutils/core
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Packager:    Eduardo Lavaque, me at greduan dot com
 # Depends on:  git xorg-libxcb
 
 name=wmutils

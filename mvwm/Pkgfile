@@ -1,6 +1,5 @@
 # Description: Extremely powerful ICCCM-compliant multiple virtual desktop window manager. (git checkout)
 # URL:         https://github.com/ThomasAdam/mvwm
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git imlib2
 

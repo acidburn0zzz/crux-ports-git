@@ -1,6 +1,5 @@
 # Description: A background browser and setter for X windows.
 # URL:         https://github.com/l3ib/nitrogen/
-# Packager:    Luiz de Milon, kori at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  gtkmm librsvg
 

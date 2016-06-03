@@ -1,6 +1,5 @@
 # Description: Helper script to install windows dependacies for wine. (git checkout)
 # URL:         https://wiki.winehq.org/Winetricks
-# Packager:    wildefyr, wildefur at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git wine
 

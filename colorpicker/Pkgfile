@@ -1,6 +1,5 @@
 # Description: A small tool for X11 that writes the color value on your screen at the cursor position to stdout, in RGB. (git checkout)
 # URL:         https://github.com/Ancurio/colorpicker
-# Packager:    onodera, onodera at openmailbox dot org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  gtk
 

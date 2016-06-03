@@ -1,6 +1,5 @@
 # Description: Curses interface for the daemon of the BitTorrent client Transmission. (git checkout)
 # URL:         https://github.com/fagga/transmission-remote-cli
-# Packager:    wildefyr, wildefur at gmail dot com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git transmission
 
