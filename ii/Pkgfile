@@ -1,0 +1,26 @@
+# Description: minimalist FIFO and filesystem-based IRC client. (git checkout)
+# URL:         http://tools.suckless.org/ii/
+# Packager:    onodera, onodera at openmailbox dot org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git imlib2
+
+name=ii
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://git.suckless.org/ii $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+    
+	rm -rf $PKG/usr/share/doc
+}
