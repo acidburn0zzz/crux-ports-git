@@ -21,6 +21,8 @@ build() {
 
 	export GOPATH=$(pwd)
 
+	sed -i "s/go build/go build -v/" Makefile
+
 	make
 	install -Dm755 micro $PKG/usr/bin/micro
 }
