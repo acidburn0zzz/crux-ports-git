@@ -1,6 +1,6 @@
 # Description: A modern and intuitive terminal-based text editor. (git checkout)
 # URL:         https://github.com/zyedidia/micro
-# Maintainer:  onodera, https://github.com/onodera-punpun/crux-ports/issues
+# Maintainer:  onodera, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  go
 # Optional:    xclip xsel
 
