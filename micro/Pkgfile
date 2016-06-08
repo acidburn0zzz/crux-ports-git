@@ -25,8 +25,9 @@ build() {
 	sed -i "s/go get/go get -v/" Makefile
 	sed -i "s/go build/go build -v/" Makefile
 
+	make clean
+	make runtime
 	make deps
-	make tcell
 	make build
 	install -Dm755 micro $PKG/usr/bin/micro
 }
