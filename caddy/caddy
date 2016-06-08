@@ -10,6 +10,7 @@ PID=/var/run/caddy.pid
 
 case $1 in
 start)
+	ulimit -n 8192
 	$SSD --start --pidfile $PID --exec $PROG -- $OPTS
 	;;
 stop)

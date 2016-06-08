@@ -24,6 +24,10 @@ build() {
 	export GOPATH=$(pwd)
 	cd $name
 
+	# More verbose building
+	sed -i "s/go get/go get -v/" build.bash
+	sed -i "s/go build/go build -v/" build.bash
+
 	go get -v -d
 	./build.bash
 
