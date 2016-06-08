@@ -5,13 +5,12 @@
 
 SSD=/sbin/start-stop-daemon
 PROG=/usr/sbin/caddy
-OPTS="-conf /etc/caddy/caddy.conf -agree"
 PID=/var/run/caddy.pid
+OPTS="-conf /etc/caddy/caddy.conf -agree --pidfile $PID"
 
 case $1 in
 start)
-	ulimit -n 8192
-	$SSD --start --pidfile $PID --exec $PROG -- $OPTS
+	$SSD --background --start --pidfile $PID --exec $PROG -- $OPTS
 	;;
 stop)
 	$SSD --stop --retry 10 --pidfile $PID
