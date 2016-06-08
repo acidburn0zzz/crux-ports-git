@@ -10,6 +10,8 @@ OPTS="-conf /etc/caddy/caddy.conf -agree --pidfile $PID"
 
 case $1 in
 start)
+	sleep 1
+	ulimit -n 8192
 	$SSD --background --start --pidfile $PID --exec $PROG -- $OPTS
 	;;
 stop)
