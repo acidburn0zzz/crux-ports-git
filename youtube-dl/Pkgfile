@@ -2,10 +2,11 @@
 # URL:         https://github.com/rg3/youtube-dl/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git setuptools
+# Optional:    ffmpeg rtmpdump 
 
 name=youtube-dl
 version=git
-release=2
+release=3
 source=()
 
 build() {
@@ -18,7 +19,8 @@ build() {
 		cd $name
 	fi
 
-	/usr/bin/python setup.py install --root=$PKG --optimize=1
+	python setup.py install --root=$PKG --optimize=1
 
-	rm -r $PKG/usr/share/doc/
+	rm -r $PKG/usr/share/doc
+	rm -r $PKG/usr/etc
 }
