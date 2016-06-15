@@ -11,23 +11,10 @@ source=()
 
 build() {
 	cd $PKGMK_SOURCE_DIR
-
-	if cd $name; then
-		git fetch -q; git reset --hard origin/master
-	else
-		git clone git://github.com/zyedidia/micro $name
-		cd $name
-	fi
+	mkdir -p $name && cd $name
 
 	export GOPATH=$(pwd)
+	go get -u -v -fix github.com/zyedidia/micro/...
 
-	# More verbose building
-	sed -i "s/go get/go get -v/" Makefile
-	sed -i "s/go build/go build -v/" Makefile
-
-	make clean
-	make runtime
-	make deps
-	make build
-	install -Dm755 micro $PKG/usr/bin/micro
+	install -Dm755 bin/micro $PKG/usr/bin/micro
 }
