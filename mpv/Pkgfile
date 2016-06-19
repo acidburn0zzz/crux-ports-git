@@ -6,7 +6,7 @@
 
 name=mpv
 version=git
-release=4
+release=5
 source=()
 
 build () {
@@ -22,8 +22,7 @@ build () {
 	./bootstrap.py
 	./waf configure \
 		--prefix=/usr \
-		--confdir=/etc/mpv \
-		--enable-gpl3
+		--confdir=/etc/mpv
 
 	./waf clean
 	./waf build $MAKEFLAGS
