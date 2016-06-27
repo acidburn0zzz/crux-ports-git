@@ -23,7 +23,6 @@ d:dfc
 d:resynthesizer
 d:nitrogen
 d:cwm
-d:redshift
 d:mvwm
 d:pytg
 d:seamonkey
@@ -51,7 +50,6 @@ d:urwid3
 d:tldr
 d:simple-mtpfs
 d:jwm
-d:gimp-gtk3
 d:wmutils
 d:ii
 d:slock
@@ -156,8 +154,9 @@ f:df5c8d655d684eafaa8e17509818462c:xtitle/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:xtitle/.md5sum
 f:9cd24d51b4e5b04cd158b2401098006f:xxd/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:xxd/.md5sum
-f:452eb39ee604bdd35565b2588596b22c:micro/Pkgfile
+f:00cdabaa490be1c5bc45d7557e5df4a6:micro/Pkgfile
 f:65dbd15e809a582174e890dd25d017f9:micro/.footprint
+f:d8eeb34f0d2ed783aba509f46adaafd9:micro/README
 f:d41d8cd98f00b204e9800998ecf8427e:micro/.md5sum
 f:3387a60aa83a3bab0c65ad232ae96d80:tint2/Pkgfile
 f:8af184f70c32963f1896509aaf962c31:tint2/.footprint
@@ -195,9 +194,6 @@ f:d41d8cd98f00b204e9800998ecf8427e:nitrogen/.md5sum
 f:6d546c88daa8d8de2a85f69bed3cddb5:cwm/Pkgfile
 f:b95d0bc9edd8cacef5ee8361c66ab2f0:cwm/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:cwm/.md5sum
-f:d7746636571a2470092de094481146e1:redshift/Pkgfile
-f:5c30381ecde948d872bcf446eddb84f8:redshift/.footprint
-f:d41d8cd98f00b204e9800998ecf8427e:redshift/.md5sum
 f:54cdf66606a8d822cfa35f1cc21faf75:mvwm/Pkgfile
 f:8ce14cac34b3d25c9a4fb8cbcc69299b:mvwm/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:mvwm/.md5sum
@@ -205,7 +201,8 @@ f:332ae30df61a53094fa56bf0e08669db:pytg/Pkgfile
 f:f058df5f7452f031c4d84b2b2244dd17:pytg/.footprint
 f:e739d740fee29eb5aba5ebe85951bf4a:pytg/README
 f:d41d8cd98f00b204e9800998ecf8427e:pytg/.md5sum
-f:5c00349e0453b3741f4a686f31fa6377:seamonkey/Pkgfile
+f:8ee4575e949dcd52787f33c7bbb14128:seamonkey/Pkgfile
+f:a1acf04ecf3a607ce9bb46915ef77ced:seamonkey/seamonkey.desktop
 f:fbd5895da01a6a7507e65bfe7ea8be76:seamonkey/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:seamonkey/.md5sum
 f:4baaec806c731bd9e128fca011a8b02b:dmenu-ee/Pkgfile
@@ -287,9 +284,6 @@ f:d41d8cd98f00b204e9800998ecf8427e:simple-mtpfs/.md5sum
 f:61a309e7278e704b1383cdef4e318dad:jwm/Pkgfile
 f:0439077079bd9da41848ec327d7bd8c1:jwm/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:jwm/.md5sum
-f:279dd10797ea26e3108e862285bc2372:gimp-gtk3/Pkgfile
-f:a72dcc6483f1194e3fe08e292158f451:gimp-gtk3/.footprint
-f:d41d8cd98f00b204e9800998ecf8427e:gimp-gtk3/.md5sum
 f:aa5a6397829148c7aad039a0c2fdf30c:wmutils/Pkgfile
 f:d41fea460f60876a5d441c05dd7f4f7f:wmutils/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:wmutils/.md5sum
@@ -328,15 +322,14 @@ f:19ecaae1ffe80e51da9bd03be0038933:ttf-noto-serif/Pkgfile
 f:9eb04b2e528c77a997f2ba30949c462e:ttf-noto-serif/.footprint
 f:97bcb11d5a33fc174b1694cf81b627ab:ttf-noto-serif/.md5sum
 f:f9cb7dceafb628d51e74d107cd1e4215:youtube-dl/Pkgfile
-f:2f13113aac9b4721be40a7b7ac5ea778:youtube-dl/.footprint
+f:a84ba383365dd06f1f3926d3f8f745f5:youtube-dl/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:youtube-dl/.md5sum
 f:272a585a8eca35412037c96df8987c3b:clib/Pkgfile
 f:208174100068e2d336c339d2aa84d8cc:clib/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:clib/.md5sum
-f:aa3257e8c58205d5665f0a5d6e6b4195:fish/Pkgfile
-f:f3f3f1fd866a4f8cb4c54d3d412acb72:fish/fix-help.patch
-f:a43b9be41fdc0609bc34c21e7d814141:fish/.footprint
-f:f22b2f11c4721a1cd2aeca7797d43665:fish/.md5sum
+f:6f8c0285bbade3d8445d84069829f451:fish/Pkgfile
+f:eeaa43dd5cc30832867182a54cbe61f2:fish/.footprint
+f:d41d8cd98f00b204e9800998ecf8427e:fish/.md5sum
 f:9b1b2f0a7b3f88edec9fd474dcef9c6b:fish/post-install
 f:8d8e8208d0b98fb5ac4a794f83364d6a:connman-ncurses/Pkgfile
 f:c957ba86a50ea7dcb3cc63cd8d932f46:connman-ncurses/.footprint
@@ -387,7 +380,7 @@ f:d41d8cd98f00b204e9800998ecf8427e:screenfetch/.md5sum
 f:b74eb9ab15face63e3443c86bdf90db2:dzen/Pkgfile
 f:54b2a5f751bfb504a7949c629d875250:dzen/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:dzen/.md5sum
-f:711f99b0e1d3728bff351dfa59fb9a71:mpv/Pkgfile
+f:a45152563b985623a4d1ed877f81ddad:mpv/Pkgfile
 f:acc86d85357a22edacf9f7c9ccbc9aca:mpv/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:mpv/.md5sum
 f:a3075d2312a872988de8b32dc6e6ea1d:ttf-tinos/Pkgfile
