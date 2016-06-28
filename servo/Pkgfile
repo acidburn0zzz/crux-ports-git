@@ -5,7 +5,7 @@
 
 name=servo
 version=git
-release=2
+release=3
 source=()
 
 build () {
@@ -33,4 +33,7 @@ build () {
 		fi
 		install -Dm644 $_file $PKG/usr/lib
 	done
+
+	mkdir -p $PKG/usr/share/servo/resources
+	cp -r resources/* $PKG/usr/share/servo
 }
