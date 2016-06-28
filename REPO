@@ -441,8 +441,9 @@ f:d41d8cd98f00b204e9800998ecf8427e:ice/.md5sum
 f:2559abbde9b63102e77a551afb46d34c:ufetch/Pkgfile
 f:194c1c7530b8229c7f41cbc30d1ee1b6:ufetch/.footprint
 f:d41d8cd98f00b204e9800998ecf8427e:ufetch/.md5sum
-f:a9a5350ec2f9a94b6ce4baca74889581:servo/Pkgfile
-f:950b786f51864315f0d7026a3f1a90d9:servo/.footprint
+f:8e5c54359920f9617aafd8e1ffc98c83:servo/Pkgfile
+f:f26fa62ec530062edb7079ceb89d9bff:servo/.footprint
+f:b142792ebc950efc7bed8f29b1a71533:servo/README
 f:d41d8cd98f00b204e9800998ecf8427e:servo/.md5sum
 f:3e516f0f7483463f6c33545042853f1f:bspwm/Pkgfile
 f:468e3a8ba83827e131e421210efcba2f:bspwm/.footprint
