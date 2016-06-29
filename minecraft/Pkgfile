@@ -1,0 +1,22 @@
+# Description: An open-world game whose gameplay revolves around breaking and placing blocks.
+# URL:         http://www.minecraft.net
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
+# Depends on:  jdk xorg-libxtst xorg-xrandr
+
+name=minecraft
+version=latest
+release=1
+source=(
+	http://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar
+	minecraft
+	minecraft.desktop
+	minecraft.png
+)
+
+build() {
+	install -Dm755 minecraft     $PKG/usr/bin/minecraft
+	install -Dm644 Minecraft.jar $PKG/usr/share/minecraft/Minecraft.jar
+
+	install -Dm644 minecraft.desktop $PKG/usr/share/applications/minecraft.desktop
+	install -Dm644 minecraft.png     $PKG/usr/share/pixmaps/minecraft.png
+}
