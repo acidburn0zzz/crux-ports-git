@@ -13,25 +13,13 @@ source=(
 
 build() {
 	cd $PKGMK_SOURCE_DIR
-
-	if cd $name; then
-		git fetch -q; git reset --hard origin/master
-	else
-		git clone git://github.com/mholt/caddy $name
-		cd $name
-	fi
+	mkdir -p $name && cd $name
 
 	export GOPATH=$(pwd)
-	cd $name
+	go get -u -v -fix github.com/mholt/caddy/caddy
 
-	# More verbose building
-	sed -i "s/go get/go get -v/" build.bash
-	sed -i "s/go build/go build -v/" build.bash
-
-	go get -v -d
-	./build.bash
-
-	install -Dm755 caddy $PKG/usr/sbin/caddy
+	ls
+	install -Dm755 bin/caddy $PKG/usr/sbin/caddy
 	install -Dm755 $SRC/caddy $PKG/etc/rc.d/caddy
 	install -Dm644 $SRC/caddy.conf $PKG/etc/caddy/caddy.conf
 }
