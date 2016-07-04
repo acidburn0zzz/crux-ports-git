@@ -24,7 +24,6 @@ build () {
 		--prefix=/usr \
 		--confdir=/etc/mpv
 
-	./waf clean
 	./waf build $MAKEFLAGS
 	./waf install --destdir=$PKG
 
