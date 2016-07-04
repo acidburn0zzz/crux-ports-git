@@ -2,7 +2,7 @@
 # URL:         http://gegl.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git babl gtk intltool json-glib
-# Optional:    ffmpeg openexr libtiff librsvg lua jasper lensfun
+# Optional:    ffmpeg openexr libtiff librsvg luajit jasper lensfun
 
 name=gegl
 version=git
