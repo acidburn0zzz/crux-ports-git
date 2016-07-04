@@ -18,7 +18,6 @@ build() {
 		cd $name
 	fi
 
-	make clean
 	make NO_DBUS=1 compton
 	install -Dm755 compton $PKG/usr/bin/compton
 }
