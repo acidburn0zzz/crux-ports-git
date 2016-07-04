@@ -1,4 +1,4 @@
-# Description: Library for making brushstrokes.
+# Description: Library for making brushstrokes. (git checkout)
 # URL:         https://github.com/mypaint/libmypaint
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  json-c python gegl gobject-introspection

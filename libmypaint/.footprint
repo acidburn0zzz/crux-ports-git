@@ -4,8 +4,6 @@ drwxr-xr-x	root/root	usr/include/libmypaint-gegl/
 -rw-r--r--	root/root	usr/include/libmypaint-gegl/mypaint-gegl-glib.h
 -rw-r--r--	root/root	usr/include/libmypaint-gegl/mypaint-gegl-surface.h
 drwxr-xr-x	root/root	usr/include/libmypaint/
-drwxr-xr-x	root/root	usr/include/libmypaint/glib/
--rw-r--r--	root/root	usr/include/libmypaint/glib/mypaint-brush.h
 -rw-r--r--	root/root	usr/include/libmypaint/mypaint-brush-settings-gen.h
 -rw-r--r--	root/root	usr/include/libmypaint/mypaint-brush-settings.h
 -rw-r--r--	root/root	usr/include/libmypaint/mypaint-brush.h
