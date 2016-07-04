@@ -672,6 +672,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/realpath.fish
 -rw-r--r--	root/root	usr/share/fish/functions/seq.fish
 -rw-r--r--	root/root	usr/share/fish/functions/setenv.fish
+-rw-r--r--	root/root	usr/share/fish/functions/string.fish
 -rw-r--r--	root/root	usr/share/fish/functions/suspend.fish
 -rw-r--r--	root/root	usr/share/fish/functions/trap.fish
 -rw-r--r--	root/root	usr/share/fish/functions/type.fish
@@ -713,6 +714,7 @@ drwxr-xr-x	root/root	usr/share/fish/man/man1/
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_config.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_indent.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_key_reader.1.gz
+-rw-r--r--	root/root	usr/share/fish/man/man1/fish_mode_prompt.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_prompt.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_realpath.1.gz
 -rw-r--r--	root/root	usr/share/fish/man/man1/fish_right_prompt.1.gz
