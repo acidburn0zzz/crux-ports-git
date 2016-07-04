@@ -8,9 +8,11 @@ drwxr-xr-x	root/root	usr/share/bash-completion/completions/
 -rw-r--r--	root/root	usr/share/bash-completion/completions/bspc
 drwxr-xr-x	root/root	usr/share/doc/
 drwxr-xr-x	root/root	usr/share/doc/bspwm/
+-rw-r--r--	root/root	usr/share/doc/bspwm/CHANGELOG.md
 -rw-r--r--	root/root	usr/share/doc/bspwm/CONTRIBUTING.md
 -rw-r--r--	root/root	usr/share/doc/bspwm/INSTALL.md
 -rw-r--r--	root/root	usr/share/doc/bspwm/MISC.md
+-rw-r--r--	root/root	usr/share/doc/bspwm/README.md
 -rw-r--r--	root/root	usr/share/doc/bspwm/TODO.md
 drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/
 -rwxr-xr-x	root/root	usr/share/doc/bspwm/examples/bspwmrc
@@ -36,6 +38,9 @@ drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/panel/
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/panel/profile
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/panel/sxhkdrc
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/sxhkdrc
+drwxr-xr-x	root/root	usr/share/fish/
+drwxr-xr-x	root/root	usr/share/fish/vendor_completions.d/
+-rw-r--r--	root/root	usr/share/fish/vendor_completions.d/bspc.fish
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 lrwxrwxrwx	root/root	usr/share/man/man1/bspc.1.gz -> bspwm.1.gz
