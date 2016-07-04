@@ -56,8 +56,8 @@ drwxr-xr-x	root/root	usr/lib/babl-0.1/
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/ycbcr.la
 -rwxr-xr-x	root/root	usr/lib/babl-0.1/ycbcr.so
 -rwxr-xr-x	root/root	usr/lib/libbabl-0.1.la
-lrwxrwxrwx	root/root	usr/lib/libbabl-0.1.so -> libbabl-0.1.so.0.116.1
-lrwxrwxrwx	root/root	usr/lib/libbabl-0.1.so.0 -> libbabl-0.1.so.0.116.1
--rwxr-xr-x	root/root	usr/lib/libbabl-0.1.so.0.116.1
+lrwxrwxrwx	root/root	usr/lib/libbabl-0.1.so -> libbabl-0.1.so.0.118.1
+lrwxrwxrwx	root/root	usr/lib/libbabl-0.1.so.0 -> libbabl-0.1.so.0.118.1
+-rwxr-xr-x	root/root	usr/lib/libbabl-0.1.so.0.118.1
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/babl.pc
