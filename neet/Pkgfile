@@ -1,0 +1,22 @@
+# Description: A script to easily play and manage your anime/drama/series. (git checkout)
+# URL:         https://github.com/onodera-punpun/neet
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  fish
+
+name=neet
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/onodera-punpun/neet $name
+		cd $name
+	fi
+
+	make DESTDIR=$PKG install
+}
