@@ -1,0 +1,23 @@
+# Description: Upload files/scrots/urls to sr.ht, punpun.xyz, or via ssh. (git checkout)
+# URL:         https://github.com/onodera-punpun/punf
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  getopts
+# Optional:    maim slop xsel
+
+name=punf
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/onodera-punpun/punf $name
+		cd $name
+	fi
+
+	make DESTDIR=$PKG install
+}
