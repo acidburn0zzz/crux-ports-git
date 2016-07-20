@@ -31,5 +31,5 @@ build() {
 	install -d $PKG/bin
 	ln -s /usr/bin/fish $PKG/bin
 
-	rm -rf $PKG/usr/share/locale
+	rm -rf $PKG/usr/share/{locale,doc}
 }
