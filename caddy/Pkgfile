@@ -12,9 +12,6 @@ source=(
 )
 
 build() {
-	cd $PKGMK_SOURCE_DIR
-	mkdir -p $name && cd $name
-
 	export GOPATH=$(pwd)
 	go get -u -v -fix github.com/mholt/caddy/caddy
 
