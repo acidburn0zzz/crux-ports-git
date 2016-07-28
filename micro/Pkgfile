@@ -10,10 +10,8 @@ release=1
 source=()
 
 build() {
-	cd $PKGMK_SOURCE_DIR
-	mkdir -p $name && cd $name
-
 	export GOPATH=$(pwd)
+	go get -u -v -fix github.com/zyedidia/micro/... || :
 	go get -u -v -fix github.com/zyedidia/micro/...
 
 	install -Dm755 bin/micro $PKG/usr/bin/micro
