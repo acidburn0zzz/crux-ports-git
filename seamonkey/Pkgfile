@@ -1,35 +1,40 @@
 # Description: The Mozilla internet suite. (hg checkout)
 # URL:         http://www.seamonkey-project.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  mercurial autoconf-2.13 ffmpeg nss libidl gtk python yasm mesa3d unzip zip libevent libvpx
- 
+# Depends on:  mercurial autoconf-2.13 nss libidl gtk python yasm mesa3d unzip zip libevent libvpx
+# Optional:    ffmpeg
+
 name=seamonkey
 version=hg
-release=1
+release=2
 source=()
 
 build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
-		hg pull http://hg.mozilla.org/releases/comm-aurora/
+		hg pull http://hg.mozilla.org/releases/comm-aurora
 	else
-		hg clone http://hg.mozilla.org/releases/comm-aurora/ $name
+		hg clone http://hg.mozilla.org/releases/comm-aurora $name
 		cd $name
 	fi
 
 	python client.py checkout
+
+	# Fix a bunch of broken Mozilla shit
+	sed -i '/^ftfntfmt.h/ i freetype/ftfntfmt.h' mozilla/config/system-headers
 
 cat <<- EOF > .mozconfig
 	ac_add_options --enable-application=suite
 	ac_add_options --prefix=/usr
 	mk_add_options MOZ_OBJDIR=$PKGMK_SOURCE_DIR/seamonkey/obj-sm-release
 
-	#ac_add_options --enable-optimize="$CFLAGS"
+	ac_add_options --enable-optimize="$CFLAGS"
 	ac_add_options --enable-strip
 	ac_add_options --enable-install-strip
 	ac_add_options --enable-default-toolkit=cairo-gtk2
 	mk_add_options MOZ_MAKE_FLAGS="$MAKEFLAGS -s"
+	STRIP_FLAGS="--strip-debug"
 
 	ac_add_options --with-system-jpeg
 	ac_add_options --with-system-zlib
@@ -43,7 +48,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --enable-system-ffi
 	ac_add_options --enable-system-pixman
 	ac_add_options --enable-system-sqlite
-	#ac_add_options --enable-system-cairo
+	ac_add_options --enable-system-cairo
 
 	ac_add_options --with-pthreads
 	ac_add_options --enable-official-branding
@@ -55,6 +60,8 @@ cat <<- EOF > .mozconfig
 	ac_add_options --enable-gio
 	ac_add_options --enable-elf-hack
 	ac_add_options --enable-pie
+	ac_add_options --enable-gold
+	ac_add_options --enable-release
 
 	ac_add_options --disable-tests
 	ac_add_options --disable-dbus
@@ -69,5 +76,5 @@ EOF
 
 	make -f client.mk clean
 	make -f client.mk build
-	make -f client.mk DESTDIR=$PKG INSTALL_SDK= install 
+	make -f client.mk DESTDIR=$PKG INSTALL_SDK= install
 }
