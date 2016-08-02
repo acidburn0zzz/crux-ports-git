@@ -6,7 +6,7 @@
 
 name=gimp
 version=git
-release=6
+release=7
 source=()
 
 build() {
@@ -21,12 +21,19 @@ build() {
 
 	./autogen.sh \
 			--prefix=/usr \
+			--enable-mp \
+			--with-gif-compression=lzw \
+			--with-libcurl \
 			--disable-static \
 			--disable-nls \
 			--without-webkit \
 			--disable-gtk-doc \
 			--without-aa \
-			--without-xvfb-run
+			--without-hal \
+			--disable-python \
+			--without-gvfs \
+			--without-gnomevfs \
+			--without-webkit LIBS="-lm"
 
 	make
 	make DESTDIR=$PKG install

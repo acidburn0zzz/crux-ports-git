@@ -155,13 +155,13 @@ drwxr-xr-x	root/root	usr/include/gimp-2.0/libgimpcolor/
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimpcolormanaged.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimpcolorprofile.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimpcolorspace.h
+-rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimpcolortransform.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimpcolortypes.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimphsl.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimphsv.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimppixbuf.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpcolor/gimprgb.h
 drwxr-xr-x	root/root	usr/include/gimp-2.0/libgimpconfig/
--rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpcolorconfig-enums.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpcolorconfig.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfig-deserialize.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfig-error.h
@@ -171,6 +171,7 @@ drwxr-xr-x	root/root	usr/include/gimp-2.0/libgimpconfig/
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfig-serialize.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfig-utils.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfig.h
+-rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfigenums.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfigtypes.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpconfigwriter.h
 -rw-r--r--	root/root	usr/include/gimp-2.0/libgimpconfig/gimpscanner.h
@@ -258,10 +259,8 @@ drwxr-xr-x	root/root	usr/lib/gimp/
 drwxr-xr-x	root/root	usr/lib/gimp/2.0/
 drwxr-xr-x	root/root	usr/lib/gimp/2.0/environ/
 -rw-r--r--	root/root	usr/lib/gimp/2.0/environ/default.env
--rw-r--r--	root/root	usr/lib/gimp/2.0/environ/pygimp.env
 drwxr-xr-x	root/root	usr/lib/gimp/2.0/interpreters/
 -rw-r--r--	root/root	usr/lib/gimp/2.0/interpreters/default.interp
--rw-r--r--	root/root	usr/lib/gimp/2.0/interpreters/pygimp.interp
 drwxr-xr-x	root/root	usr/lib/gimp/2.0/modules/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/modules/libcolor-selector-cmyk.la
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/modules/libcolor-selector-cmyk.so
@@ -297,7 +296,6 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/color-enhance
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/colorify
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/colormap-remap
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/colorxhtml.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/compose
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/contrast-normalize
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/contrast-retinex
@@ -329,7 +327,6 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-html-table
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-ico
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-jpeg
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-openraster.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pat
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pcx
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/file-pdf-load
@@ -352,7 +349,6 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/film
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/filter-pack
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/flame
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/foggify.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/fractal-explorer
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/fractal-trace
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/gfig
@@ -360,11 +356,9 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/goat-exercise
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/gradient-flare
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/gradient-map
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/gradients-save-as-css.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/grid
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/guillotine
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/help
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/histogram-export.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/hot
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/ifs-compose
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/imagemap
@@ -378,17 +372,10 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/nl-filter
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/oilify
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/pagecurl
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/palette-offset.py
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/palette-sort.py
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/palette-to-gradient.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/photocopy
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/plugin-browser
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/print
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/procedure-browser
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/py-slice.py
--rw-r--r--	root/root	usr/lib/gimp/2.0/plug-ins/pyconsole.py
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/python-console.py
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/python-eval.py
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/qbist
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/ripple
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/sample-colorize
@@ -407,69 +394,42 @@ drwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/van-gogh-lic
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/warp
 -rwxr-xr-x	root/root	usr/lib/gimp/2.0/plug-ins/web-browser
-drwxr-xr-x	root/root	usr/lib/gimp/2.0/python/
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/_gimpenums.la
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/_gimpenums.so
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/_gimpui.la
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/_gimpui.so
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/gimp.la
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/gimp.so
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/gimpcolor.la
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/gimpcolor.so
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpenums.py
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpenums.pyc
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpenums.pyo
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpfu.py
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpfu.pyc
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpfu.pyo
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpplugin.py
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpplugin.pyc
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpplugin.pyo
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpshelf.py
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpshelf.pyc
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpshelf.pyo
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/gimpthumb.la
--rwxr-xr-x	root/root	usr/lib/gimp/2.0/python/gimpthumb.so
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpui.py
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpui.pyc
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/gimpui.pyo
--rw-r--r--	root/root	usr/lib/gimp/2.0/python/pygimp-logo.png
 -rwxr-xr-x	root/root	usr/lib/libgimp-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimp-2.0.so -> libgimp-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimp-2.0.so.0 -> libgimp-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimp-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimp-2.0.so -> libgimp-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimp-2.0.so.0 -> libgimp-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimp-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpbase-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpbase-2.0.so -> libgimpbase-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpbase-2.0.so.0 -> libgimpbase-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpbase-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpbase-2.0.so -> libgimpbase-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpbase-2.0.so.0 -> libgimpbase-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpbase-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpcolor-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpcolor-2.0.so -> libgimpcolor-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpcolor-2.0.so.0 -> libgimpcolor-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpcolor-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpcolor-2.0.so -> libgimpcolor-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpcolor-2.0.so.0 -> libgimpcolor-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpcolor-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpconfig-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpconfig-2.0.so -> libgimpconfig-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpconfig-2.0.so.0 -> libgimpconfig-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpconfig-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpconfig-2.0.so -> libgimpconfig-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpconfig-2.0.so.0 -> libgimpconfig-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpconfig-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpmath-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpmath-2.0.so -> libgimpmath-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmath-2.0.so.0 -> libgimpmath-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpmath-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmath-2.0.so -> libgimpmath-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmath-2.0.so.0 -> libgimpmath-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpmath-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpmodule-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpmodule-2.0.so -> libgimpmodule-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpmodule-2.0.so.0 -> libgimpmodule-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpmodule-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmodule-2.0.so -> libgimpmodule-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpmodule-2.0.so.0 -> libgimpmodule-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpmodule-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpthumb-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpthumb-2.0.so -> libgimpthumb-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpthumb-2.0.so.0 -> libgimpthumb-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpthumb-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpthumb-2.0.so -> libgimpthumb-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpthumb-2.0.so.0 -> libgimpthumb-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpthumb-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpui-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpui-2.0.so -> libgimpui-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpui-2.0.so.0 -> libgimpui-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpui-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpui-2.0.so -> libgimpui-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpui-2.0.so.0 -> libgimpui-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpui-2.0.so.0.905.0
 -rwxr-xr-x	root/root	usr/lib/libgimpwidgets-2.0.la
-lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-2.0.so -> libgimpwidgets-2.0.so.0.903.0
-lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-2.0.so.0 -> libgimpwidgets-2.0.so.0.903.0
--rwxr-xr-x	root/root	usr/lib/libgimpwidgets-2.0.so.0.903.0
+lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-2.0.so -> libgimpwidgets-2.0.so.0.905.0
+lrwxrwxrwx	root/root	usr/lib/libgimpwidgets-2.0.so.0 -> libgimpwidgets-2.0.so.0.905.0
+-rwxr-xr-x	root/root	usr/lib/libgimpwidgets-2.0.so.0.905.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/gimp-2.0.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/gimpthumb-2.0.pc
@@ -859,6 +819,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/12x12/apps/
 drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/
 drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-anchor.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-buffer.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-cancel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-cap-butt.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-cap-round.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-cap-square.png
@@ -871,8 +833,14 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-channel-red.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-channel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-channels.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-char-picker.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-clipboard.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-close-all.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-color-cmyk.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-color-palette.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-color-pick-from-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-color-triangle.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-color-water.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-colormap.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-controller-keyboard.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-controller-linux-input.png
@@ -892,13 +860,17 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-display-filter-lcms.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-display-filter-proof.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-display-filter.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-document-recent.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-duplicate.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-dynamics.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-edit-clear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-edit.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-error.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-file-manager.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-flip-horizontal.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-flip-vertical.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-floating-selection.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-font.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-gegl.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-gradient-bilinear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-gradient-conical-asymmetric.png
@@ -912,9 +884,12 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-gradient-spiral-clockwise.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-gradient-square.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-grid.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-group-layer.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-histogram-linear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-histogram-logarithmic.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-histogram.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-image-open.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-image-reload.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-image.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-images.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-info.png
@@ -932,11 +907,18 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-merge-down.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-move-to-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-navigation.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-next.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-open.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-paste-as-new.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-paste-into.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-path-delete.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-path-down.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-path-new.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-path-stroke.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-path-up.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-path.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-paths.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-pattern.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-plugin.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-portrait.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-brushes.png
@@ -947,6 +929,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-folders-plug-ins.png
@@ -961,15 +944,20 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-toolbox.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-prefs-window-management.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-previous.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-print-resolution.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-question.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-quit.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-reset.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-reshow-filter.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-resize.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-revert.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-rotate-180.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-rotate-270.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-rotate-90.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-sample-point.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-save-as.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-save.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-scale.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-selection-add.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-selection-all.png
@@ -987,6 +975,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-shape-circle.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-shape-diamond.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-shape-square.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-shred.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/16x16/apps/gimp-text-layer.png
@@ -1068,7 +1057,12 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-char-picker.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-dynamics.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-histogram.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-indent.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-input-device.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-justify-center.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-justify-fill.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-justify-left.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-justify-right.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-landscape.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-letter-spacing.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-line-spacing.png
@@ -1087,6 +1081,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-folders-plug-ins.png
@@ -1099,6 +1094,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-help-system.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-icon-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-image-title.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-image-windows-appearance.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-image-windows-snapping.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-image-windows.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-input-devices.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/22x22/apps/gimp-prefs-interface.png
@@ -1123,6 +1120,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-channel-red.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-channel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-channels.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-color-palette.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-colormap.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-controller-keyboard.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-controller-linux-input.png
@@ -1212,6 +1210,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-tool-perspective-clone.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-tool-perspective.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-tool-posterize.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-tool-preset.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-tool-rect-select.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-tool-rotate.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/24x24/apps/gimp-tool-scale.png
@@ -1280,6 +1279,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-folders-plug-ins.png
@@ -1292,6 +1292,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-help-system.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-icon-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-image-title.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-image-windows-appearance.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-image-windows-snapping.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-image-windows.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-input-devices.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Color/hicolor/48x48/apps/gimp-prefs-interface.png
@@ -1815,6 +1817,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/12x12/ap
 drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/
 drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-anchor.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-buffer.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-cancel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-cap-butt.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-cap-round.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-cap-square.png
@@ -1827,8 +1831,14 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-channel-red.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-channel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-channels.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-char-picker.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-clipboard.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-close-all.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-color-cmyk.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-color-palette.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-color-pick-from-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-color-triangle.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-color-water.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-colormap.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-controller-keyboard.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-controller-linux-input.png
@@ -1848,13 +1858,17 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-display-filter-lcms.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-display-filter-proof.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-display-filter.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-document-recent.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-duplicate.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-dynamics.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-edit-clear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-edit.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-error.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-file-manager.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-flip-horizontal.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-flip-vertical.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-floating-selection.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-font.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-gegl.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-gradient-bilinear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-gradient-conical-asymmetric.png
@@ -1868,9 +1882,12 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-gradient-spiral-clockwise.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-gradient-square.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-grid.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-group-layer.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-histogram-linear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-histogram-logarithmic.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-histogram.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-image-open.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-image-reload.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-image.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-images.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-info.png
@@ -1888,11 +1905,18 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-merge-down.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-move-to-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-navigation.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-next.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-open.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-paste-as-new.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-paste-into.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-path-delete.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-path-down.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-path-new.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-path-stroke.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-path-up.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-path.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-paths.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-pattern.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-plugin.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-portrait.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-brushes.png
@@ -1903,6 +1927,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-folders-plug-ins.png
@@ -1917,15 +1942,20 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-toolbox.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-prefs-window-management.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-previous.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-print-resolution.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-question.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-quit.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-reset.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-reshow-filter.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-resize.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-revert.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-rotate-180.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-rotate-270.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-rotate-90.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-sample-point.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-save-as.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-save.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-scale.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-selection-add.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-selection-all.png
@@ -1943,6 +1973,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-shape-circle.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-shape-diamond.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-shape-square.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-shred.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/16x16/apps/gimp-text-layer.png
@@ -2024,7 +2055,12 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-char-picker.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-dynamics.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-histogram.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-indent.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-input-device.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-justify-center.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-justify-fill.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-justify-left.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-justify-right.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-landscape.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-letter-spacing.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-line-spacing.png
@@ -2043,6 +2079,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-folders-plug-ins.png
@@ -2055,6 +2092,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-help-system.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-icon-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-image-title.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-image-windows-appearance.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-image-windows-snapping.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-image-windows.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-input-devices.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/22x22/apps/gimp-prefs-interface.png
@@ -2079,6 +2118,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-channel-red.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-channel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-channels.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-color-palette.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-colormap.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-controller-keyboard.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-controller-linux-input.png
@@ -2168,6 +2208,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-tool-perspective-clone.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-tool-perspective.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-tool-posterize.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-tool-preset.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-tool-rect-select.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-tool-rotate.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/24x24/apps/gimp-tool-scale.png
@@ -2236,6 +2277,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-folders-plug-ins.png
@@ -2248,6 +2290,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/ap
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-help-system.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-icon-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-image-title.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-image-windows-appearance.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-image-windows-snapping.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-image-windows.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-input-devices.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic-Inverted/hicolor/48x48/apps/gimp-prefs-interface.png
@@ -2299,6 +2343,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/12x12/apps/
 drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/
 drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-anchor.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-buffer.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-cancel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-cap-butt.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-cap-round.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-cap-square.png
@@ -2311,8 +2357,14 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-channel-red.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-channel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-channels.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-char-picker.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-clipboard.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-close-all.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-color-cmyk.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-color-palette.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-color-pick-from-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-color-triangle.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-color-water.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-colormap.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-controller-keyboard.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-controller-linux-input.png
@@ -2332,13 +2384,17 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-display-filter-lcms.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-display-filter-proof.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-display-filter.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-document-recent.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-duplicate.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-dynamics.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-edit-clear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-edit.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-error.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-file-manager.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-flip-horizontal.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-flip-vertical.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-floating-selection.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-font.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-gegl.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-gradient-bilinear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-gradient-conical-asymmetric.png
@@ -2352,9 +2408,12 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-gradient-spiral-clockwise.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-gradient-square.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-grid.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-group-layer.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-histogram-linear.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-histogram-logarithmic.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-histogram.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-image-open.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-image-reload.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-image.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-images.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-info.png
@@ -2372,11 +2431,18 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-merge-down.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-move-to-screen.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-navigation.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-next.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-open.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-paste-as-new.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-paste-into.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-path-delete.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-path-down.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-path-new.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-path-stroke.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-path-up.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-path.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-paths.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-pattern.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-plugin.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-portrait.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-brushes.png
@@ -2387,6 +2453,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-folders-plug-ins.png
@@ -2401,15 +2468,20 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-toolbox.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-prefs-window-management.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-previous.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-print-resolution.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-question.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-quit.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-reset.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-reshow-filter.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-resize.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-revert.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-rotate-180.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-rotate-270.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-rotate-90.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-sample-point.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-save-as.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-save.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-scale.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-selection-add.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-selection-all.png
@@ -2427,6 +2499,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-shape-circle.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-shape-diamond.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-shape-square.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-shred.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-symmetry.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-template.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/16x16/apps/gimp-text-layer.png
@@ -2508,7 +2581,12 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-char-picker.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-dynamics.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-histogram.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-indent.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-input-device.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-justify-center.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-justify-fill.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-justify-left.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-justify-right.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-landscape.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-letter-spacing.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-line-spacing.png
@@ -2527,6 +2605,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-folders-plug-ins.png
@@ -2539,6 +2618,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-help-system.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-icon-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-image-title.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-image-windows-appearance.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-image-windows-snapping.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-image-windows.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-input-devices.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/22x22/apps/gimp-prefs-interface.png
@@ -2563,6 +2644,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-channel-red.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-channel.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-channels.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-color-palette.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-colormap.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-controller-keyboard.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-controller-linux-input.png
@@ -2652,6 +2734,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-tool-perspective-clone.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-tool-perspective.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-tool-posterize.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-tool-preset.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-tool-rect-select.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-tool-rotate.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/24x24/apps/gimp-tool-scale.png
@@ -2720,6 +2803,7 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-folders-icon-themes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-folders-interp.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-folders-modules.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-folders-mypaint-brushes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-folders-palettes.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-folders-patterns.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-folders-plug-ins.png
@@ -2732,6 +2816,8 @@ drwxr-xr-x	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-help-system.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-icon-theme.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-image-title.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-image-windows-appearance.png
+-rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-image-windows-snapping.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-image-windows.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-input-devices.png
 -rw-r--r--	root/root	usr/share/gimp/2.0/icons/Symbolic/hicolor/48x48/apps/gimp-prefs-interface.png
