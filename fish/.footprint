@@ -65,6 +65,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/apt-zip-list.fish
 -rw-r--r--	root/root	usr/share/fish/completions/apt.fish
 -rw-r--r--	root/root	usr/share/fish/completions/aptitude.fish
+-rw-r--r--	root/root	usr/share/fish/completions/arc.fish
 -rw-r--r--	root/root	usr/share/fish/completions/arepack.fish
 -rw-r--r--	root/root	usr/share/fish/completions/arp.fish
 -rw-r--r--	root/root	usr/share/fish/completions/asp.fish
@@ -594,7 +595,9 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_prt_use_port.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_pwd.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_seen_subcommand_from.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_set_locale.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_sgrep.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_shared_key_bindings.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_svn_prompt.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_automounts.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_systemctl_devices.fish
