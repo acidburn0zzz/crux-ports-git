@@ -1,0 +1,23 @@
+# Description: A tiny command-line utility to download media contents (videos, audios, images) from the Web. (git checkout)
+# URL:         https://you-get.org
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git python3 ffmpeg
+# Optional:    rtmpdump
+
+name=you-get
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/soimort/you-get.git $name
+		cd $name
+	fi
+
+	python3 setup.py install --root=$PKG
+}
