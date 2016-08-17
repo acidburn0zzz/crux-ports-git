@@ -11,8 +11,7 @@ source=()
 
 build() {
 	export GOPATH=$(pwd)
-	go get -u -v -fix github.com/zyedidia/micro/... || :
-	go get -u -v -fix github.com/zyedidia/micro/...
+	go get -u -v -fix github.com/zyedidia/micro/cmd/micro
 
 	install -Dm755 bin/micro $PKG/usr/bin/micro
 }
