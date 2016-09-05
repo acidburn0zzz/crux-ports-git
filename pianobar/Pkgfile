@@ -1,7 +1,7 @@
-# Description:  Console-based pandora.com player
-# URL:          http://6xq.net/projects/pianobar/
+# Description:  Console-based pandora.com player.
+# URL:          http://6xq.net/projects/pianobar
 # Maintainer:   6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:   git	json-c libao 
+# Depends on:   git json-c libao ffmpeg 
 
 name=pianobar
 version=git
@@ -11,15 +11,13 @@ source=()
 build() {
         cd $PKGMK_SOURCE_DIR
 
-				if cd $name; then
-								git fetch -q; git reset --hard origin/master
-				else
-								git clone git://github.com/PromyLOPh/pianobar.git
-								cd $name
-				fi
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/PromyLOPh/pianobar.git
+		cd $name
+	fi
 
-				#patch -p1 < "$SRC/fix_compiler_name.patch"
-
-        make
-        make DESTDIR="$PKG" PREFIX="/usr" MANDIR="/usr/share/man" install
+        make PREFIX=/usr
+        make PREFIX=/usr DESTDIR=$PKG install
 }
