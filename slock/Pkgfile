@@ -7,7 +7,6 @@ name=slock
 version=git
 release=1
 source=(
-	http://tools.suckless.org/slock/patches/slock-20160316-quickcancel.diff
 	config.h
 )
 
@@ -20,8 +19,6 @@ build() {
 		git clone git://git.suckless.org/slock $name
 		cd $name
 	fi
-
-	patch -p1 < $SRC/slock-20160316-quickcancel.diff
 
 	cp $SRC/config.h .
 
