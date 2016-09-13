@@ -1,0 +1,23 @@
+# Description: Full featured CLI system information tool.
+# URL:         https://github.com/smxi/inxi
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git gawk grep
+
+name=inxi
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/smxi/inxi -b master $name
+		cd $name
+	fi
+
+	install -Dm755 inxi $PKG/usr/bin/inxi
+	install -Dm644 inxi.1 $PKG/usr/share/man/man1/inxi.1
+}
