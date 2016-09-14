@@ -22,6 +22,7 @@ drwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/crux_small
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/debian
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/deepin
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/devuan
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/dragonflybsd
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/elementary
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/exherbo
@@ -29,9 +30,11 @@ drwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/freebsd
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/frugalware
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/funtoo
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/galliumos
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/gentoo
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/gentoo_small
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/gnewsense
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/guixsd
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/kali
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/kaos
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/kde
@@ -47,8 +50,12 @@ drwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/nixos
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/openbsd
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/openbsd_small
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/openindiana
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/openmandriva
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/opensuse
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/openwrt
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/oracle
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/pacbsd
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/parabola
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/pclinuxos
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/peppermint
@@ -56,6 +63,7 @@ drwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/qubes
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/raspbian
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/redhat
+-rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/rosa
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/sabayon
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/sailfishos
 -rwxr-xr-x	root/root	usr/share/neofetch/ascii/distro/scientific
