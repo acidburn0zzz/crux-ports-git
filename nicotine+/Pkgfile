@@ -19,7 +19,7 @@ build() {
 	fi
 
 	python2 setup.py install --root=$PKG
-	mv $PKG/usr/bin/nicotine.py $PKG/usr/bin/nicotine
+	mv $PKG/usr/bin/nicotine.py $PKG/usr/bin/nicotine+
 
 	rm -rf $PKG/usr/share
 }
