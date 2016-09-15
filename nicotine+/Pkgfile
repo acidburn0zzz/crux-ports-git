@@ -1,7 +1,7 @@
 # Description: A soulseek music-sharing client written in python. (git checkout)
 # URL:         http://nicotine-plus.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
-# Depends on:  git pygtk librsvg
+# Depends on:  git pygtk librsvg mutagen
 
 name=nicotine+
 version=git
