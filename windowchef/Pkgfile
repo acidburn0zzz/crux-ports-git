@@ -1,0 +1,23 @@
+# Description: A stacking window manager that cooks windows with orders from the Waitron (git checkout).
+# URL:         https://github.com/tudurom/windowchef
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git xorg-libxcb xorg-xcb-util-wm
+
+name=windowchef
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone https://github.com/tudurom/windowchef -b master $name
+		cd $name
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+}
