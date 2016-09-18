@@ -1,4 +1,4 @@
-# Description: Ncurses interface to connman. (git checkout)
+# Description: Ncurses interface to connman.
 # URL:         https://github.com/eurogiciel-oss/connman-json-client/wiki
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  dbus json-c connman

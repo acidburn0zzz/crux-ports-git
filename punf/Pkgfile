@@ -1,4 +1,4 @@
-# Description: Upload files/scrots/urls to sr.ht, punpun.xyz, or via ssh. (git checkout)
+# Description: Upload files/scrots/urls to sr.ht, punpun.xyz, or via ssh.
 # URL:         https://github.com/onodera-punpun/punf
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  getopts

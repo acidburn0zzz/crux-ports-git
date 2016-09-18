@@ -1,4 +1,4 @@
-# Description: Get and set the backlight brightness . (git checkout)
+# Description: Get and set the backlight brightness .
 # URL:         https://github.com/baskerville/backlight
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git

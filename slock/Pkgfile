@@ -1,4 +1,4 @@
-# Description: Simple X display locker. (git checkout)
+# Description: Simple X display locker.
 # URL:         http://tools.suckless.org/slock/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxext

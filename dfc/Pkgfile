@@ -1,4 +1,4 @@
-# Description: Display file system space usage using graph and colors. (git checkout)
+# Description: Display file system space usage using graph and colors.
 # URL:         https://github.com/Rolinh/dfc
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git cmake

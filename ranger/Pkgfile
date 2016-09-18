@@ -1,4 +1,4 @@
-# Description: A vim-inspired filemanager for the console. (git checkout)
+# Description: A vim-inspired filemanager for the console.
 # URL:         http://ranger.nongnu.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git python

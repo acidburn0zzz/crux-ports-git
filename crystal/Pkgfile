@@ -1,4 +1,4 @@
-# Description: The Crystal Programming Language. (git checkout)
+# Description: The Crystal Programming Language.
 # URL:         http://crystal-lang.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  boehm-gc libgmp libpcl libpcre libunwind libxml2 libyaml

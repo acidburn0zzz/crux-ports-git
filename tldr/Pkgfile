@@ -1,4 +1,4 @@
-# Description: C++ command line client for tldr. (git checkout)
+# Description: C++ command line client for tldr.
 # URL:         https://github.com/tldr-pages/tldr-cpp-client
 # Depends on:  git clang
 

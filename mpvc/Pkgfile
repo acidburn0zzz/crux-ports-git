@@ -1,4 +1,4 @@
-# Description: An mpc-like interface for mpv. (git checkout)
+# Description: An mpc-like interface for mpv.
 # URL:         https://github.com/wildefyr/mpvc
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git socat mpv

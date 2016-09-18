@@ -1,4 +1,4 @@
-# Description: A lightweight panel/taskbar for Linux. (git checkout)
+# Description: A lightweight panel/taskbar for Linux.
 # URL:         https://gitlab.com/o9000/tint2
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  gtk imlib2 librsvg pango startup-notification xorg-libxcomposite xorg-libxinerama xorg-libxrandr

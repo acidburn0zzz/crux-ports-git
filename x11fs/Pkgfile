@@ -1,4 +1,4 @@
-# Description: A tool for manipulating X windows. (git checkout)
+# Description: A tool for manipulating X windows.
 # URL:         https://github.com/sdhand/x11fs
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git fuse xorg-libxcb

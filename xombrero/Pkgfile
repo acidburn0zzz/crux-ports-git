@@ -1,4 +1,4 @@
-# Description: A minimalist web browser (git checkout)
+# Description: A minimalist web browser
 # URL:         https://github.com/conformal/xombrero
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libbsd desktop-file-utils webkitgtk

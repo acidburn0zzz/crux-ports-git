@@ -1,4 +1,4 @@
-# Description: A customizable and lightweight notification-daemon. (git checkout)
+# Description: A customizable and lightweight notification-daemon.
 # URL:         https://github.com/knopwob/dunst
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  dbus git libnotify libxdg-basedir xorg-libxscrnsaver

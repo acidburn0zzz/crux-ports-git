@@ -1,4 +1,4 @@
-# Description: A simple compositing manager for X. (git checkout)
+# Description: A simple compositing manager for X.
 # URL:         https://github.com/aoba1217/ortle
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxcomposite mesa3d

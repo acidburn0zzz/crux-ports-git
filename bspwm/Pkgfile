@@ -1,4 +1,4 @@
-# Description: Binary space partitioning window manager. (git checkout)
+# Description: Binary space partitioning window manager.
 # URL:         https://github.com/baskerville/bspwm
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxcb xorg-xcb-util xorg-xcb-util-wm 

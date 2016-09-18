@@ -1,4 +1,4 @@
-# Description: Download videos from youtube.com or other video platforms. (git checkout)
+# Description: Download videos from youtube.com or other video platforms.
 # URL:         https://github.com/rg3/youtube-dl/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git setuptools

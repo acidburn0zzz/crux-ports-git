@@ -1,4 +1,4 @@
-# Description: Emulates an old-style "code page 437" / "IBM-PC" character set terminal on a modern UTF-8 terminal emulator. (git checkout)
+# Description: Emulates an old-style "code page 437" / "IBM-PC" character set terminal on a modern UTF-8 terminal emulator.
 # URL:         https://github.com/keaston/cp437
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:

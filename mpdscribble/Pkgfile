@@ -1,4 +1,4 @@
-# Description: last.fm/libre.fm scrobbler for mpd. (git checkout)
+# Description: last.fm/libre.fm scrobbler for mpd.
 # URL:         http://git.musicpd.org/cgit/master/mpdscribble.git/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libmpdclient glib

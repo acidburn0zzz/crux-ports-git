@@ -1,4 +1,4 @@
-# Description: Minimalistic init script. (git checkout)
+# Description: Minimalistic init script.
 # URL:         https://github.com/hut/minirc
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  busybox

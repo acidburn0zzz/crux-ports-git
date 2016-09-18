@@ -1,4 +1,4 @@
-# Description: A read-only FUSE filesystem which transcodes audio formats (currently FLAC) to MP3 on the fly when opened and read. (git checkout)
+# Description: A read-only FUSE filesystem which transcodes audio formats
 # URL:         http://khenriks.github.com/mp3fs/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git flac lame libid3tag fuse

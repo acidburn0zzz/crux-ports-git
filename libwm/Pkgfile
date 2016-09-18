@@ -1,4 +1,4 @@
-# Description: A small library for X windows manipulation. (git checkout)
+# Description: A small library for X windows manipulation.
 # URL:         https://github.com/wmutils/libwm
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxcb

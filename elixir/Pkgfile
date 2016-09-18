@@ -1,4 +1,4 @@
-# Description: A dynamic, functional language designed for building scalable and maintainable applications. (git checkout)
+# Description: A dynamic, functional language designed for building scalable and maintainable applications.
 # URL:         http://elixir-lang.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git erlang

@@ -1,4 +1,4 @@
-# Description: Outputs the current EWMH desktop name and window title. (git checkout)
+# Description: Outputs the current EWMH desktop name and window title.
 # URL:         https://github.com/baskerville/ewmhstatus
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxcb xorg-xcb-util-wm cairo

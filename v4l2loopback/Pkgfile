@@ -1,4 +1,4 @@
-# Description: A kernel module to create V4L2 loopback devices. (git checkout)
+# Description: A kernel module to create V4L2 loopback devices.
 # URL:         https://github.com/umlaeute/v4l2loopback/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  

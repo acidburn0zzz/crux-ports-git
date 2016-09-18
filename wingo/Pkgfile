@@ -1,4 +1,4 @@
-# Description: A fully-featured window manager written in Go. (git checkout)
+# Description: A fully-featured window manager written in Go.
 # URL:         https://github.com/BurntSushi/wingo
 # Maintainer:  onodera, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  go

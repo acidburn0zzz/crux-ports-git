@@ -1,4 +1,4 @@
-# Description: minimalist FIFO and filesystem-based IRC client. (git checkout)
+# Description: minimalist FIFO and filesystem-based IRC client.
 # URL:         http://tools.suckless.org/ii/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git imlib2

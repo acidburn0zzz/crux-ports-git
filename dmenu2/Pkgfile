@@ -1,4 +1,4 @@
-# Description: Fork of dmenu with many useful patches applied and additional options. (hg checkout)
+# Description: Fork of dmenu with many useful patches applied and additional options.
 # URL:         https://bitbucket.org/melek/dmenu2
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  mercurial xorg-libxft xorg-libxinerama

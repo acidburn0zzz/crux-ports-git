@@ -1,4 +1,4 @@
-# Description: A tool that outputs X window titles. (git checkout)
+# Description: A tool that outputs X window titles.
 # URL:         https://github.com/baskerville/xtitle
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  xorg-xcb-util-wm

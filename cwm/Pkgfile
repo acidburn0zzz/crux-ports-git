@@ -1,4 +1,4 @@
-# Description: Portable version of OpenBSD's cwm. (git checkout)
+# Description: Portable version of OpenBSD's cwm.
 # URL:         https://github.com/chneukirchen/cwm
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxft xorg-libx11 xorg-libxinerama xorg-libxrandr fontconfig
