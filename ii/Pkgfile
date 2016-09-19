@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.suckless.org/ii $name
+		git clone git://git.suckless.org/$name $name
 		cd $name
 	fi
 

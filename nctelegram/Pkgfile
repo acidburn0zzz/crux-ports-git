@@ -7,20 +7,19 @@ name=nctelegram
 version=git
 release=1
 source=()
-branch=master
 
 build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
-		git fetch -q; git reset --hard origin/$branch
+		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/Nanoseb/ncTelegram -b $branch $name
+		git clone git://github.com/Nanoseb/$name $name
 		cd $name
 	fi
 
 	python3 setup.py build
 	python3 setup.py install \
-					--prefix=/usr \
-					--root=$PKG
+		--prefix=/usr \
+		--root=$PKG
 }

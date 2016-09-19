@@ -1,12 +1,12 @@
-# Description:  Configuration tool for AMD Overdrive6 devices.
-# URL:          http://epixoip.github.io/od6config/
+# Description: Configuration tool for AMD Overdrive6 devices.
+# URL:         http://epixoip.github.io/od6config/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:   fglrx
+# Depends on:  fglrx
 
 name=od6config
 version=git
 release=1
-source=(https://github.com/epixoip/od6config/archive/master.tar.gz)
+source=(https://github.com/epixoip/$name/archive/master.tar.gz)
 
 build() {
 	cd $name-master

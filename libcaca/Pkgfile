@@ -14,18 +14,19 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard
 	else
-		git clone git://github.com/cacalabs/libcaca $name
+		git clone git://github.com/cacalabs/$name $name
 		cd $name
 	fi
 
 	./bootstrap
 	./configure --prefix=/usr \
-				--enable-shared \
-				--disable-csharp \
-				--disable-doc \
-				--disable-cxx \
-				--disable-gl \
-				--disable-static
+		--enable-shared \
+		--disable-csharp \
+		--disable-doc \
+		--disable-cxx \
+		--disable-gl \
+		--disable-static
+
 	make
-	make DESTDIR=${PKG} PREFIX="/usr" install
+	make DESTDIR=$PKG PREFIX=/usr install
 }

@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.openbox.org/mikachu/openbox $name
+		git clone git://git.$name.org/mikachu/$name $name
 		cd $name
 	fi
 

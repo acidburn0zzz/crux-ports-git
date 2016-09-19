@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.2f30.org/noice $name
+		git clone git://git.2f30.org/$name $name
 		cd $name
 	fi
 

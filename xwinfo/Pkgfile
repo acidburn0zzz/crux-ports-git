@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/baskerville/xwinfo $name
+		git clone git://github.com/baskerville/$name $name
 		cd $name
 	fi
 

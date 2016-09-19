@@ -14,10 +14,10 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.suckless.org/ubase $name
+		git clone git://git.suckless.org/$name $name
 		cd $name
 	fi
 
 	make
-	make DESTDIR=${PKG} PREFIX="/opt/ubase" MANPREFIX="/opt/ubase/man" install
+	make DESTDIR=$PKG PREFIX=/opt/ubase MANPREFIX=/opt/ubase/man install
 }

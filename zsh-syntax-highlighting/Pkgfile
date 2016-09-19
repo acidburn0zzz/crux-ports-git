@@ -15,10 +15,10 @@ build() {
 		git fetch -q
 		git reset --had origin/master
 	else
-		git clone git://github.com/zsh-users/zsh-syntax-highlighting
+		git clone git://github.com/zsh-users/$name
 		cd $name
 	fi
 
 	make
-	make PREFIX=/usr SHARE_DIR="${PKG}/usr/share/zsh/plugins/${name}" DESTDIR="$PKG" install
+	make PREFIX=/usr SHARE_DIR=$PKG/usr/share/zsh/plugins/$name DESTDIR=$PKG install
 }

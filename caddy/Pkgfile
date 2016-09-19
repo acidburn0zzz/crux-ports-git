@@ -13,7 +13,7 @@ source=(
 
 build() {
 	export GOPATH=$(pwd)
-	go get -u -v -fix github.com/mholt/caddy/caddy
+	go get -u -v -fix github.com/mholt/$name/$name
 
 	install -Dm755 bin/caddy $PKG/usr/sbin/caddy
 	install -Dm755 $SRC/caddy $PKG/etc/rc.d/caddy

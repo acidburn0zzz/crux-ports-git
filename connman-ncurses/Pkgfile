@@ -14,14 +14,14 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/eurogiciel-oss/connman-json-client.git -b master $name
+		git clone git://github.com/eurogiciel-oss/connman-json-client $name
 		cd $name
 	fi
 
 	autoreconf -i -f
 	./configure --prefix=/usr \
-				--bindir=/usr/bin \
-				--mandir=/usr/share/man
+		--bindir=/usr/bin \
+		--mandir=/usr/share/man
 
 	make
 	install -Dm755 connman_ncurses $PKG/usr/bin/connman-ncurses

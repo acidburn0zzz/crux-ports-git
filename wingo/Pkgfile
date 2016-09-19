@@ -10,7 +10,7 @@ source=()
 
 build() {
 	export GOPATH=$(pwd)
-	go get -u -v -fix github.com/BurntSushi/wingo
+	go get -u -v -fix github.com/BurntSushi/$name
 
 	install -Dm755 bin/wingo $PKG/usr/bin/wingo
 }
