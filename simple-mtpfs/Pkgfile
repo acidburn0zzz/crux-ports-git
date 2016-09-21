@@ -1,4 +1,4 @@
-# Description: Simple MTP fuse filesystem driver. (git checkout)
+# Description: Simple MTP fuse filesystem driver.
 # URL:         https://github.com/phatina/simple-mtpfs/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libid3tag fuse glib libmtp
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/phatina/simple-mtpfs $name
+		git clone git://github.com/phatina/$name $name
 		cd $name
 	fi
 

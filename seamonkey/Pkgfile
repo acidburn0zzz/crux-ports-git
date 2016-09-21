@@ -1,4 +1,4 @@
-# Description: The Mozilla internet suite. (hg checkout)
+# Description: The Mozilla internet suite.
 # URL:         http://www.seamonkey-project.org/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  mercurial autoconf-2.13 nss libidl gtk python yasm mesa3d unzip zip libevent libvpx

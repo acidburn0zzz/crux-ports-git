@@ -1,4 +1,4 @@
-# Description: General purpose messaging, notification and menuing program for X11. (git checkout)
+# Description: General purpose messaging, notification and menuing program for X11.
 # URL:         https://github.com/robm/dzen
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libx11 xorg-libxpm xorg-libxinerama xorg-libxft
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/robm/dzen $name
+		git clone git://github.com/robm/$name $name
 		cd $name
 	fi
 

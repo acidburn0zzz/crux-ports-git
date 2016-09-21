@@ -1,4 +1,4 @@
-# Description: A minimalist web browser (git checkout)
+# Description: A minimalist web browser.
 # URL:         https://github.com/conformal/xombrero
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libbsd desktop-file-utils webkitgtk
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/conformal/xombrero $name
+		git clone git://github.com/conformal/$name $name
 		cd $name
 	fi
 
@@ -23,10 +23,10 @@ build() {
 	sed -i 's|LIBS= gtk+-2.0|& javascriptcoregtk-1.0|' Makefile
 	sed -i 's|https://www.cyphertite.com|http://crux.nu|' xombrero.{c,conf,h}
 
-	cd "linux"
+	cd linux
 
 	make GTK_VERSION=gtk2
-	make PREFIX="/usr/" MANDIR="/usr/share/man" DESTDIR="$PKG" install 
+	make PREFIX=/usr/ MANDIR=/usr/share/man DESTDIR=$PKG install 
 
 	install -Dm644 ../xombrero.conf $PKG/etc/xombrero.conf
 	install -Dm644 ../xombrero.desktop  $PKG/usr/share/applications/xombrero.desktop

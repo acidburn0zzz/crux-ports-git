@@ -1,4 +1,4 @@
-# Description: A featherweight, lemon-scented bar based on xcb with xft support. (git checkout)
+# Description: A featherweight, lemon-scented bar based on xcb with xft support.
 # URL:         https://github.com/krypt-n/bar
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  xorg-libxcb

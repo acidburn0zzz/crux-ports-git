@@ -1,4 +1,4 @@
-# Description: A a 'cd' wrapper that fuzzy finds and cd into a directory. (git checkout)
+# Description: A a 'cd' wrapper that fuzzy finds and cd into a directory.
 # URL:         https://github.com/miguelvps/c
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/miguelvps/c $name
+		git clone git://github.com/miguelvps/$name $name
 		cd $name
 	fi
 

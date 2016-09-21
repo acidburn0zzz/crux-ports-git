@@ -1,4 +1,4 @@
-# Description: A suckless variant of the *nix core utilities (git checkout)
+# Description: A suckless variant of the *nix core utilities.
 # URL:         http://git.2f30.org/sbase/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
@@ -14,10 +14,10 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.2f30.org/sbase $name
+		git clone git://git.2f30.org/$name $name
 		cd $name
 	fi
 
 	make
-	make DESTDIR=${PKG} PREFIX="/opt/sbase" MANPREFIX="/opt/sbase/man" install
+	make DESTDIR=${PKG} PREFIX=/opt/sbase MANPREFIX=/opt/sbase/man install
 }

@@ -1,4 +1,4 @@
-# Description: Configurable talking ASCII cow. (git checkout)
+# Description: Configurable talking ASCII cow.
 # URL:         https://github.com/schacon/cowsay
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues  
 # Depends on:
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/schacon/cowsay.git
+		git clone git://github.com/schacon/$name $name
 		cd $name
 	fi
 

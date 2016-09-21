@@ -1,4 +1,4 @@
-# Description: Small ncurses-based file browser. (git checkout)
+# Description: Small ncurses-based file browser.
 # URL:         http://git.2f30.org/noice/about/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.2f30.org/noice $name
+		git clone git://git.2f30.org/$name $name
 		cd $name
 	fi
 

@@ -1,4 +1,4 @@
-# Description: A modern and intuitive terminal-based text editor. (git checkout)
+# Description: A modern and intuitive terminal-based text editor.
 # URL:         https://github.com/zyedidia/micro
 # Maintainer:  onodera, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  go
@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/zyedidia/micro $name
+		git clone git://github.com/zyedidia/$name $name
 		cd $name
 	fi
 

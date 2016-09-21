@@ -1,4 +1,4 @@
-# Description: Curses interface for the daemon of the BitTorrent client Transmission. (git checkout)
+# Description: Curses interface for the daemon of the BitTorrent client Transmission.
 # URL:         https://github.com/fagga/transmission-remote-cli
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git transmission
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/fagga/transmission-remote-cli -b master $name
+		git clone git://github.com/fagga/$name $name
 		cd $name
 	fi
 

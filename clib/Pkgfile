@@ -1,4 +1,4 @@
-# Description: Package manager for the C programming language. (git checkout)
+# Description: Package manager for the C programming language.
 # URL:         https://github.com/clibs/clib
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/clibs/clib.git -b master $name
+		git clone git://github.com/clibs/$name -b master $name
 		cd $name
 	fi
 

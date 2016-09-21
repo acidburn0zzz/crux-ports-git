@@ -1,4 +1,4 @@
-# Description: A stacking window manager that cooks windows with orders from the Waitron (git checkout).
+# Description: A stacking window manager that cooks windows with orders from the Waitron.
 # URL:         https://github.com/tudurom/windowchef
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxcb xorg-xcb-util-wm
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/tudurom/windowchef -b master $name
+		git clone git://github.com/tudurom/$name $name
 		cd $name
 	fi
 

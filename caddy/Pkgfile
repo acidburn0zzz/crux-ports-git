@@ -1,4 +1,4 @@
-# Description: Fast, cross-platform HTTP/2 web server with automatic HTTPS. (git checkout)
+# Description: Fast, cross-platform HTTP/2 web server with automatic HTTPS.
 # URL:         https://caddyserver.com
 # Maintainer:  onodera, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  go
@@ -13,7 +13,7 @@ source=(
 
 build() {
 	export GOPATH=$(pwd)
-	go get -u -v -fix github.com/mholt/caddy/caddy
+	go get -u -v -fix github.com/mholt/$name/$name
 
 	install -Dm755 bin/caddy $PKG/usr/sbin/caddy
 	install -Dm755 $SRC/caddy $PKG/etc/rc.d/caddy

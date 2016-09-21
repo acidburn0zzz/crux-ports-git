@@ -1,4 +1,4 @@
-# Description: Read-line interface for telegram. (git checkout)
+# Description: Read-line interface for telegram.
 # URL:         https://github.com/vysheng/tg
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git lua jansson libevent libconfig
@@ -7,15 +7,14 @@ name=telegram-cli
 version=git
 release=1
 source=()
-branch=master
 
 build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
-		git fetch -q; git reset --hard origin/$branch
+		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/vysheng/tg -b $branch $name
+		git clone git://github.com/vysheng/tg $name
 		cd $name
 	fi
 

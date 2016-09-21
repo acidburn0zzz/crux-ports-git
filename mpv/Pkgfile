@@ -1,4 +1,4 @@
-# Description: General Purpose video player based on MPlayer and mplayer2. (git checkout)
+# Description: General Purpose video player based on MPlayer and mplayer2.
 # URL:         http://mpv.io
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git libass ffmpeg docutils python luajit
@@ -15,7 +15,7 @@ build () {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/mpv-player/mpv $name
+		git clone git://github.com/$name-player/$name $name
 		cd $name
 	fi
 

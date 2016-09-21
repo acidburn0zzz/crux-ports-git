@@ -1,4 +1,4 @@
-# Description: Hexdump program written by Bram. (git checkout)
+# Description: Hexdump program written by Bram.
 # URL:         https://github.com/Wildefyr/xxd
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports/issues
 # Depends on:  git
@@ -7,15 +7,14 @@ name=xxd
 version=git
 release=1
 source=()
-branch=master
 
 build() {
 	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
-		git fetch -q; git reset --hard origin/$branch
+		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/Wildefyr/xxd -b $branch $name
+		git clone git://github.com/Wildefyr/$name $name
 		cd $name
 	fi
 

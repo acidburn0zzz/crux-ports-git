@@ -1,6 +1,6 @@
-# Description:  Standalone console MPD visualizer (git checkout)
+# Description:  Standalone console MPD visualizer.
 # URL:          https://github.com/lucy/mpdviz
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Maintainer:   6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:   git go fftw 
 
 name=mpdviz
@@ -14,11 +14,11 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/lucy/mpdviz $name
+		git clone git://github.com/lucy/$name $name
 		cd $name
 	fi
 
-	export GOPATH="$SRC"
+	export GOPATH=$SRC
 
 	go get -d
 	go clean

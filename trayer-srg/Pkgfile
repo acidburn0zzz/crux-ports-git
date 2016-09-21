@@ -1,4 +1,4 @@
-# Description: trayer fork with multi monitor support, cleaned up codebase and other fancy stuff. (git checkout)
+# Description: trayer fork with multi monitor support, cleaned up codebase and other fancy stuff.
 # URL:         https://github.com/sargon/trayer-srg
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git gtk
@@ -14,12 +14,11 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/sargon/trayer-srg $name
+		git clone git://github.com/sargon/$name $name
 		cd $name
 	fi
 
-	./configure \
-		--prefix=/usr
+	./configure --prefix=/usr
 
 	make
 	make DESTDIR=$PKG install

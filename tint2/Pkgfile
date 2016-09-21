@@ -1,4 +1,4 @@
-# Description: A lightweight panel/taskbar for Linux. (git checkout)
+# Description: A lightweight panel/taskbar for Linux.
 # URL:         https://gitlab.com/o9000/tint2
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  gtk imlib2 librsvg pango startup-notification xorg-libxcomposite xorg-libxinerama xorg-libxrandr
@@ -15,7 +15,7 @@ build() {
     if cd $name; then
         git fetch -q; git reset --hard origin/master
     else
-        git clone https://gitlab.com/o9000/tint2.git $name
+        git clone git://gitlab.com/o9000/$name $name
         cd $name
     fi
 

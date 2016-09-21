@@ -1,4 +1,4 @@
-# Description: dmenu with XFT, quiet, xy, token, fuzzy matching, followfocus, tabnav, filter and mouse support. (git checkout)
+# Description: dmenu with XFT, quiet, xy, token, fuzzy matching, followfocus, tabnav, filter and mouse support.
 # URL:         https://github.com/toolpunk/dmenu-ee
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libxft xorg-libxinerama
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/toolpunk/dmenu-ee
+		git clone git://github.com/toolpunk/$name $name
 		cd $name
 	fi
 

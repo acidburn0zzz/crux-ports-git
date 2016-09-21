@@ -1,4 +1,4 @@
-# Description: Minimalistic init script. (git checkout)
+# Description: Minimalistic init script.
 # URL:         https://github.com/hut/minirc
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  busybox
@@ -14,7 +14,7 @@ build () {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/hut/minirc $name
+		git clone git://github.com/hut/$name $name
 		cd $name
 	fi
 

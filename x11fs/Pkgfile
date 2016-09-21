@@ -1,4 +1,4 @@
-# Description: A tool for manipulating X windows. (git checkout)
+# Description: A tool for manipulating X windows.
 # URL:         https://github.com/sdhand/x11fs
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git fuse xorg-libxcb
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/sdhand/x11fs $name
+		git clone git://github.com/sdhand/$name $name
 		cd $name
 	fi
 

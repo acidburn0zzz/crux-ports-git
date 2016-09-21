@@ -9,17 +9,18 @@ release=1
 source=()
 
 build() {
-		cd $PKGMK_SOURCE_DIR
+	cd $PKGMK_SOURCE_DIR
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/herbstluftwm/herbstluftwm -b master $name
+		git clone git://github.com/$name/$name $name
 		cd $name
 	fi
 
 	make all-nodoc
 	make PREFIX=/usr DESTDIR=$PKG install-nodoc
+
 	rm -rf $PKG/usr/share/doc
 	[ ! -e /usr/bin/zsh ] && rm -rf $PKG/usr/share/zsh
 }

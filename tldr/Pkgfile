@@ -1,4 +1,4 @@
-# Description: C++ command line client for tldr. (git checkout)
+# Description: C++ command line client for tldr.
 # URL:         https://github.com/tldr-pages/tldr-cpp-client
 # Depends on:  git clang
 
@@ -13,7 +13,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone https://github.com/tldr-pages/tldr-cpp-client.git -b master $name
+		git clone git://github.com/$name-pages/$name-cpp-client $name
 		cd $name
 	fi
 

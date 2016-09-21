@@ -1,4 +1,4 @@
-# Description: A simple graphical menu launcher for X11. (git checkout)
+# Description: A simple graphical menu launcher for X11.
 # URL:         http://git.r-36.net/thingmenu/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git xorg-libx11
@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.r-36.net/thingmenu $name
+		git clone git://git.r-36.net/$name $name
 		cd $name
 	fi
 

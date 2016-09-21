@@ -1,4 +1,4 @@
-# Description: Wireless LAN network daemon. (git checkout)
+# Description: Wireless LAN network daemon.
 # URL:         https://01.org/connman
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  dbus gnutils glib openconnect openvpn vpnc wpa_supplicant
@@ -15,18 +15,18 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.kernel.org/pub/scm/network/connman/connman.git -b master $name
+		git clone git://git.kernel.org/pub/scm/network/$name/$name $name
 		cd $name
 	fi
 
 
 	./bootstrap-configure
 	./configure --prefix=/usr \
-				--bindir=/usr/bin \
-				--mandir=/usr/share/man \
-				--enable-openvpn \
-				--enable-client \
-				--enable-polkit
+			--bindir=/usr/bin \
+			--mandir=/usr/share/man \
+			--enable-openvpn \
+			--enable-client \
+			--enable-polkit
 
 	make
 	make DESTDIR=$PKG install

@@ -1,12 +1,12 @@
-# Description: For 1377 hackers only. (git checkout)
-# URL:         https://github.com/baskerville/bspwm
+# Description: For 1377 hackers only.
+# URL:         https://raw.githubusercontent.com/janbrennen/rice/
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  
 
 name=hack.exe
 version=git
 release=1
-source=(https://raw.githubusercontent.com/janbrennen/rice/master/hack.exe.c)
+source=(https://raw.githubusercontent.com/janbrennen/rice/master/$name.c)
 
 build() {
 	gcc -pthread hack.exe.c -o hack.exe
