@@ -1,5 +1,0 @@
-After installing configure /etc/minirc.conf to your needs.
-See sections "Dealing with services" and "Further configuration" on the linked
-URL in the Pgkfile.
-
-Make sure to uninstall sysvinit.
