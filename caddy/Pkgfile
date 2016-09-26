@@ -14,7 +14,7 @@ source=(
 
 build() {
 	export GOPATH=$(pwd)
-	go get -u -v -fix github.com/mholt/caddy/caddy
+	go get -u -v -fix github.com/mholt/$name/$name
 
 	cd src/github.com/mholt/caddy/caddy
 
