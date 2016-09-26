@@ -5,17 +5,36 @@
 
 name=caddy
 version=git
-release=1
+release=2
 source=(
+	plugins.patch
 	caddy.conf
 	caddy
 )
 
 build() {
 	export GOPATH=$(pwd)
-	go get -u -v -fix github.com/mholt/$name/$name
+	go get -u -v -fix github.com/mholt/caddy/caddy
 
-	install -Dm755 bin/caddy $PKG/usr/sbin/caddy
+	cd src/github.com/mholt/caddy/caddy
+
+	patch caddymain/run.go < $SRC/plugins.patch
+
+	go get -d -v
+
+	# More verbose building
+	sed -i "s/go build/go build -v/" build.bash
+
+	./build.bash
+
+	install -Dm755 caddy $PKG/usr/sbin/caddy
 	install -Dm755 $SRC/caddy $PKG/etc/rc.d/caddy
 	install -Dm644 $SRC/caddy.conf $PKG/etc/caddy/caddy.conf
+	install -d -g www -o caddy -m755 $PKG/srv/caddy
+	install -d -g www -o caddy -m755 $PKG/var/run/caddy
+
+	# caddy currently does not support dropping privileges so we
+	# change attributes with setcat to allow access to priv ports
+	# https://caddyserver.com/docs/faq
+	setcap cap_net_bind_service=+ep $PKG/usr/sbin/caddy
 }
