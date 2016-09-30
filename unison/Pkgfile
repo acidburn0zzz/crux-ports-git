@@ -1,0 +1,28 @@
+# Description: File-synchronization too;.
+# URL:         http://www.cis.upenn.edu/~bcpierce/unison/
+# Maintainer:  onodera, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  ocaml
+
+name=unison
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/master
+	else
+		git clone git://github.com/bcpierce00/$name $name
+		cd $name
+	fi
+
+	cd src
+
+	CFLAGS=""
+	make DEBUGGING=false THREADS=true
+
+	install -Dm755 unison $PKG/usr/bin/unison
+	install -Dm755 unison-fsmonitor $PKG/usr/bin/unison-fsmonitor
+}
