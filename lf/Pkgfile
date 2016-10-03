@@ -1,0 +1,16 @@
+# Description: A terminal file manager.
+# URL:         https://github.com/gokcehan/lf
+# Maintainer:  onodera, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  go
+
+name=lf
+version=git
+release=1
+source=()
+
+build() {
+	export GOPATH=$(pwd)
+	go get -u -v -fix github.com/gokcehan/$name
+
+	install -Dm755 bin/lf $PKG/usr/bin/lf
+}
