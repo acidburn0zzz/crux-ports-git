@@ -16,8 +16,10 @@ build() {
 	else
 		git clone --recursive git://github.com/thestinger/$name $name
 		cd $name
-	fi   
-         
+	fi
+	
+	sed -i 's|vte_terminal_set_color_cursor_foreground(vte, &*color)|vte_terminal_set_color_foreground(vte, &*color)|' termite.cc
+
 	patch -Np1 < $SRC/fix-transparency.patch
 
 	make 
