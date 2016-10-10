@@ -5,7 +5,7 @@
 
 name=termite
 version=git
-release=1
+release=2
 source=(fix-transparency.patch)
 
 build() {
@@ -17,12 +17,12 @@ build() {
 		git clone --recursive git://github.com/thestinger/$name $name
 		cd $name
 	fi
-	
-	sed -i 's|vte_terminal_set_color_cursor_foreground(vte, &*color)|vte_terminal_set_color_foreground(vte, &*color)|' termite.cc
+
+	sed -i 's|vte_terminal_set_color_cursor_foreground|vte_terminal_set_color_foreground|' termite.cc
 
 	patch -Np1 < $SRC/fix-transparency.patch
 
-	make 
+	make PREFIX=/usr
 	tic -x termite.terminfo -o terminfo
 	install -Dm644 man/termite.1 $PKG/usr/share/man/man1/termite.1
 	install -Dm644 man/termite.config.5 $PKG/usr/share/man/man5/termite.config.5
