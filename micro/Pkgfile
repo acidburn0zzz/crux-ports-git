@@ -11,7 +11,7 @@ source=()
 
 build() {
 	cd $PKGMK_SOURCE_DIR
-
+	
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
@@ -20,13 +20,12 @@ build() {
 	fi
 
 	export GOPATH=$(pwd)
+	export GOBIN=$GOPATH/bin
 
 	# More verbose building
 	sed -i "s/go get/go get -v/" Makefile
 	sed -i "s/go build/go build -v/" Makefile
 
-	make clean
-	make build-all
-
-	install -Dm755 micro $PKG/usr/bin/micro
+	make install-all
+	install -Dm755 bin/micro $PKG/usr/bin/micro
 }
