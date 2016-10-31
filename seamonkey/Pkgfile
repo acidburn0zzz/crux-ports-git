@@ -6,7 +6,7 @@
 
 name=seamonkey
 version=hg
-release=2
+release=3
 source=()
 
 build() {
@@ -29,7 +29,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --prefix=/usr
 	mk_add_options MOZ_OBJDIR=$PKGMK_SOURCE_DIR/seamonkey/obj-sm-release
 
-	ac_add_options --enable-optimize="$CFLAGS"
+	ac_add_options --enable-optimize
 	ac_add_options --enable-default-toolkit=cairo-gtk2
 	mk_add_options MOZ_MAKE_FLAGS="$MAKEFLAGS -s"
 	STRIP_FLAGS="--strip-debug"
@@ -53,10 +53,7 @@ cat <<- EOF > .mozconfig
 	ac_add_options --with-distribution-id=nu.crux
 
 	ac_add_options --enable-extensions=default,-gnomevfs
-	ac_add_options --enable-gio
 	ac_add_options --enable-elf-hack
-	ac_add_options --enable-pie
-	ac_add_options --enable-gold
 	ac_add_options --enable-release
 
 	ac_add_options --disable-tests
@@ -71,7 +68,6 @@ cat <<- EOF > .mozconfig
 	ac_add_options --disable-eme
 	ac_add_options --disable-safe-browsing
 	ac_add_options --disable-url-classifier
-
 EOF
 
 	make -f client.mk clean
