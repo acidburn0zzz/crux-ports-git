@@ -1,5 +1,5 @@
 # Description: A smart and user-friendly command line shell for OSX, Linux, and the rest of the family.
-# URL:         http://fishshell.com
+# URL:         https://fishshell.com
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  git doxygen libpcre2
 # Optional:    python xsel
