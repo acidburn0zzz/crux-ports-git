@@ -1,2 +1,2 @@
-In order for fish to compile you need to
-build libpcre2 with the --enable-pcre2-32 flag
+In order to get fish to compile you need to
+build libpcre2 with the --enable-pcre2-32 flag.
