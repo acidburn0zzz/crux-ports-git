@@ -6,7 +6,7 @@
 
 name=you-get
 version=git
-release=1
+release=2
 source=()
 
 build() {
@@ -14,9 +14,11 @@ build() {
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
+		git checkout develop
 	else
 		git clone git://github.com/soimort/$name $name
 		cd $name
+		git checkout develop
 	fi
 
 	python3 setup.py install --root=$PKG
