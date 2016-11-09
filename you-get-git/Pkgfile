@@ -4,9 +4,9 @@
 # Depends on:  git python3 ffmpeg
 # Optional:    rtmpdump
 
-name=you-get
+name=you-get-git
 version=git
-release=2
+release=1
 source=()
 
 build() {
@@ -16,7 +16,7 @@ build() {
 		git fetch -q; git reset --hard origin/master
 		git checkout develop
 	else
-		git clone git://github.com/soimort/$name $name
+		git clone git://github.com/soimort/${name%-git} $name
 		cd $name
 		git checkout develop
 	fi
