@@ -1,0 +1,16 @@
+# Description: Tool to fix (add, remove) your Go imports automatically.
+# URL:         https://github.com/bradfitz/goimports
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  go
+
+name=goimports
+version=git
+release=1
+source=()
+
+build() {
+	export GOPATH=$(pwd)
+	go get -u -v -fix golang.org/x/tools/cmd/$name
+
+	install -Dm755 bin/goimports $PKG/usr/bin/goimports
+}
