@@ -6,7 +6,7 @@
 
 name=fish
 version=git
-release=5
+release=6
 source=()
 
 build() {
@@ -19,7 +19,7 @@ build() {
 		cd $name
 	fi
 
-	autoconf
+	autoreconf --no-recursive
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
