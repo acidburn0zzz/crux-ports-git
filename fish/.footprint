@@ -14,6 +14,8 @@ drwxr-xr-x	root/root	usr/share/fish/
 -rw-r--r--	root/root	usr/share/fish/__fish_build_paths.fish
 drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/..fish
+-rw-r--r--	root/root	usr/share/fish/completions/VBoxHeadless.fish
+-rw-r--r--	root/root	usr/share/fish/completions/VBoxSDL.fish
 -rw-r--r--	root/root	usr/share/fish/completions/a2disconf.fish
 -rw-r--r--	root/root	usr/share/fish/completions/a2dismod.fish
 -rw-r--r--	root/root	usr/share/fish/completions/a2dissite.fish
@@ -79,6 +81,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/aura.fish
 -rw-r--r--	root/root	usr/share/fish/completions/awk.fish
 -rw-r--r--	root/root	usr/share/fish/completions/badblocks.fish
+-rw-r--r--	root/root	usr/share/fish/completions/base64.fish
 -rw-r--r--	root/root	usr/share/fish/completions/bc.fish
 -rw-r--r--	root/root	usr/share/fish/completions/bg.fish
 -rw-r--r--	root/root	usr/share/fish/completions/bind.fish
@@ -138,6 +141,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/cygport.fish
 -rw-r--r--	root/root	usr/share/fish/completions/darcs.fish
 -rw-r--r--	root/root	usr/share/fish/completions/date.fish
+-rw-r--r--	root/root	usr/share/fish/completions/dconf.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dcop.fish
 -rw-r--r--	root/root	usr/share/fish/completions/dd.fish
 -rw-r--r--	root/root	usr/share/fish/completions/defaults.fish
@@ -180,6 +184,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/exit.fish
 -rw-r--r--	root/root	usr/share/fish/completions/expand.fish
 -rw-r--r--	root/root	usr/share/fish/completions/fcrontab.fish
+-rw-r--r--	root/root	usr/share/fish/completions/feh.fish
 -rw-r--r--	root/root	usr/share/fish/completions/fg.fish
 -rw-r--r--	root/root	usr/share/fish/completions/fgrep.fish
 -rw-r--r--	root/root	usr/share/fish/completions/figlet.fish
@@ -247,6 +252,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/la.fish
 -rw-r--r--	root/root	usr/share/fish/completions/latex.fish
 -rw-r--r--	root/root	usr/share/fish/completions/latexmk.fish
+-rw-r--r--	root/root	usr/share/fish/completions/launchctl.fish
 -rw-r--r--	root/root	usr/share/fish/completions/lein.fish
 -rw-r--r--	root/root	usr/share/fish/completions/less.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ll.fish
@@ -325,6 +331,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/npm.fish
 -rw-r--r--	root/root	usr/share/fish/completions/nvim.fish
 -rw-r--r--	root/root	usr/share/fish/completions/nvram.fish
+-rw-r--r--	root/root	usr/share/fish/completions/objdump.fish
 -rw-r--r--	root/root	usr/share/fish/completions/obnam.fish
 -rw-r--r--	root/root	usr/share/fish/completions/oggenc.fish
 -rw-r--r--	root/root	usr/share/fish/completions/omega.fish
@@ -578,6 +585,7 @@ drwxr-xr-x	root/root	usr/share/fish/functions/
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_number_of_cmd_args_wo_opts.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_paginate.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_ports_dirs.fish
+-rw-r--r--	root/root	usr/share/fish/functions/__fish_print_VBox_vms.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_abook_emails.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_addresses.fish
 -rw-r--r--	root/root	usr/share/fish/functions/__fish_print_arch_daemons.fish
