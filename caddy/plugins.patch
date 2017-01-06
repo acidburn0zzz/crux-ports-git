@@ -4,8 +4,8 @@
  
  	"github.com/mholt/caddy/caddytls"
  	// This is where other plugins get plugged in (imported)
-+	_ "github.com/onodera-punpun/caddy.upload"
-+	_ "github.com/pedronasser/caddy-search"
++	//_ "github.com/onodera-punpun/caddy.upload"
++	//_ "github.com/pedronasser/caddy-search"
  )
  
  func init() {
