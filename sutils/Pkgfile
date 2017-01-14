@@ -1,7 +1,7 @@
 # Description: Small command-line utilities.
 # URL:         https://github.com/baskerville/sutils
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git
+# Depends on:  git alsa-lib
 
 name=sutils
 version=git
