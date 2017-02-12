@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/6c37-git.pub
+RWQY8eVY1sSPFQ00+pmAuwx3cZY4m/5DgDVY9vNy+S9SOwIXzbQ+kTZ6BqC88BktJVDe6ELUFG3OqYyyQGBNcWwfLncgAJ/ZBw0=
+SHA256 (Pkgfile) = 5a42cdf6d203f23e91ad3bc9e3498ca760b5a5cf04ffbb3c83f995a311f84475
+SHA256 (.footprint) = 05b000ff8d074c914480174c7ab285e3265d06470bd533b32474ae6b63ac0e85
+SHA256 (fix-transparency.patch) = 1fb879d74b9e3ae20b33170268806328bcb95a817043e8130f77cddfdf45fefe

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/6c37-git.pub
+RWQY8eVY1sSPFY25d/jJbGY2TXgHmwR0PwkW1i3G1MNhwDhl4R65SQcuBrIx3cloBTlMxWn25+n3bZOdHMqiubNHowsNhHiDdgQ=
+SHA256 (Pkgfile) = 57b5ed805b33b9564f8d4beb41dad787f6923157833f24aa093b4d6488ff4802
+SHA256 (.footprint) = 65120812bcc1c74e0438e8b2854780836c8e8e6ddd03592bcaf308a08eed5e4d
+SHA256 (cowsay-3.03.patch) = 89d192d5db3390378424e8ef95e63ab4835d68a54a262ff02614e19ab2c70b6a

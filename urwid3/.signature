@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/6c37-git.pub
+RWQY8eVY1sSPFfI/LU9Fvp8eysqpb04/0rrNSqYYVDEBg/tJQLtzMaCPNh+s82Z/+ZMqjLIOuy7c4t6+xTSudP8M+mJCI24HSwM=
+SHA256 (Pkgfile) = d96e4c605150990e8de72b7a19500c1442d766328795dc8c8d94dbe60f042da1
+SHA256 (.footprint) = 06dc5f05572925c4b5f1634e83b0a385bb8c3564eabc6eebc00d209a0e4b0e4c
+SHA256 (urwid-1.3.1.tar.gz) = cfcec03e36de25a1073e2e35c2c7b0cc6969b85745715c3a025a31d9786896a1

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/6c37-git.pub
+RWQY8eVY1sSPFQfJDdMGhRT5XYN4l03g98tolmTRAl33EL9iMwswVLiNi3N1fHrmaMMzt97shTsiB5+Z6ITL6hpCqde7uXVM3gM=
+SHA256 (Pkgfile) = ef39225ddc6df3f1293e46856b25914daa52de655816a77d88ac4c685f1a0aa4
+SHA256 (.footprint) = e1149abde137e47489a54cbe6c995c2097f45d8c3751bb3c4e2c19a3e2f930a9
+SHA256 (master.tar.gz) = b119f83a1c63a8eecc25f3062a7abcfb9eb95075611fba399eac323ac76e40ca
