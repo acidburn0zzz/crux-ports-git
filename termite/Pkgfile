@@ -1,12 +1,12 @@
 # Description: A keyboard-centric VTE-based terminal.
 # URL:         https://github.com/thestinger/termite
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git vte3
+# Depends on:  git vte3-ng
 
 name=termite
 version=git
-release=2
-source=(fix-transparency.patch)
+release=3
+source=()
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -18,14 +18,8 @@ build() {
 		cd $name
 	fi
 
-	sed -i 's|vte_terminal_set_color_cursor_foreground|vte_terminal_set_color_foreground|' termite.cc
-
-	patch -Np1 < $SRC/fix-transparency.patch
+	sed -i '/GdkVisual /s/gdk_screen_get_rgba_visual(screen)/nullptr/' termite.cc
 
 	make PREFIX=/usr
-	tic -x termite.terminfo -o terminfo
-	install -Dm644 man/termite.1 $PKG/usr/share/man/man1/termite.1
-	install -Dm644 man/termite.config.5 $PKG/usr/share/man/man5/termite.config.5
-	install -Dm644 terminfo/x/xterm-termite $PKG/usr/share/terminfo/x/xterm-termite
-	install -Dm755 termite $PKG/usr/bin/termite
+	make PREFIX=/usr DESTDIR=$PKG install
 }
