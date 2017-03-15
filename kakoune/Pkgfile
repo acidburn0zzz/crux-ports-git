@@ -5,9 +5,9 @@
 
 name=kakoune
 version=git
-release=1
-source=()
+release=2
 branch=master
+source=()
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -20,5 +20,7 @@ build() {
 	fi
 
 	cd src
-	make install debug=no DESTDIR=$PKG PREFIX=/usr
+
+	make debug=no DESTDIR=$PKG PREFIX=/usr install
+	find $PKG -name '*README*' -delete
 }
