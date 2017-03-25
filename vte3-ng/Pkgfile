@@ -1,0 +1,33 @@
+# Description: Enhanced vte terminal widget.
+# URL:         https://github.com/thestinger/vte-ng
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  git gtk3 vala libpcre2 gtk-doc gnutls
+
+name=vte3-ng
+version=git
+branch=0.46.1-ng
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q; git reset --hard origin/$branch
+	else
+		git clone --recursive git://github.com/thestinger/vte-ng $name
+		cd $name
+		git checkout $branch
+	fi
+
+	./autogen.sh
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc
+
+	make
+	make DESTDIR=$PKG install
+
+	rm -rf $PKG/usr/share/locale
+}
