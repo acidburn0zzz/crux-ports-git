@@ -93,7 +93,6 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/builtin.fish
 -rw-r--r--	root/root	usr/share/fish/completions/bundle.fish
 -rw-r--r--	root/root	usr/share/fish/completions/bunzip2.fish
--rw-r--r--	root/root	usr/share/fish/completions/burp.fish
 -rw-r--r--	root/root	usr/share/fish/completions/busctl.fish
 -rw-r--r--	root/root	usr/share/fish/completions/bzcat.fish
 -rw-r--r--	root/root	usr/share/fish/completions/bzip2.fish
@@ -181,7 +180,6 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/exec.fish
 -rw-r--r--	root/root	usr/share/fish/completions/exit.fish
 -rw-r--r--	root/root	usr/share/fish/completions/expand.fish
--rw-r--r--	root/root	usr/share/fish/completions/fcrontab.fish
 -rw-r--r--	root/root	usr/share/fish/completions/feh.fish
 -rw-r--r--	root/root	usr/share/fish/completions/fg.fish
 -rw-r--r--	root/root	usr/share/fish/completions/fgrep.fish
@@ -244,6 +242,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/import.fish
 -rw-r--r--	root/root	usr/share/fish/completions/invoke-rc.d.fish
 -rw-r--r--	root/root	usr/share/fish/completions/ip.fish
+-rw-r--r--	root/root	usr/share/fish/completions/ipset.fish
 -rw-r--r--	root/root	usr/share/fish/completions/iptables.fish
 -rw-r--r--	root/root	usr/share/fish/completions/jobs.fish
 -rw-r--r--	root/root	usr/share/fish/completions/journalctl.fish
@@ -461,6 +460,7 @@ drwxr-xr-x	root/root	usr/share/fish/completions/
 -rw-r--r--	root/root	usr/share/fish/completions/tee.fish
 -rw-r--r--	root/root	usr/share/fish/completions/telnet.fish
 -rw-r--r--	root/root	usr/share/fish/completions/termite.fish
+-rw-r--r--	root/root	usr/share/fish/completions/terraform.fish
 -rw-r--r--	root/root	usr/share/fish/completions/test.fish
 -rw-r--r--	root/root	usr/share/fish/completions/tex.fish
 -rw-r--r--	root/root	usr/share/fish/completions/time.fish
