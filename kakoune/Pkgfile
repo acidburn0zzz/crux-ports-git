@@ -1,7 +1,7 @@
 # Description: Vim-like text editor with less keystrokes. (git checkout)
 # URL:         http://kakoune.org
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git boost ncurses asciidoc
+# Depends on:  git boost asciidoc
 
 name=kakoune
 version=git
@@ -9,17 +9,21 @@ release=2
 branch=master
 source=()
 
-build() {
-	cd $PKGMK_SOURCE_DIR
-
-	if cd $name; then
-		git fetch -q; git reset --hard origin/$branch
+download_git() {
+	if [[ -d $PKGMK_SOURCE_DIR/$name ]]; then
+		git -C $PKGMK_SOURCE_DIR/$name fetch --depth=1
+		git -C $PKGMK_SOURCE_DIR/$name clean -f
+		git -C $PKGMK_SOURCE_DIR/$name reset --hard origin/$2
 	else
-		git clone https://github.com/mawww/kakoune -b $branch $name
-		cd $name
+		git -C $PKGMK_SOURCE_DIR clone --depth=1 $1 -b $2 $name
 	fi
 
-	cd src
+	cp -r $PKGMK_SOURCE_DIR/$name $PKGMK_WORK_DIR/src/$name
+}
+
+build() {
+	download_git https://github.com/mawww/kakoune master
+	cd $name/src
 
 	make debug=no DESTDIR=$PKG PREFIX=/usr install
 	find $PKG -name '*README*' -delete
