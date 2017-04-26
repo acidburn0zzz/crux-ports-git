@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard
 	else
-		git clone git://github.com/cacalabs/$name $name
+		git clone https://github.com/cacalabs/$name $name
 		cd $name
 	fi
 

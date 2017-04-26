@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.kernel.org/pub/scm/linux/kernel/git/firmware/$name $name
+		git clone https://git.kernel.org/pub/scm/linux/kernel/git/firmware/$name $name
 		cd $name
 	fi
 

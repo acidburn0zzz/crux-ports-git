@@ -15,7 +15,7 @@ build() {
     if cd $name; then
         git fetch -q; git reset --hard origin/master
     else
-        git clone git://gitlab.com/o9000/$name $name
+        git clone https://gitlab.com/o9000/$name $name
         cd $name
     fi
 

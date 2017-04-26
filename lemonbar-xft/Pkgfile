@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/xft-port
 	else
-		git clone git://github.com/krypt-n/bar -b xft-port $name
+		git clone https://github.com/krypt-n/bar -b xft-port $name
 		cd $name
 	fi
 

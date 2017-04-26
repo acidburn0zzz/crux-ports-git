@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone --recursive git://github.com/thestinger/$name $name
+		git clone --recursive https://github.com/thestinger/$name $name
 		cd $name
 	fi
 

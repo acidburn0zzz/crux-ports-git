@@ -14,7 +14,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://thetudor.ddns.net/$name $name
+		git clone https://thetudor.ddns.net/$name $name
 		cd $name
 	fi
 

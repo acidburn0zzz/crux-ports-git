@@ -21,7 +21,7 @@ build () {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://git.code.sourceforge.net/p/opensound/git $name
+		git clone https://git.code.sourceforge.net/p/opensound/git $name
 		cd $name
 	fi
 

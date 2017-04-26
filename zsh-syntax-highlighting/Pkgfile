@@ -15,7 +15,7 @@ build() {
 		git fetch -q
 		git reset --had origin/master
 	else
-		git clone git://github.com/zsh-users/$name
+		git clone https://github.com/zsh-users/$name
 		cd $name
 	fi
 

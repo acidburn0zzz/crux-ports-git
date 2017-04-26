@@ -15,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/$branch
 	else
-		git clone --recursive git://github.com/thestinger/vte-ng $name
+		git clone --recursive https://github.com/thestinger/vte-ng $name
 		cd $name
 		git checkout $branch
 	fi
