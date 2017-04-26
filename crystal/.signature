@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/6c37-git.pub
-RWQY8eVY1sSPFdOSfeF5gJJRwqvf3T5qGefH7EZVSTHs/GALf7B8rPGNmN2azwd26fSpmnFF85T9EQejmoPhhAAldIRkVMN7mgY=
-SHA256 (Pkgfile) = 23977bfe3050d66b480412f7e0bd2949ce79da48334b5ef9a3c101f415c5cca2
-SHA256 (.footprint) = b637729d75f2382ebae119b3d299daa2048bbacfaffdcada5773914368f785b3
-SHA256 (crystal-0.7.6-1-linux-x86_64.tar.gz) = 5fd6781ecf7243d2a71ec9c1aa93ad6a1fadef0d231c329280720c271183c1ff
