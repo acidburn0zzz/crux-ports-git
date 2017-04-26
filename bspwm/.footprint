@@ -37,6 +37,10 @@ drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/panel/
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/panel/panel_colors
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/panel/profile
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/panel/sxhkdrc
+drwxr-xr-x	root/root	usr/share/doc/bspwm/examples/receptacles/
+-rw-r--r--	root/root	usr/share/doc/bspwm/examples/receptacles/README.md
+-rwxr-xr-x	root/root	usr/share/doc/bspwm/examples/receptacles/extract_canvas
+-rwxr-xr-x	root/root	usr/share/doc/bspwm/examples/receptacles/induce_rules
 -rw-r--r--	root/root	usr/share/doc/bspwm/examples/sxhkdrc
 drwxr-xr-x	root/root	usr/share/fish/
 drwxr-xr-x	root/root	usr/share/fish/vendor_completions.d/
