@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/6c37-git.pub
-RWQY8eVY1sSPFVm0oHNVkd5tBXFsINeJ/Pgqt51lckYI6acLD8qrB9kHR21/5l53QCfSwmivwUAx8U4revm0mXxt74u7mz+Qpw8=
-SHA256 (Pkgfile) = 48eea7f93625d4d37b610452baf6625b2b590fef111987fb4f5e863ee818494d
+RWQY8eVY1sSPFSNX7w2DJHJfddWTs6iUzjaTaH9RpOKIkvykNF9Qz8rQLI4OWEkydyjXSIqWaqH8UpCTgbWDpMi2mUqmxHdscQw=
+SHA256 (Pkgfile) = 2dabd226dda22dc9b5b3aa47ac9281c378c844794edefea0bf54bfe9db3d0a79
 SHA256 (.footprint) = e9793c8ebf579e929232e553edf3216888fc142460e4762155a6a94c69e8aade
 SHA256 (rc.connmand) = 69d5ef458ad3a0ee8ebd3bf0c147c92cc60e4edc1d3778675802a87aa9b46b8a
