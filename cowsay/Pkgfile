@@ -1,6 +1,6 @@
 # Description: Configurable talking ASCII cow.
 # URL:         https://github.com/schacon/cowsay
-# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues  
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:
 
 name=cowsay
@@ -8,15 +8,22 @@ version=git
 release=1
 source=(cowsay-3.03.patch)
 
-build() {
-	cd $PKGMK_SOURCE_DIR
-	
-	if cd $name; then
-		git fetch -q; git reset --hard origin/master
+download_git() {
+	if [[ -d $PKGMK_SOURCE_DIR/$name ]]; then
+		git -C $PKGMK_SOURCE_DIR/$name fetch --depth=1
+		git -C $PKGMK_SOURCE_DIR/$name clean -f
+		git -C $PKGMK_SOURCE_DIR/$name reset --hard origin/$2
 	else
-		git clone https://github.com/schacon/$name $name
-		cd $name
+		git -C $PKGMK_SOURCE_DIR clone --depth=1 $1 -b $2 $name
 	fi
+
+	cp -r $PKGMK_SOURCE_DIR/$name $PKGMK_WORK_DIR/src/$name
+}
+
+
+build() {
+	download_git https://github.com/schacon/$name master
+	cd $name
 
 	patch -p1 < $SRC/cowsay-3.03.patch
 
@@ -24,7 +31,7 @@ build() {
 	install -Dm644 cowsay.1 $PKG/usr/share/man/man1/cowsay.1
 	ln -s cowsay $PKG/usr/bin/cowthink
 
-	for c in cows/*.cow; do 
+	for c in cows/*.cow; do
 		install -Dm644 $c $PKG/usr/share/cowsay/$c
 	done
 }
