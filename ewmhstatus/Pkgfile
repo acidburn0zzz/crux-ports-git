@@ -24,13 +24,6 @@ build() {
 	download_git https://github.com/baskerville/$name master
 	cd $name
 
-	if cd $name; then
-		git fetch -q; git reset --hard origin/master
-	else
-		git clone https://github.com/baskerville/$name $name
-		cd $name
-	fi
-
 	make
 	make PREFIX=/usr DESTDIR=$PKG install
 }
