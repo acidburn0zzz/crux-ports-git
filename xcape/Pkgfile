@@ -1,22 +1,28 @@
 # Description: Linux utility to configure modifier keys to act as other keys when pressed and released on their own.
 # URL:         https://github.com/alols/xcape
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git xorg-libx11 xorg-libxi xorg-libxtst 
+# Depends on:  git xorg-libx11 xorg-libxi xorg-libxtst
 
 name=xcape
 version=git
 release=1
 source=()
 
-build() {
-	cd $PKGMK_SOURCE_DIR
-
-	if cd $name; then
-		git fetch -q; git reset --hard origin/master
+download_git() {
+	if [[ -d $PKGMK_SOURCE_DIR/$name ]]; then
+		git -C $PKGMK_SOURCE_DIR/$name fetch --depth=1
+		git -C $PKGMK_SOURCE_DIR/$name clean -f
+		git -C $PKGMK_SOURCE_DIR/$name reset --hard origin/$2
 	else
-		git clone https://github.com/alols/$name $name
-		cd $name
+		git -C $PKGMK_SOURCE_DIR clone --depth=1 $1 -b $2 $name
 	fi
+
+	cp -r $PKGMK_SOURCE_DIR/$name $PKGMK_WORK_DIR/src/$name
+}
+
+build() {
+	download_git https://github.com/alols/$name master
+	cd $name
 
 	make
 	make PREFIX=/usr MANDIR=/usr/share/man DESTDIR=$PKG install
