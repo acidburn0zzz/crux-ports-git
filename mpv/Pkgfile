@@ -1,7 +1,7 @@
 # Description: General Purpose video player based on MPlayer and mplayer2.
 # URL:         http://mpv.io
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
-# Depends on:  git libass ffmpeg docutils python luajit
+# Depends on:  git libass ffmpeg docutils python luajit xorg-libxscrnsaver
 # Optional:    libdvdread libdvdnav youtube-dl libcdio-paranoia
 
 name=mpv
