@@ -1,0 +1,30 @@
+# Description: A pseudo terminal scroller for st.
+# URL:         https://github.com/jeaye/sts
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:
+
+name=sts
+version=git
+release=git
+source=()
+
+download_git() {
+	if [[ -d $PKGMK_SOURCE_DIR/$name ]]; then
+		git -C $PKGMK_SOURCE_DIR/$name fetch --depth=1
+		git -C $PKGMK_SOURCE_DIR/$name clean -f
+		git -C $PKGMK_SOURCE_DIR/$name reset --hard origin/$2
+	else
+		git -C $PKGMK_SOURCE_DIR clone --depth=1 $1 -b $2 $name
+	fi
+
+	cp -r $PKGMK_SOURCE_DIR/$name $PKGMK_WORK_DIR/src/$name
+}
+
+build() {
+	download_git https://github.com/jeaye/$name master
+	cd $name
+
+	sed -i 's/-Werror//g' config.mk
+
+	make DESTDIR=$PKG PREFIX=/usr install
+}
