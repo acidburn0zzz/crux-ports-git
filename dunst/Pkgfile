@@ -5,7 +5,7 @@
 
 name=dunst
 version=git
-release=2
+release=3
 source=()
 
 download_git() {
@@ -24,7 +24,7 @@ build() {
 	download_git https://github.com/knopwob/$name master
 	cd $name
 
-	make
+	make VERSION=$(git -C $PKGMK_SOURCE_DIR/$name rev-parse --short HEAD)
 	make DESTDIR=$PKG PREFIX=/usr install
 
 	rm -rf $PKG/usr/share/dunst
