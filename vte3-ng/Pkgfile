@@ -5,8 +5,8 @@
 
 name=vte3-ng
 version=git
-branch=0.46.1-ng
-release=1
+branch=0.48.2-ng
+release=2
 source=()
 
 build() {
@@ -14,6 +14,7 @@ build() {
 
 	if cd $name; then
 		git fetch -q; git reset --hard origin/$branch
+		git checkout $branch
 	else
 		git clone --recursive https://github.com/thestinger/vte-ng $name
 		cd $name
