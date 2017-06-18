@@ -6,32 +6,18 @@
 
 name=micro
 version=git
-release=1
+release=2
 source=()
 
-download_git() {
-	if [[ -d $PKGMK_SOURCE_DIR/$name ]]; then
-		git -C $PKGMK_SOURCE_DIR/$name fetch --depth=1
-		git -C $PKGMK_SOURCE_DIR/$name clean -f
-		git -C $PKGMK_SOURCE_DIR/$name reset --hard origin/$2
-	else
-		git -C $PKGMK_SOURCE_DIR clone --depth=1 $1 -b $2 $name
-	fi
-
-	cp -r $PKGMK_SOURCE_DIR/$name $PKGMK_WORK_DIR/src/$name
-}
-
 build() {
-	download_git https://github.com/zyedidia/$name master
-	cd $name
-
 	export GOPATH=$(pwd)
-	export GOBIN=$GOPATH/bin
+	go get -d -v -fix github.com/zyedidia/$name/cmd/$name
+	cd src/github.com/zyedidia/$name
 
 	# More verbose building
 	sed -i "s/go get/go get -v/" Makefile
 	sed -i "s/go build/go build -v/" Makefile
 
-	make install-all
-	install -Dm755 bin/micro $PKG/usr/bin/micro
+	make install
+	install -Dm755 $SRC/bin/micro $PKG/usr/bin/micro
 }
