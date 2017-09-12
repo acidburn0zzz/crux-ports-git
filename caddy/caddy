@@ -16,7 +16,7 @@ start)
 	# Set the ulimits
 	ulimit -n 8192
 
-	$SSD --chuid caddy:www --start --background --pidfile $PID --exec $PROG -- $OPTS
+	$SSD --start --background --pidfile $PID --exec $PROG -- $OPTS
 	;;
 stop)
 	$SSD --stop --retry 10 --pidfile $PID

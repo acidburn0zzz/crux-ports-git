@@ -5,7 +5,7 @@
 
 name=caddy
 version=git
-release=4
+release=5
 source=(
 	caddy.conf
 	caddy
@@ -19,17 +19,9 @@ build() {
 
 	go get -d -v
 	go get -u -v -fix github.com/caddyserver/builds
-
 	go run build.go
 
 	install -Dm755 caddy $PKG/usr/sbin/caddy
 	install -Dm755 $SRC/caddy $PKG/etc/rc.d/caddy
 	install -Dm644 $SRC/caddy.conf $PKG/etc/caddy/caddy.conf
-	install -d -g www -o caddy -m755 $PKG/srv/caddy
-	install -d -g www -o caddy -m755 $PKG/var/run/caddy
-
-	# caddy currently does not support dropping privileges so we
-	# change attributes with setcat to allow access to priv ports
-	# https://caddyserver.com/docs/faq
-	setcap cap_net_bind_service=+ep $PKG/usr/sbin/caddy
 }
