@@ -5,7 +5,7 @@
 
 name=caddy
 version=git
-release=3
+release=4
 source=(
 	plugins.patch
 	caddy.conf
@@ -21,7 +21,7 @@ build() {
 	patch caddymain/run.go < $SRC/plugins.patch
 
 	go get -d -v
-	go get -u -v -fix github.com/caddyserver/buildworker
+	go get -u -v -fix github.com/caddyserver/builds
 
 	go run build.go
 
