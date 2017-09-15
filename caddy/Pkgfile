@@ -5,23 +5,17 @@
 
 name=caddy
 version=git
-release=6
+release=7
 source=(
 	caddy.conf
 	caddy
-	remove-header.patch
 )
 
 build() {
 	export GOPATH=$(pwd)
 	go get -u -v -fix github.com/mholt/$name/$name
 	go get -u -v -fix github.com/caddyserver/builds
-
-	cd src/github.com/mholt/caddy
-
-	patch -p1 < $SRC/remove-header.patch
-
-	cd caddy
+	cd src/github.com/mholt/$name/$name
 
 	go run build.go
 

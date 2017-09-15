@@ -1,7 +1,6 @@
 untrusted comment: verify with /etc/ports/6c37-git.pub
-RWQY8eVY1sSPFXyju7ifs5lBz51SyS1WxKSIh+YxAQ3sgvZWdDlmtF2+XWMyI6vl+L2TRDLOmQnzdDyq0rVRO0Yp3V1vAk5DGAU=
-SHA256 (Pkgfile) = 1fb57d3627c57e0fb3a3a4533f7fe906e4d13841e4c0276ce79ed5020e374bd4
+RWQY8eVY1sSPFa2MZeNd7FyFJ2T0e9g0Jw8wn+Q10F3aqgSjgboJHdrCyS6+W1tf8NygPe4SObxiG8nnH21mKLEmLruhrgPghAc=
+SHA256 (Pkgfile) = 7092de0f5b48790d3a23569b300bc5b75c113d4afef94436571d4b02788d98db
 SHA256 (.footprint) = b1c8b52058b70ef01fa89d18583d3cb76bdb6a0207ef04b9dbdea8ac1c499d24
 SHA256 (caddy.conf) = 4da8fca38aacec288744571c9bf8805b31af97857ff5e332d4a5c7252545dba8
 SHA256 (caddy) = 96d6c427d9bcfffbbd0d517a980c9ecde832390ce5dba3031dbb9a444d6710cd
-SHA256 (remove-header.patch) = c7cc993643c0288ec1d018f96dd430c5cf56f6bd35b9a5ddd824648a49238aff
