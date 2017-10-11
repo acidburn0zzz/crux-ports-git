@@ -1,5 +1,5 @@
 # Description: A tool that concurrently runs a whole bunch of Go linters.
-# URL:         https://github.com/bradfitz/goimports
+# URL:         https://github.com/alecthomas/gometalinter
 # Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
 # Depends on:  go
 
