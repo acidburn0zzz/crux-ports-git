@@ -1,0 +1,28 @@
+# Description: A small python script that enables receiving android notifications on your GNU/Linux PC.
+# URL:         https://github.com/MihaiBojescu/Linux-notifier
+# Maintainer:  6c37 Team, https://github.com/6c37/crux-ports-git/issues
+# Depends on:  libnotify python3-gobject
+
+name=linux-notifier
+version=git
+release=1
+source=()
+
+download_git() {
+	if [[ -d $PKGMK_SOURCE_DIR/$name ]]; then
+		git -C $PKGMK_SOURCE_DIR/$name fetch --depth=1
+		git -C $PKGMK_SOURCE_DIR/$name clean -f
+		git -C $PKGMK_SOURCE_DIR/$name reset --hard origin/$2
+	else
+		git -C $PKGMK_SOURCE_DIR clone --depth=1 $1 -b $2 $name
+	fi
+
+	cp -r $PKGMK_SOURCE_DIR/$name $PKGMK_WORK_DIR/src/$name
+}
+
+build() {
+	download_git https://github.com/MihaiBojescu/$name master
+	cd $name
+
+	install -Dm755 linuxnotifier.py $PKG/usr/bin/linuxnotifier
+}
