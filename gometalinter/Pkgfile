@@ -71,6 +71,7 @@ build() {
 	go get -u -v -fix github.com/alecthomas/gometalinter
 	cd src/github.com/alecthomas/gometalinter
 	find . -type f -print0 | xargs -0 sed -i \
+		-e 's/govet/go vet/g' \
 		-e 's/deadcode/godeadcode/g' \
 		-e 's/varcheck/govarcheck/g' \
 		-e 's/structcheck/gostructcheck/g' \
